@@ -18,66 +18,119 @@
        Staff  - UCBMUN XXV
     </title>
   </head>
-  <body>
+  <body style="padding-top: 90px;">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
-    <a class="navbar-brand header-font align-bottom" href="/">UCBMUN XXV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav
+  class="navbar navbar-expand-lg navbar-light bg-light"
+  style="position: fixed; width: 100%; top: 0; z-index: 10;"
+>
+  <a class="navbar-brand header-font align-bottom" href="/"
+    ><img
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 75px; width: 75vw;"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-            <li class="nav-item dropdown active">
-          
-          <a class="nav-link dropdown-toggle" href="/about" id="AboutNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="AboutNavbarDropdown">
-                <a class="dropdown-item" href="/about">Overview</a>
-                <a class="dropdown-item" href="/awards">Awards</a>
-                <a class="dropdown-item" href="/staff">Staff</a>
-                <a class="dropdown-item" href="/schedule">Schedule</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/committees" id="CommitteesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Committees
-          </a>
-          <div class="dropdown-menu" aria-labelledby="CommitteesNavbarDropdown">
-                <a class="dropdown-item" href="/committees">Overview</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/faq" id="ResourcesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
-          </a>
-          <div class="dropdown-menu" aria-labelledby="ResourcesNavbarDropdown">
-                <a class="dropdown-item" href="/static/UCBMUN XXIV Delegate Handbook.pdf">Delegate Handbook</a>
-                <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXIV.pdf">Rules of Procedure</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
-                <a class="dropdown-item" href="/position_papers">Position Papers</a>
-          </div>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
-          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item dropdown active">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/about"
+          id="AboutNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          About
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="AboutNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/about">Overview</a>
+          <a class="dropdown-item" href="/awards">Awards</a>
+          <a class="dropdown-item" href="/staff">Staff</a>
+          <a class="dropdown-item" href="/schedule">Schedule</a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/committees"
+          id="CommitteesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Committees
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="CommitteesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/committees">Overview</a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/position_papers"
+          id="ResourcesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Resources
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="ResourcesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/handbook">Delegate Handbook</a>
+          <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXV.pdf">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
+          <a class="dropdown-item" href="/position_papers">Position Papers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/faq">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
+      </li>
     </ul>
   </div>
 </nav>
-
     </header>
     <div id="content" class="text-light">
 <div class="container">
@@ -93,11 +146,11 @@
   </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Darren.png" alt="Darren Chow" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/Rithika.png" alt="Rithika Neti" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Darren Chow
+          Rithika Neti
         </h3>
         <p>
           <em> Secretary General </em>
@@ -105,17 +158,17 @@
         <p>
         <a href="mailto:secretarygeneral@ucbmun.org"> secretarygeneral@ucbmun.org  </a>
         </p>
-          <p>Darren is a junior from sunny San Diego, California double majoring in Business Administration and English. He is passionate about improving access to judicial and financial assistance and hopes to attend law school after graduation. Darren joined MUN his freshman year to find driven, like-minded people—interested in challenging themselves and changing the world—and, wow, did he hit the jackpot. He has had the pleasure of being an ACD in the Ad-Hoc committee of the Secretary-General his freshman year and acted as the Chief of Staff External this past year. Darren is honored and humbled to serve as the Secretary-General for UCBMUN XXIV and can't wait to bring you the best conference San Francisco has seen to date!</p>
+          <p>Rithika is a junior studying data science with a concentration in business analytics and a minor in public policy. She is from, in her opinion, the greatest city in the world Boston, Massachusetts. Rithika joined UCBMUN to find passionate, challenge-oriented people and gain unique and diverse perspectives about the world. In her free time, you can find her cheering for Boston sports teams, drinking way too much coffee, and spontaneously planning trips. After both staffing and being on Secretariat in the past, Rithika is incredibly excited to welcome delegates to the iconic San Francisco Bay Area and is looking forward to all of the lively and engaging committees. She is honored and humbled to be your Secretary-General and hopes that the 25th edition of UCBMUN is the best one yet.</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Vassie.png" alt="Vassilisa Rubtsova" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/Pranav.png" alt="Pranav Mallampalli" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Vassilisa Rubtsova
+          Pranav Mallampalli
         </h3>
         <p>
           <em> Director General </em>
@@ -123,25 +176,7 @@
         <p>
         <a href="mailto:directorgeneral@ucbmun.org"> directorgeneral@ucbmun.org  </a>
         </p>
-          <p>Vassie is a junior from Los Angeles, California double majoring in Environmental Economics and Policy and Applied Mathematics. She joined UCBMUN first semester of her freshman year and what she found was an incredible community of brilliant, supportive, and passionate individuals ready to engage in the most important and relevant conversations and debates. Outside of UCBMUN, she is active in UC Berkeley’s student government, a member of an environmental consulting club, and a stand-up comedy enthusiast. Vassie is incredibly honored to be the Director-General for UCBMUN XXIV and is excited to see the lively debate, power moves, and resolutions this amazing conference will bring.</p>
-
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <img src="/static/secretariat/Zack.png" alt="Zack Schiffer" class="img-thumbnail" style="width: 256px;">
-      </div>
-      <div class="col">
-        <h3 >
-          Zack Schiffer
-        </h3>
-        <p>
-          <em> Chief of Staff, External </em>
-        </p>
-        <p>
-        <a href="mailto:cos-external@ucbmun.org"> cos-external@ucbmun.org  </a>
-        </p>
-          <p>Zack is a sophomore from Orange County, California majoring in political science. His first MUN experience happened at UCLA’s MUNSI, where his counselors have now become his friends on the circuit (go figure?!). As a tenured member of UCBMUN, Zack has the pleasure of being your Chief of Staff External and hopes that conference is as enjoyable as it is enriching.</p>
+          <p>Pranav is a junior studying Political Science and Data Science with a concentration in Cognitive Science. He is from the great state of New Jersey and fully believes that since New York sports teams play in New Jersey, he's allowed to support them. Pranav joined UCBMUN to find like-minded, passionate people and discover new political perspectives. In his free time, Pranav enjoys watching soccer, watching his favorite shows on Netflix, and taking long naps. As this is his second year on secretariat, Pranav is excited to welcome all delegates to the wonderful San Francisco Bay Area, the place he now calls home. He is honored to be the Director General of this upcoming conference and hopes that the 25th edition of UCBMUN is one to remember.</p>
 
       </div>
     </div>
@@ -159,17 +194,17 @@
         <p>
         <a href="mailto:usg-jcc@ucbmun.org"> usg-jcc@ucbmun.org  </a>
         </p>
-          <p>William is a Junior from Virginia studying Computer Science and is delighted to be your Under-Secretary General of JCC/Ad-Hoc!  William loves discussing the intersection of technology and policy as he sees it as one of the most critical areas of development for any political body.  William started MUN in high school and has continued participating since then, most recently as the USG of Crisis for UCBMUN XXIII. When not debating, you can find him on the climbing wall or in a theater sound designing a musical.  He does classwork sometimes too. He hopes you enjoy San Francisco and have an amazing time at UCBMUN XXIV!</p>
+          <p>William is a senior studying Computer Science with a focus on cyber security. Originally from the DC area, he started in MUN during his freshman year of highschool. Now part of UCBMUN, he been a USG for three years. MUN has been a major part of his life and has helped him open his eyes to new points of view and experiences. The memories he made on the circuit will stay with him forever and he is excited to help put on a conference delegates will never forget!</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Pranav.png" alt="Pranav Mallampalli" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/samuel.png" alt="Samuel Gao" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Pranav Mallampalli
+          Samuel Gao
         </h3>
         <p>
           <em> USG &mdash; Crisis </em>
@@ -177,17 +212,17 @@
         <p>
         <a href="mailto:usg-crisis@ucbmun.org"> usg-crisis@ucbmun.org  </a>
         </p>
-          <p>Pranav is a sophomore and originally from New Jersey, but is now a proud Berkeley Bear. Pranav is an intended Data Science and Political Science double major with his Data Science emphasis being in Robotics and his political science concentration intended to be in international relations. Having done Model UN in high school, having a particular love of debate and politics, Pranav chose to apply to UCBMUN out of many clubs on Cal’s campus. One of the reasons he eventually joined the organization was his belief that the members of the club made him feel right at home and shared a diverse range of opinions that he could learn from throughout his collegiate career. Outside of UCBMUN, Pranav is part of the Student Advocate’s Office on campus. In his free time, he loves to go to the gym, read, and watch reddit videos to kill time. Pranav is excited to welcome all participating delegates to the beautiful bay area and make conference as amazing as possible.</p>
+          <p>Samuel Gao is currently a Sophomore here at the University of California, Berkeley majoring in economics and statistics. Growing up from Fuzhou, China, he developed an interest in history, especially Chinese history, early on. Gradually, he also became more interested in current events, ultimately leading my decision to study Economics. While in high school, the school attempted to initiate a MUN club on campus but was forced to cancel due to limited interest. He was given a second chance to join MUN when he entered into college and have been with this community ever since. Outside of schoolwork and UCBMUN, Samuel is a big tennis fan and enjoys playing the piano. He also holds a part time job at the College of Chemistry as Finance Assistant. He looks forward to meeting with all the delegates and making this conference as best as possible.</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Ali.png" alt="Ali Hasan" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/ayushi.png" alt="Ayushi Balan" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Ali Hasan
+          Ayushi Balan
         </h3>
         <p>
           <em> USG &mdash; Crisis </em>
@@ -195,25 +230,97 @@
         <p>
         <a href="mailto:usg-crisis@ucbmun.org"> usg-crisis@ucbmun.org  </a>
         </p>
-          <p>Ali Hasan is a second-year from Indiana studying political science and sociology. This is his second year as a part of UCBMUN which he joined because of his love for international relations and crisis committees. As a part of UCBMUN XXIII, Ali assisted as part of the crisis staff for the Republican National Committee, 2015. When not studying, Ali enjoys napping and using The Cash App instead of Venmo. He is very excited to help facilitate the crisis committees for UCBMUN XXIV and hopes everyone has a great time this spring!</p>
+          <p>Ayushi is a sophomore and intends to double major in Business Administration and Molecular &amp; Cell Biology with an emphasis in Neurobiology.  She is from Chicago, Illinois, the best food city in the world. If you ever need any restaurant recommendations, Ayushi is the person to go to! She first discovered her love for Model UN while competing in the Hong Kong middle school circuit. She then continued participating in Model UN for four years at the high school level and has now further developed her passion for international relations and found a tight-knit community in UCBMUN! When she's not spending time in UCBMUN or her classes, she enjoys collaborating with healthcare related companies in Phoenix Consulting, experimenting on her watercolor paintings, and initiating spontaneous dance breaks.</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Rithika.png" alt="Rithika Neti" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/sharicka.png" alt="Sharicka Zutshi" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Rithika Neti
+          Sharicka Zutshi
         </h3>
         <p>
-          <em> Chief of Staff, Internal </em>
+          <em> USG &mdash; GA/SB </em>
+        </p>
+        <p>
+        <a href="mailto:usg-ga@ucbmun.org"> usg-ga@ucbmun.org  </a>
+        </p>
+          <p>Sharicka is an aspiring Bioengineer hoping to work in Global Public Health and social service, but in her free time, she takes a keen interest in watching and critiquing documentaries and reality shows. She is an international student from India and is of Kashmiri descent, something that has contributed to her passion for global politics. Sharicka is passionate about international relations and their impact on the functioning of the internal politics of nations, which in turn impacts public welfare, hence, she has incorporated studying politics into her primarily technical academic career. On arriving at Berkeley, she joined UCBMUN to compete in Model United Nations conferences to stimulate the effect and impact of important international events. Being in her 6th year for competitive delegation, she believes UCBMUN has helped hone her skills in diplomacy and debate, along with providing her with necessary leadership skills. Having staffed the year before and competed in her own share of collegiate conferences, Sharicka is confident in UCBMUN's distinguishing factor as an impactful, inclusive, and all-rounded learning experience. She is excited to welcome talented delegates to join UCBMUN in the industry hub called San Francisco, and make this conference truly supercalifragilisticexpialidocious.</p>
+
+      </div>
+    </div>
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <img src="/static/secretariat/abhinav.png" alt="Abhinav Subramaniam" class="img-thumbnail" style="width: 256px;">
+      </div>
+      <div class="col">
+        <h3 >
+          Abhinav Subramaniam
+        </h3>
+        <p>
+          <em> Chief of Staff </em>
+        </p>
+        <p>
+        <a href="mailto:cos-external@ucbmun.org"> cos-external@ucbmun.org  </a>
+        </p>
+          <p>Abhinav is a Sophomore from Chennai, India but was born and raised in Manila, Philippines and is pursuing Mechanical Engineering with a EE/CS Minor. While a STEM kid, Abhinav believes in helping the world, and hopes to join the renewable energy industry and pursue higher education in Public Policy and Economics. He joined MUN, first because his mother forced him, but later because he found a place full of like-minded, driven people finding solutions to global problems. Abhinav is a fan of the simple things in life, like fine-dining, and high-end fashion and his hat collection. He is humbled to be serving as UCBMUN's Chief of Staff, and can't wait for the best conference the Bay Area has seen yet.</p>
+
+      </div>
+    </div>
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <img src="/static/secretariat/emma.png" alt="Emma Lapinsky" class="img-thumbnail" style="width: 256px;">
+      </div>
+      <div class="col">
+        <h3 >
+          Emma Lapinsky
+        </h3>
+        <p>
+          <em> Chief of Staff </em>
         </p>
         <p>
         <a href="mailto:cos-internal@ucbmun.org"> cos-internal@ucbmun.org  </a>
         </p>
-          <p>Rithika is a sophomore from beautiful Boston, Massachusetts studying Data Science and Economics. She hopes to intersect these fields to better recognize and tackle societal problems and has plans to go to law school in the future. Rithika joined MUN her freshman year to find passionate, challenge-oriented people and gain more knowledge in the realm of international relations.  She is incredibly excited to serve as Chief of Staff Internal for UCBMUN XXIV and hopes that conference is filled with creative and important debate.</p>
+          <p>Emma is a sophomore originally from Seattle, Washington and is majoring in Political Science with minors in Public Policy and Human Rights. She plans to attend law school after graduation. Emma joined UCBMUN her first semester of freshman year because of her love for competitive public speaking. Outside of UCBMUN, Emma conducts research at the law school, writes for the Berkeley Political Review, and advises low-income students in the college application process. In her free time, she enjoys reading, spending time with her dog, and watching Netflix originals. Emma is excited to serve as Chief of Staff and can't wait for conference!</p>
+
+      </div>
+    </div>
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <img src="/static/secretariat/ammar.png" alt="Ammar Ansari" class="img-thumbnail" style="width: 256px;">
+      </div>
+      <div class="col">
+        <h3 >
+          Ammar Ansari
+        </h3>
+        <p>
+          <em> Director of Sponsorships </em>
+        </p>
+        <p>
+        <a href="mailto:">   </a>
+        </p>
+          <p>Ammar is a junior studying History and Political Science at UC Berkeley. He has lived in many places during his childhood, but lived in Sacramento ever since he was eight. Ammar has never done Model UN during high school; in fact, he was introduced to it during his freshman year of college. While UCBMUN offers a place to cultivate debate and diplomacy, he holds that the club has provided a welcoming and enjoyable community. He appreciates the diversity and intellectual curiosity of the members at UCBMUN, forming some of the best relationships in college at the club. Outside of UCBMUN, Ammar is part of the ASUC as a Director of the Pre-Law Department in the Office of Senator Aasim Yehya as well as Editor-In-Chief for a human rights publication on campus called The Rights Stuff. In his free time, Ammar loves to read, cook, and explore the Bay Area. Plus, you can find him posting his memes about MUN on UCBMUN's Slack page. Ammar is excited to welcome all delegates to the 25th iteration of UCBMUN, and invites you to join him for his committee "Unification of the Caribbean", which he will be chairing.</p>
+
+      </div>
+    </div>
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <img src="/static/secretariat/daniel.png" alt="Daniel Liu" class="img-thumbnail" style="width: 256px;">
+      </div>
+      <div class="col">
+        <h3 >
+          Daniel Liu
+        </h3>
+        <p>
+          <em> Director of Delegate Affairs </em>
+        </p>
+        <p>
+        <a href="mailto:">   </a>
+        </p>
+          <p>Daniel is a sophomore originally from Albany, California (around 2 miles from UC Berkeley). At Berkeley (GO BEARS!), Daniel is intending to major in Economics and Political Science. Having done Model UN since freshman year of high school, Daniel is familiar with many West coast high school model conferences including BMUN, SMUNC, and DMUNC. Daniel chose to apply to UCBMUN because he never had any opportunities staffing any Model UN conferences and because he was interested in competing at the collegiate level. Outside of UCBMUN, Daniel is part of the Taiwanese-American Student Association on campus and loves to read, play cello, and relax. Daniel can't wait to see all of you at UCBMUN XXV!</p>
 
       </div>
     </div>
@@ -226,66 +333,48 @@
           Gamin Kim
         </h3>
         <p>
-          <em> Chief of Staff, Internal </em>
+          <em> Director of Community Relations </em>
         </p>
         <p>
-        <a href="mailto:cos-internal@ucbmun.org"> cos-internal@ucbmun.org  </a>
+        <a href="mailto:">   </a>
         </p>
-          <p>Gamin is a sophomore from Hollywood, California who intends to major in Political Science and minor in Public Policy. Planning to attend law school after completing her undergraduate years at Berkeley, she hopes to utilize her academic learning to help better legal and health resources for immigrants in the Bay Area and become more involved in unconventional channels to government and politics. Living within the metropolis of Los Angeles, Gamin loves to hike up to the Griffith Observatory every now and then, but she also enjoys cooking, traveling, and listening to podcasts. Ever since she joined the college Model UN circuit her freshman year fall semester, it has been challenging but even more exciting to befriend other politically-minded individuals and debate complex issues current legislators have struggled to find common ground on. As a Vice Chair during the previous UCBMUN conference, Gamin hopes to consolidate what she’s learned so far during her MUN journey to be a supportive, helpful, and dependable Chief of Staff Internal this UCBMUN XXIV!</p>
+          <p>Gamin is a junior from Hollywood, California who is majoring in Political Science and minoring in Data Science. Ever since she joined the college Model UN circuit her freshman year fall semester, it has been challenging but even more exciting to befriend other politically-minded individuals and debate complex issues current policymakers have struggled to find common ground on. Other than UCBMUN, Gamin is also involved in research on campus and Delta Phi Epsilon, the foreign-service professional fraternity. She enjoys cooking, hiking, and listening to podcasts in her free time. Gamin hopes to consolidate what she’s learned so far during her MUN journey to be a supportive and helpful Director of Community Relations this UCBMUN XXIV!</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Reetu.png" alt="Reetu Manchem" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/helen.png" alt="Helen Yang" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Reetu Manchem
+          Helen Yang
         </h3>
         <p>
-          <em> Director of Programming </em>
-        </p>
-        <p>
-        <a href="mailto:programming@ucbmun.org"> programming@ucbmun.org  </a>
-        </p>
-          <p>Reetu is a sophomore from Richmond, Virginia majoring in Cognitive Science and Molecular and Cell Biology. She has done MUN since middle school and this will be her third time that she will be secretariat for a conference. Having done both GA and crisis, Reetu looks forward to all the challenging committees this year. You can find her drawing or debating with the person next to her. She looks forward to making new friendships and getting more involved in the college MUN circuit.</p>
-
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <img src="/static/secretariat/Sean.png" alt="Sean Vernon" class="img-thumbnail" style="width: 256px;">
-      </div>
-      <div class="col">
-        <h3 >
-          Sean Vernon
-        </h3>
-        <p>
-          <em> Director of Technology </em>
+          <em> Director of Tech, Ops, and Design </em>
         </p>
         <p>
         <a href="mailto:technology@ucbmun.org"> technology@ucbmun.org  </a>
         </p>
-          <p>Sean is a senior from Hillsborough, California studying Computer Science. UCBMUN XXIV will be his fourth (and final!) UCBMUN, and he is proud to have served in a litany of roles over the years, working his way up from ACD to CD to USG before finally getting to do something actually related to his major as Director of Technology. Additionally, Sean is the Crisis Director for Death of a Naturalist, and previously CD’d Airbnb, also known as “the best crisis committee on the circuit in the last four years”. Besides MUN, he splits his time between his couch, Berkeley’s various coffee shops, and the Open Computing Facility on campus.</p>
+          <p>Helen is a sophomore who has lived in 13 cities in the US, Canada, and China, but calls Cal and the San Francisco Bay Area home. She is an intended Computer Science (and business? applied math? econ? who knows) major. As a member of her high school MUN team, she developed a passion for international relations and debate, and looked forward to joining UCBMUN the moment she committed to Cal. Throughout her freshman year, the club became not only an outlet for her interests, but also a welcoming family and a safe space for discussion and thought. When she is not busy with UCBMUN, she can be found crying over bugs in her code, binge reading sci-fi novels, and listening to BTS. Helen is incredibly excited to help create an unforgettable conference experience for all delegates, and cannot wait to meet everyone during conference weekend.</p>
 
       </div>
     </div>
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <img src="/static/secretariat/Phanisri.png" alt="Phanisri Tummala" class="img-thumbnail" style="width: 256px;">
+        <img src="/static/secretariat/winston.png" alt="Winston Purnomo" class="img-thumbnail" style="width: 256px;">
       </div>
       <div class="col">
         <h3 >
-          Phanisri Tummala
+          Winston Purnomo
         </h3>
         <p>
-          <em> Director of Business Relations </em>
+          <em> Director of Tech, Ops, and Design </em>
         </p>
         <p>
-        <a href="mailto:businessrelations@ucbmun.org"> businessrelations@ucbmun.org  </a>
+        <a href="mailto:technology@ucbmun.org"> technology@ucbmun.org  </a>
         </p>
-          <p>Phanisri Tummala is a sophomore who is studying Molecular and Cell Biology with an emphasis in Biochemistry. She joined UCBMUN because she absolutely loves debate and the rush of thinking on her feet, especially when it’s about the wide array of interesting topics in MUN! She also believes that it’s important, not more than ever, to stay involved in the major world issues of today. A fun fact about Phanisri is that she really enjoys listening to old Taylor Swift songs and watching Disney movies over and over again because, honestly, they never get old.</p>
+          <p>Winston is a sophomore studying Computer Science originally from Indonesia. Having discovered Model UN during his sophomore year of high school, he joined UCBMUN last spring only to have his semester cut short before he could travel to college conferences. He did however manage to staff the Reddit Board of Directors at last year's UCBMUN. In addition to being the co-Director of Tech, Ops and Design, Winston is a chair for IATA, and can't wait to meet everyone at UCBMUN!</p>
 
       </div>
     </div>
@@ -303,7 +392,7 @@
       <div class=container>
         <span class="text-light" >
           <p style="margin-top: 8px">
-        &copy; Copyright 2018 by UCBMUN.
+        &copy; Copyright 2020 by UCBMUN.
           </p>
         </span>
         
