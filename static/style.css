@@ -3,7 +3,6 @@
 html {
   position: relative;
   min-height: 100%;
-  width: 100vw;
 }
 
 body {
@@ -15,11 +14,6 @@ body {
   -o-background-size: cover;
   padding-bottom: 0;
 }
-
-.container {
-    margin-right: 0px;
-    padding-right:0px;
-} !important
 
 .header-font {
   font-family: 'Markazi Text', serif;
@@ -38,8 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .filler-space {
   height: 20vh;
-  margin: 0;
-  padding:0;
 }
 
 
