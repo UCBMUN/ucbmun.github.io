@@ -15,172 +15,340 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Home  - UCBMUN XXIV
+       Home  - UCBMUN XXV
     </title>
   </head>
-  <body>
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
-    <a class="navbar-brand header-font align-bottom" href="/">UCBMUN XXIV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav
+  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"
+  style="
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    justify-content: center;
+  "
+>
+  <a
+    class="navbar-brand header-font align-bottom"
+    style="text-align: center;"
+    href="/"
+    ><img
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
-          </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/about" id="AboutNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/about"
+          id="AboutNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          About
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="AboutNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/about">Overview</a>
+          <a class="dropdown-item" href="/awards">Awards</a>
+          <a class="dropdown-item" href="/staff">Staff</a>
+          <a class="dropdown-item" href="/schedule">Schedule</a>
+          <a class="dropdown-item" href="/explore">Explore SF</a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/committees"
+          id="CommitteesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Committees
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="CommitteesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/committees">Overview</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#gaandsb">
+            General Assembly &amp; Specialized Bodies
           </a>
-          <div class="dropdown-menu" aria-labelledby="AboutNavbarDropdown">
-                <a class="dropdown-item" href="/about">Overview</a>
-                <a class="dropdown-item" href="/awards">Awards</a>
-                <a class="dropdown-item" href="/staff">Staff</a>
-                <a class="dropdown-item" href="/schedule">Schedule</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/committees" id="CommitteesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Committees
+          <a class="dropdown-item" href="/committee/ecofin">ECOFIN: Southeast Asian Economies</a>
+          <a class="dropdown-item" href="/committee/senate">US Senate: Data Privacy and Cybersecurity</a>
+          <a class="dropdown-item" href="/committee/iata">Up in the Air 1945: International Air Transport Association</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#crisis">
+            Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="CommitteesNavbarDropdown">
-                <a class="dropdown-item" href="/committees">Overview</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#gaandsb"> General Assembly &amp; Specialized Bodies </a>
-                <a class="dropdown-item" href="/committee/disec">DISEC: Peace Operations (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/escwa">UN Economic and Social Commission for Western Asia</a>
-                <a class="dropdown-item" href="/committee/grulac">Group of Latin America and the Caribbean</a>
-                <a class="dropdown-item" href="/committee/cabinet">Nehru&#39;s Cabinet</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#crisis"> Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/warringstates">Unification of the Warring States Period</a>
-                <a class="dropdown-item" href="/committee/kuwtk">Keeping Up with the Kardashians</a>
-                <a class="dropdown-item" href="/committee/hetchhetchy">Death of a Naturalist</a>
-                <a class="dropdown-item" href="/committee/khomeini">Death of Khomeini</a>
-                <a class="dropdown-item" href="/committee/unsc">UNSC: The Conflict in Kivu (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/reddit">Reddit: /r/BoardOfDirectors</a>
-                <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#jcc"> Joint Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/jccallende">JCC: Allende&#39;s Government</a>
-                <a class="dropdown-item" href="/committee/jccpinochet">JCC: U.S.-Backed Rebels</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/faq" id="ResourcesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
+          <a class="dropdown-item" href="/committee/unsc">UNSC: Sudanese Uprising</a>
+          <a class="dropdown-item" href="/committee/caribbean">Unification of Carribean</a>
+          <a class="dropdown-item" href="/committee/missiontomars">Mission to Mars</a>
+          <a class="dropdown-item" href="/committee/versailles">Court of Versailles: The Reign of Louis XIV</a>
+          <a class="dropdown-item" href="/committee/kamehameha">The First King: Kamehameha’s Council of Chiefs</a>
+          <a class="dropdown-item" href="/committee/khanofkhans">Khan of Khans</a>
+          <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc Committee of the Secretary-General</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#jcc">
+            Joint Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="ResourcesNavbarDropdown">
-                <a class="dropdown-item" href="/static/UCBMUN XXIV Delegate Handbook.pdf">Delegate Handbook</a>
-                <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXIV.pdf">Rules of Procedure</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
-                <a class="dropdown-item" href="/position_papers">Position Papers</a>
-          </div>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
-          </li>
+          <a class="dropdown-item" href="/committee/jccadm">Survival of Nixon: Nixon Administration</a>
+          <a class="dropdown-item" href="/committee/jcclib">Survival of Nixon: Council of Liberty </a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/position_papers"
+          id="ResourcesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Resources
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="ResourcesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/handbook">Delegate Handbook</a>
+          <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXV.pdf">Rules of Procedure</a>
+          <a class="dropdown-item" href="/faq">FAQ</a>
+          <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
+          <a class="dropdown-item" href="/position_papers">Position Papers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
+      </li>
     </ul>
   </div>
 </nav>
-
     </header>
     <div id="content" class="text-light">
-<div class="container text-center">
+<div
+  style="
+    text-align: center;
+    position: fixed;
+    width: 110vw;
+    height: 95%;
+    z-index: -1;
+    margin-right:0;
+  "
+>
+  <video
+    style="width: 110vw; height: 100%; object-fit: cover;"
+    autoplay
+    muted
+    loop
+  >
+    <source src="/static/ucbmunIntro.webm" type="video/webm" />
+  </video>
+</div>
+<div style="width:95vw; align:center; padding-left:6.5vw;">
   
           
 
-  <div class="row filler-space"> </div>
-  <div class="row">
+  <div class="row filler-space" style="margin-right:0px"></div>
+  <div class="row" style="margin-right:0px">
     <div class="col">
-      <h3 class="display-3" >
-        
-          UCBMUN XXIV
+      <h3 class="display-3" style="text-align: left; padding-left:6vw">
+         UCBMUN XXV
       </h3>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="margin-right:0px; padding-left:6vw;">
     <div class="col">
-      <p class="lead">
-        February 27th &ndash; March 1st, 2020
+      <p class="lead" style="text-align: left;">
+        February 25 - 28, 2021
       </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="text-align: left;" style="margin-right:0px; padding-left:6vw;">
     <div class="col">
       <img
         src="/static/ucbmun_bear.png"
-        style="max-width: 418px; width: 90vw;"
+        style="max-width: 418px; width: 90vw; padding-left:6vw; padding-right:6vw"
         alt="UCBMUN Bear"
       />
     </div>
   </div>
-  <div class="row filler-space"> </div>
-  <br>
-  <h2>
+  <div class="row filler-space" style="margin-right:0px"></div>
+  <br />
+  <h2 style="text-align: center;">
     Letter from the Secretary-General
   </h2>
-  <div class="row text-left">
-    <div class="col-md-4">
+  <br>
+  <!-- <div class="row text-left"> -->
+    <div
+      class="column"
+      style="
+        padding-left: 15%;
+        padding-right: 15%;
+      "
+    >
+  <img
+    src="/static/secretariat/secgen.png"
+    style="
+      padding-right: 2%;
+      float: left;
+      width: 95%;
+      max-width: 256px;
+      display: block;
+    "
+    alt="rithika"
+  />
+    <p>
+      Dear Esteemed Delegates, Advisors, and Partners,
+    </p>
+    <p>
+      On behalf of my Secretariat and staff, it is my privilege and honor to
+      invite all of you to the lovely Bay Area and the heart of San Francisco’s
+      historic Financial District for the Twenty-Fifth iteration of UCBMUN, UC
+      Berkeley’s Model United Nations Conference. Every Spring, this conference
+      hosts some of the world’s brightest minds, discussing the most
+      pressing and urgent global issues.
+    </p>
+    <p>
+      UCBMUN XXV is at the heart of Silicon Valley, and thus, global innovation
+      and endeavor, with which we hope our delegates appreciate and take with them.
+      As we embark on this twenty-fifth edition, we strive to make this
+      conference’s experience even more unforgettable, transformative, and
+      unique. We hope our delegates find our amazing array of
+      committees intellectually enriching and exciting. From racing to create a
+      new civilization on Mars, to settling the future of the Mongol empire,
+      those interested in Crisis-based committees will participate in rapid
+      problem-solving, which challenges delegates to discover innovative, yet
+      realistic solutions. Those wishing to participate in the General
+      Assemblies or Specialized Bodies can expect extremely substantive and
+      relevant topics coupled with a diverse and collaborative debate style
+      second to none.
+    </p>
+    <p>
+      Beyond committee experiences, the beautiful city of San Francisco offers
+      delegates a once in a lifetime opportunity to socialize, network, and
+      sightsee. Delegates can find spectacular views at Golden Gate Park or
+      Mission Dolores. A mere trolly ride away from the world-famous Ghirardelli
+      Square, delegates can enjoy the delicious Ocean Beach sundae, my favorite
+      dessert stop in the entire city. From there, one can take a late night
+      stroll to Pier 39 and Union Square and enjoy the amazing SF skyline and
+      oceanside view. We hope that the city by the bay makes your experience
+      absolutely unforgettable.
+    </p>
+    <p>
+      In a city where the historic UN charter was signed, hosted by a university
+      that embodies free speech and democracy, UCBMUN XXV has been one of the
+      most competitive and historic conferences not only on the west coast, but
+      in the United States. Today, more than ever, the world is faced with
+      unknown and increasingly complex situations, dilemmas, and threats; thus,
+      it is important that we channel the ideals inherent to the grand
+      institution that we model. I hope that all of you find UCBMUN XXV to be
+      one of the highlights of your 2021 calendar year.
+    </p>
+    <p>
+      With this in mind, I hope that you take a moment to explore our website
+      with its incredible committees and staffers. I strongly encourage all of
+      you to look over the registration details on the website, and if you have
+      any other questions or concerns, feel free to email any member of our
+      UCBMUN XXV Secretariat or me personally at
+      <a href="mailto:secretarygeneral@ucbmun.org"
+        >secretarygeneral@ucbmun.org</a
+      >.
+    </p>
+    <p>
+      The UCBMUN staff and I look forward to welcoming you on February 25, 2021
+      in person!
+    </p>
+    <p style="padding: 0; margin: 0">
+      Best Regards,
+      <!-- <br>
       <img
-        src="/static/secretariat/SecGen.png"
-        class="img-thumbnail"
-        style="width: 95%; max-width: 256px; display: block; margin: 0 auto;"
-        alt="Darren"
-      />
-    </div>
-    <div class="col">
-      <p>
-        Dear Delegates,
-      </p>
-      <p>
-        My name is Darren Chow, and I am the Secretary-General for the 24th session of UC Berkeley’s Model United Nations Conference (UCBMUN XXIV). On behalf of our Secretariat and staff, it is with the utmost honor and humility that I welcome you to the heart of San Francisco’s historic Financial District, to collaborate with some of the best and brightest minds on the world’s most pertinent issues. 
-      </p>
-      <p>
-		Our thirteen unique and engaging committees reflect the principles of free speech and democracy which embody Berkeley and its denizens. With topics ranging from the Damming of the Hetch Hetchy Valley to the UNSC response towards the Conflict in Kivu, from the Death of Khomeini to the Group of Latin America and Caribbean Countries, our committees span time and space. Our esteemed delegates — diverse in background, education, and perspective — will all have something to contribute to the dialogue of progress and innovation that this moment in history desperately demands. At UCBMUN, we pride ourselves on not only creating competitive and well-run committees but also on prioritizing inclusivity and support as tenets of our conference culture. If you ever need anything at all, please flag down one of our staffers who will be happy to help.
-      </p>
-      <p>
-      	The original UN Charter — which, after two months of negotiations, ushered in a new era of international diplomacy after WWII — was signed at the San Francisco Opera House, less than three miles from where we stand today. This history and its wide-ranging repercussions are palpable; we wade in its depths. And now, more than ever, is it important that we channel the ideals inherent in the grand institution that we model. It is my pleasure to invite you on February 27th through March 1st, 2020 to our home in the Bay — and to experience a conference unlike any other. 
-      </p>
-      <p>
-        Best, 
-        <br>
-        Darren Chow
-        <br>
-        <i>Secretary-General,</i> UCBMUN XXIV
-        <br>
-        <a href=mailto:secretarygeneral@ucbmun.org>secretarygeneral@ucbmun.org</a>
-      </p>
-    </div>
+    src="/static/secgen_sign.png"
+    style="
+      padding-right: 2%;
+      float: left;
+      width: 95%;
+      max-width: 100px;
+      display: block;
+    "
+  />
+  <br><br> -->
+  <br><br>
+  <img
+    src="/static/secgen_sign.png"
+    style="
+      padding-right: 2%;
+      float: left;
+      width: 100%;
+      max-width: 120px;
+      display: block;
+    "
+  />
+  <br><br><br>
+      <br />
+      Rithika Neti
+      <br />
+      <i>Secretary-General,</i> UCBMUN XXV
+      <br />
+      <a href="mailto:secretarygeneral@ucbmun.org"
+        >secretarygeneral@ucbmun.org</a><br><br>
+    </p>
   </div>
-</div>
-
+    <!-- </div> -->
+    
     </div>
+    <div>
     <footer class="bg-transperant footer">
       
       <div class=container>
         <span class="text-light" >
           <p style="margin-top: 8px">
-        &copy; Copyright 2018 by UCBMUN.
+        &copy; Copyright 2020 by UCBMUN.
           </p>
         </span>
         
       
       </div>
     </footer>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

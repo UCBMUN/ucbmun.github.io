@@ -15,88 +15,153 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Frequently Asked Questions  - UCBMUN XXIV
+       Frequently Asked Questions  - UCBMUN XXV
     </title>
   </head>
-  <body>
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
-    <a class="navbar-brand header-font align-bottom" href="/">UCBMUN XXIV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav
+  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"
+  style="
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    justify-content: center;
+  "
+>
+  <a
+    class="navbar-brand header-font align-bottom"
+    style="text-align: center;"
+    href="/"
+    ><img
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/about" id="AboutNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/about"
+          id="AboutNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          About
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="AboutNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/about">Overview</a>
+          <a class="dropdown-item" href="/awards">Awards</a>
+          <a class="dropdown-item" href="/staff">Staff</a>
+          <a class="dropdown-item" href="/schedule">Schedule</a>
+          <a class="dropdown-item" href="/explore">Explore SF</a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/committees"
+          id="CommitteesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Committees
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="CommitteesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/committees">Overview</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#gaandsb">
+            General Assembly &amp; Specialized Bodies
           </a>
-          <div class="dropdown-menu" aria-labelledby="AboutNavbarDropdown">
-                <a class="dropdown-item" href="/about">Overview</a>
-                <a class="dropdown-item" href="/awards">Awards</a>
-                <a class="dropdown-item" href="/staff">Staff</a>
-                <a class="dropdown-item" href="/schedule">Schedule</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/committees" id="CommitteesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Committees
+          <a class="dropdown-item" href="/committee/ecofin">ECOFIN: Southeast Asian Economies</a>
+          <a class="dropdown-item" href="/committee/senate">US Senate: Data Privacy and Cybersecurity</a>
+          <a class="dropdown-item" href="/committee/iata">Up in the Air 1945: International Air Transport Association</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#crisis">
+            Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="CommitteesNavbarDropdown">
-                <a class="dropdown-item" href="/committees">Overview</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#gaandsb"> General Assembly &amp; Specialized Bodies </a>
-                <a class="dropdown-item" href="/committee/disec">DISEC: Peace Operations (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/escwa">UN Economic and Social Commission for Western Asia</a>
-                <a class="dropdown-item" href="/committee/grulac">Group of Latin America and the Caribbean</a>
-                <a class="dropdown-item" href="/committee/cabinet">Nehru&#39;s Cabinet</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#crisis"> Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/warringstates">Unification of the Warring States Period</a>
-                <a class="dropdown-item" href="/committee/kuwtk">Keeping Up with the Kardashians</a>
-                <a class="dropdown-item" href="/committee/hetchhetchy">Death of a Naturalist</a>
-                <a class="dropdown-item" href="/committee/khomeini">Death of Khomeini</a>
-                <a class="dropdown-item" href="/committee/unsc">UNSC: The Conflict in Kivu (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/reddit">Reddit: /r/BoardOfDirectors</a>
-                <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#jcc"> Joint Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/jccallende">JCC: Allende&#39;s Government</a>
-                <a class="dropdown-item" href="/committee/jccpinochet">JCC: U.S.-Backed Rebels</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown active">
-          
-          <a class="nav-link dropdown-toggle" href="/faq" id="ResourcesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
+          <a class="dropdown-item" href="/committee/unsc">UNSC: Sudanese Uprising</a>
+          <a class="dropdown-item" href="/committee/caribbean">Unification of Carribean</a>
+          <a class="dropdown-item" href="/committee/missiontomars">Mission to Mars</a>
+          <a class="dropdown-item" href="/committee/versailles">Court of Versailles: The Reign of Louis XIV</a>
+          <a class="dropdown-item" href="/committee/kamehameha">The First King: Kamehameha’s Council of Chiefs</a>
+          <a class="dropdown-item" href="/committee/khanofkhans">Khan of Khans</a>
+          <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc Committee of the Secretary-General</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#jcc">
+            Joint Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="ResourcesNavbarDropdown">
-                <a class="dropdown-item" href="/static/UCBMUN XXIV Delegate Handbook.pdf">Delegate Handbook</a>
-                <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXIV.pdf">Rules of Procedure</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
-                <a class="dropdown-item" href="/position_papers">Position Papers</a>
-          </div>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
-          </li>
+          <a class="dropdown-item" href="/committee/jccadm">Survival of Nixon: Nixon Administration</a>
+          <a class="dropdown-item" href="/committee/jcclib">Survival of Nixon: Council of Liberty </a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/position_papers"
+          id="ResourcesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Resources
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="ResourcesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/handbook">Delegate Handbook</a>
+          <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXV.pdf">Rules of Procedure</a>
+          <a class="dropdown-item" href="/faq">FAQ</a>
+          <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
+          <a class="dropdown-item" href="/position_papers">Position Papers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
+      </li>
     </ul>
   </div>
 </nav>
-
     </header>
     <div id="content" class="text-light">
 <div class="container text-center">
@@ -107,31 +172,30 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-8">
-        <p>﻿</p>
-<h1>Frequently Asked Questions</h1>
-<p>Information on the dates, location, and costs of UCBMUN XXIV can be found on the <a href="/about">About</a> page.</p>
+        <p>﻿<h1>Frequently Asked Questions</h1></p>
+<p>Details about UCBMUN XXV vision and history can be found in the Overview page, and committee information can be found in the Committee Overview page. All details about Registration can be found on the Registration page or in the Registration Guide.</p>
 <h2>What is the registration process?</h2>
 <p>To begin the registration process please fill out our registration form! Once you have completed the initial registration form, we will send you a PayPal invoice and other information pertaining to conference such as committee preferences, hotel discounts, and flight codes.</p>
-<p>Your registration will be finalized once payment is received—whether by invoice or by check. We will continually send out information leading up to conference.</p>
+<p>Your registration will be finalized once payment is received—whether by invoice or by check. We will continually send out information leading up to conference. Please reach out to our Director of Delegate Affairs at <a href="mailto:delaffairs@ucbmun.org">delaffairs@ucbmun.org</a> or Secretary-General at <a href="mailto:secretarygeneral@ucbmun.org">secretarygeneral@ucbmun.org</a> for any questions or concerns.</p>
 <h2>When will we receive committee assignments?</h2>
-<p>We will finalize committee assignments sometime around January. Committee assignments will be made on a rolling basis once your school fills out the committee preference form and registration has been finalized (i.e. once payment has been received through PayPal or through the mail). Assignments will not be released until payment is finalized.</p>
+<p>We will finalize committee assignments sometime around January. Committee assignments will be made on a rolling basis once your school fills out the committee preference form and registration has been finalized (i.e. once payment has been received through PayPal or through the mail). Assignments will not be released until payment is finalized. For any extenuating circumstances or considerations, please email <a href="mailto:secretarygeneral@ucbmun.org">secretarygeneral@ucbmun.org</a>.</p>
 <h2>Do I need to pay a delegation fee even if I’m coming alone from my school?</h2>
 <p>To make conference more accessible for smaller schools, delegations bringing just 1 or 2 delegates will have the delegation fee waived!</p>
 <h2>How can I get a tourist visa letter?</h2>
-<p>Once you fill out our initial registration form and indicate that you will be traveling internationally, we will ask if you need a tourist visa letter. Once your registration is finalized (i.e. payment is received either through PayPal or mail), then we will send you a tourist visa letter to help you acquire a tourist visa.</p>
+<p>Once you fill out our initial registration form and indicate that you will be traveling internationally, we will ask if you need a tourist visa letter. Once your registration is finalized (i.e. payment is received either through PayPal or mail), then we will send you a tourist visa letter to help you acquire a tourist visa. Please reach out to our Director of Delegate Affairs at <a href="mailto:delaffairs@ucbmun.org">delaffairs@ucbmun.org</a> or Secretary-General at <a href="mailto:secretarygeneral@ucbmun.org">secretarygeneral@ucbmun.org</a> for any questions or concerns.</p>
 <h2>How do I send a check if my area doesn’t have PayPal?</h2>
 <p>If you’d prefer to send a check for the registration fee, please send it to:</p>
 <p class="text-center">
 
 
 
-ASUC/UC Berkeley Model United Nations  </br>
+ASUC/UC Berkeley Model United Nations </br>
 
 c/o LEAD Center </br>
 
-432 Eshleman Hall  </br>
+432 Eshleman Hall </br>
 
-Berkeley, CA 94720-4500  
+Berkeley, CA 94720-4500
 
 
 
@@ -144,18 +208,20 @@ Berkeley, CA 94720-4500
 </div>
 
     </div>
+    <div>
     <footer class="bg-transperant footer">
       
       <div class=container>
         <span class="text-light" >
           <p style="margin-top: 8px">
-        &copy; Copyright 2018 by UCBMUN.
+        &copy; Copyright 2020 by UCBMUN.
           </p>
         </span>
         
       
       </div>
     </footer>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

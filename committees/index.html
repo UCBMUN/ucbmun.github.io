@@ -15,88 +15,151 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Committees Overview  - UCBMUN XXIV
+       Committees Overview  - UCBMUN XXV
     </title>
   </head>
-  <body>
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
-    <a class="navbar-brand header-font align-bottom" href="/">UCBMUN XXIV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav
+  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"
+  style="
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    justify-content: center;
+  "
+>
+  <a
+    class="navbar-brand header-font align-bottom"
+    style="text-align: center;"
+    href="/"
+    ><img
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/about" id="AboutNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/about"
+          id="AboutNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          About
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="AboutNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/about">Overview</a>
+          <a class="dropdown-item" href="/awards">Awards</a>
+          <a class="dropdown-item" href="/staff">Staff</a>
+          <a class="dropdown-item" href="/schedule">Schedule</a>
+          <a class="dropdown-item" href="/explore">Explore SF</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/committees"
+          id="CommitteesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Committees
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="CommitteesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/committees">Overview</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#gaandsb">
+            General Assembly &amp; Specialized Bodies
           </a>
-          <div class="dropdown-menu" aria-labelledby="AboutNavbarDropdown">
-                <a class="dropdown-item" href="/about">Overview</a>
-                <a class="dropdown-item" href="/awards">Awards</a>
-                <a class="dropdown-item" href="/staff">Staff</a>
-                <a class="dropdown-item" href="/schedule">Schedule</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown active">
-          
-          <a class="nav-link dropdown-toggle" href="/committees" id="CommitteesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Committees
+          <a class="dropdown-item" href="/committee/ecofin">ECOFIN: Southeast Asian Economies</a>
+          <a class="dropdown-item" href="/committee/senate">US Senate: Data Privacy and Cybersecurity</a>
+          <a class="dropdown-item" href="/committee/iata">Up in the Air 1945: International Air Transport Association</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#crisis">
+            Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="CommitteesNavbarDropdown">
-                <a class="dropdown-item" href="/committees">Overview</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#gaandsb"> General Assembly &amp; Specialized Bodies </a>
-                <a class="dropdown-item" href="/committee/disec">DISEC: Peace Operations (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/escwa">UN Economic and Social Commission for Western Asia</a>
-                <a class="dropdown-item" href="/committee/grulac">Group of Latin America and the Caribbean</a>
-                <a class="dropdown-item" href="/committee/cabinet">Nehru&#39;s Cabinet</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#crisis"> Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/warringstates">Unification of the Warring States Period</a>
-                <a class="dropdown-item" href="/committee/kuwtk">Keeping Up with the Kardashians</a>
-                <a class="dropdown-item" href="/committee/hetchhetchy">Death of a Naturalist</a>
-                <a class="dropdown-item" href="/committee/khomeini">Death of Khomeini</a>
-                <a class="dropdown-item" href="/committee/unsc">UNSC: The Conflict in Kivu (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/reddit">Reddit: /r/BoardOfDirectors</a>
-                <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#jcc"> Joint Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/jccallende">JCC: Allende&#39;s Government</a>
-                <a class="dropdown-item" href="/committee/jccpinochet">JCC: U.S.-Backed Rebels</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/faq" id="ResourcesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
+          <a class="dropdown-item" href="/committee/unsc">UNSC: Sudanese Uprising</a>
+          <a class="dropdown-item" href="/committee/caribbean">Unification of Carribean</a>
+          <a class="dropdown-item" href="/committee/missiontomars">Mission to Mars</a>
+          <a class="dropdown-item" href="/committee/versailles">Court of Versailles: The Reign of Louis XIV</a>
+          <a class="dropdown-item" href="/committee/kamehameha">The First King: Kamehameha’s Council of Chiefs</a>
+          <a class="dropdown-item" href="/committee/khanofkhans">Khan of Khans</a>
+          <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc Committee of the Secretary-General</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="/committees#jcc">
+            Joint Crisis Committees
           </a>
-          <div class="dropdown-menu" aria-labelledby="ResourcesNavbarDropdown">
-                <a class="dropdown-item" href="/static/UCBMUN XXIV Delegate Handbook.pdf">Delegate Handbook</a>
-                <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXIV.pdf">Rules of Procedure</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
-                <a class="dropdown-item" href="/position_papers">Position Papers</a>
-          </div>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
-          </li>
+          <a class="dropdown-item" href="/committee/jccadm">Survival of Nixon: Nixon Administration</a>
+          <a class="dropdown-item" href="/committee/jcclib">Survival of Nixon: Council of Liberty </a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/position_papers"
+          id="ResourcesNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Resources
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="ResourcesNavbarDropdown"
+        >
+          <a class="dropdown-item" href="/handbook">Delegate Handbook</a>
+          <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXV.pdf">Rules of Procedure</a>
+          <a class="dropdown-item" href="/faq">FAQ</a>
+          <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
+          <a class="dropdown-item" href="/position_papers">Position Papers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
+      </li>
     </ul>
   </div>
 </nav>
-
     </header>
     <div id="content" class="text-light">
 <div class="container">
@@ -110,6 +173,105 @@
       </h4>
     </div>
   </div>
+      <div class="row">
+      <div class="col-md">
+      <hr style="width: 90%; border-color: white; border-width: 1px;" />
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2 id="gaandsb">
+            General Assembly and Specialized Bodies
+          </h2>
+          <br>
+        </div>
+      </div>
+
+      <div class="row">          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          min-width: 100px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/ecofin">
+            <img src="/static/comm_overview/ecofin.png" alt="ecofin" class="img-thumbnail" style="width: 148px;" alt="ECOFIN: Southeast Asian Economies"
+          >
+          </a>
+          <a href="/committee/ecofin">
+            <h4 class="text-light">
+              ECOFIN: Southeast Asian Economies
+            </h4>
+          </a>
+          <p>
+            <em>Chair:</em> Avani Yadav
+            <br>
+            <em>Chair:</em> Ananya Yanamandra
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          min-width: 100px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/senate">
+            <img src="/static/comm_overview/senate.png" alt="senate" class="img-thumbnail" style="width: 148px;" alt="US Senate: Data Privacy and Cybersecurity "
+          >
+          </a>
+          <a href="/committee/senate">
+            <h4 class="text-light">
+              US Senate: Data Privacy and Cybersecurity 
+            </h4>
+          </a>
+          <p>
+            <em>Chair:</em> Parth Nobel
+            <br>
+            <em>Chair:</em> Antonio Kobe Lopez
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          min-width: 100px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/iata">
+            <img src="/static/comm_overview/iata.png" alt="iata" class="img-thumbnail" style="width: 148px;" alt="Up in the Air 1945: International Air Transport Association"
+          >
+          </a>
+          <a href="/committee/iata">
+            <h4 class="text-light">
+              Up in the Air 1945: International Air Transport Association
+            </h4>
+          </a>
+          <p>
+            <em>Chair:</em> Manisha Sahoo
+            <br>
+            <em>Chair:</em> Winston Purnomo
+          </p> 
+        </div>
+    </div>
+
+    <!--
     <div class="row">
     <div class="col-md">
     <hr style="width: 90%; border-color: white; border-width: 1px;" />
@@ -121,85 +283,273 @@
           General Assembly and Specialized Bodies
         </h2>
       </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/disec">
-          <img src="/static/comm_overview/disec.png" alt="disec" class="img-thumbnail" style="width: 148px;" alt="DISEC: Peace Operations (Double-Del)"
+        <a href="/committee/ecofin">
+          <img src="/static/comm_overview/ecofin.png" alt="ecofin" class="img-thumbnail" style="width: 148px;" alt="ECOFIN: Southeast Asian Economies"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/disec">
+        <a href="/committee/ecofin">
           <h4 class="text-light">
-            DISEC: Peace Operations (Double-Del)
+            ECOFIN: Southeast Asian Economies
           </h4>
         </a>
         <p>
-          Chair: Ruhee Wadhwania
-          <br>
           Chair: Avani Yadav
+          <br>
+          Chair: Ananya Yanamandra
         </p>
       </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/escwa">
-          <img src="/static/comm_overview/escwa.png" alt="escwa" class="img-thumbnail" style="width: 148px;" alt="UN Economic and Social Commission for Western Asia"
+        <a href="/committee/senate">
+          <img src="/static/comm_overview/senate.png" alt="senate" class="img-thumbnail" style="width: 148px;" alt="US Senate: Data Privacy and Cybersecurity "
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/escwa">
+        <a href="/committee/senate">
           <h4 class="text-light">
-            UN Economic and Social Commission for Western Asia
-          </h4>
-        </a>
-        <p>
-          Chair: Mahshad Badii
-        </p>
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/grulac">
-          <img src="/static/comm_overview/grulac.png" alt="grulac" class="img-thumbnail" style="width: 148px;" alt="Group of Latin America and the Caribbean 2020"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/grulac">
-          <h4 class="text-light">
-            Group of Latin America and the Caribbean 2020
+            US Senate: Data Privacy and Cybersecurity 
           </h4>
         </a>
         <p>
           Chair: Parth Nobel
           <br>
-          Chair: Kenny Kang
+          Chair: Antonio Kobe Lopez
         </p>
       </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/cabinet">
-          <img src="/static/comm_overview/cabinet.png" alt="cabinet" class="img-thumbnail" style="width: 148px;" alt="Nehru&#39;s Cabinet"
+        <a href="/committee/iata">
+          <img src="/static/comm_overview/iata.png" alt="iata" class="img-thumbnail" style="width: 148px;" alt="Up in the Air 1945: International Air Transport Association"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/cabinet">
+        <a href="/committee/iata">
           <h4 class="text-light">
-            Nehru's Cabinet
+            Up in the Air 1945: International Air Transport Association
           </h4>
         </a>
         <p>
-          Chair: Rudraveer Reddy
-          <br>
           Chair: Manisha Sahoo
+          <br>
+          Chair: Winston Purnomo
         </p>
       </div>
+    </div> -->
+      <div class="row">
+      <div class="col-md">
+      <hr style="width: 90%; border-color: white; border-width: 1px;" />
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2 id="crisis">
+            Crisis Committees
+          </h2>
+          <br>
+        </div>
+      </div>
+
+      <div class="row">          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/unsc">
+            <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Sudanese Uprising "
+          >
+          </a>
+          <a href="/committee/unsc">
+            <h4 class="text-light">
+              UNSC: Sudanese Uprising 
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Darren Chow
+            <br>
+            <em>Crisis Director:</em> Maeve Sneddon
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/caribbean">
+            <img src="/static/comm_overview/caribbean.png" alt="caribbean" class="img-thumbnail" style="width: 148px;" alt="Unification of Caribbean"
+          >
+          </a>
+          <a href="/committee/caribbean">
+            <h4 class="text-light">
+              Unification of Caribbean
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Ammar Ansari
+            <br>
+            <em>Crisis Director:</em> Sameer Kazim
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/missiontomars">
+            <img src="/static/comm_overview/missiontomars.png" alt="missiontomars" class="img-thumbnail" style="width: 148px;" alt="Mission to Mars"
+          >
+          </a>
+          <a href="/committee/missiontomars">
+            <h4 class="text-light">
+              Mission to Mars
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Evan Mallah
+            <br>
+            <em>Crisis Director:</em> Liam Quinn Wohl
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/versailles">
+            <img src="/static/comm_overview/versailles.png" alt="versailles" class="img-thumbnail" style="width: 148px;" alt="Court of Versailles: The Reign of Louis XIV"
+          >
+          </a>
+          <a href="/committee/versailles">
+            <h4 class="text-light">
+              Court of Versailles: The Reign of Louis XIV
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Aruna Sudarshan
+            <br>
+            <em>Crisis Director:</em> Savanna Slaughter
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/kamehameha">
+            <img src="/static/comm_overview/kamehameha.png" alt="kamehameha" class="img-thumbnail" style="width: 148px;" alt="The First King: Kamehameha&#39;s Council of Chiefs"
+          >
+          </a>
+          <a href="/committee/kamehameha">
+            <h4 class="text-light">
+              The First King: Kamehameha's Council of Chiefs
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Gamin Kim
+            <br>
+            <em>Crisis Director:</em> Kai Smith
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/khanofkhans">
+            <img src="/static/comm_overview/khanofkhans.png" alt="khanofkhans" class="img-thumbnail" style="width: 148px;" alt="Khan of Khans"
+          >
+          </a>
+          <a href="/committee/khanofkhans">
+            <h4 class="text-light">
+              Khan of Khans
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Carol Xie
+            <br>
+            <em>Crisis Director:</em> Raahema Arshad
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/adhoc">
+            <img src="/static/comm_overview/adhoc.png" alt="adhoc" class="img-thumbnail" style="width: 148px;" alt="Ad&amp;ndash;Hoc Committee of the Secretary&amp;ndash;General"
+          >
+          </a>
+          <a href="/committee/adhoc">
+            <h4 class="text-light">
+              Ad&ndash;Hoc Committee of the Secretary&ndash;General
+            </h4>
+          </a>
+          <p>            
+            <em>Chair:</em> Jessica Wang
+            <br>
+            <em>Crisis Director:</em> Phanisri Tummala
+          </p> 
+        </div>
     </div>
+
+    <!--
     <div class="row">
     <div class="col-md">
     <hr style="width: 90%; border-color: white; border-width: 1px;" />
@@ -211,147 +561,235 @@
           Crisis Committees
         </h2>
       </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/warringstates">
-          <img src="/static/comm_overview/warringstates.png" alt="warringstates" class="img-thumbnail" style="width: 148px;" alt="Unification of the Warring States Period"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/warringstates">
-          <h4 class="text-light">
-            Unification of the Warring States Period
-          </h4>
-        </a>
-        <p>
-          Head Chair: Samuel Gao
-          <br>
-          Crisis Director: Carol Xie
-        </p>
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/kuwtk">
-          <img src="/static/comm_overview/kuwtk.png" alt="kuwtk" class="img-thumbnail" style="width: 148px;" alt="Keeping Up with the Kardashians"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/kuwtk">
-          <h4 class="text-light">
-            Keeping Up with the Kardashians
-          </h4>
-        </a>
-        <p>
-          Head Chair: Melyssa Oviedo
-          <br>
-          Crisis Director: Alison Luna
-        </p>
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/hetchhetchy">
-          <img src="/static/comm_overview/hetchhetchy.png" alt="hetchhetchy" class="img-thumbnail" style="width: 148px;" alt="Death of a Naturalist: The Damming of Hetch Hetchy Valley"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/hetchhetchy">
-          <h4 class="text-light">
-            Death of a Naturalist: The Damming of Hetch Hetchy Valley
-          </h4>
-        </a>
-        <p>
-          Head Chair: John Rider 
-          <br>
-          Crisis Director: Sean Vernon
-        </p>
-      </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/khomeini">
-          <img src="/static/comm_overview/khomeini.png" alt="khomeini" class="img-thumbnail" style="width: 148px;" alt="Death of Khomeini "
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/khomeini">
-          <h4 class="text-light">
-            Death of Khomeini 
-          </h4>
-        </a>
-        <p>
-          Head Chair: Phanisri Tummala
-          <br>
-          Crisis Director: Leila Hooshyar
-        </p>
-      </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
         <a href="/committee/unsc">
-          <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: The Conflict in Kivu (Double-Del)"
+          <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Sudanese Uprising "
         >
         </a>
       </div>
       <div class="col">
         <a href="/committee/unsc">
           <h4 class="text-light">
-            UNSC: The Conflict in Kivu (Double-Del)
+            UNSC: Sudanese Uprising 
+          </h4>
+        </a>
+        <p>
+          Head Chair: Darren Chow
+          <br>
+          Crisis Director: Maeve Sneddon
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/caribbean">
+          <img src="/static/comm_overview/caribbean.png" alt="caribbean" class="img-thumbnail" style="width: 148px;" alt="Unification of Caribbean"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/caribbean">
+          <h4 class="text-light">
+            Unification of Caribbean
+          </h4>
+        </a>
+        <p>
+          Head Chair: Ammar Ansari
+          <br>
+          Crisis Director: Sameer Kazim
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/missiontomars">
+          <img src="/static/comm_overview/missiontomars.png" alt="missiontomars" class="img-thumbnail" style="width: 148px;" alt="Mission to Mars"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/missiontomars">
+          <h4 class="text-light">
+            Mission to Mars
+          </h4>
+        </a>
+        <p>
+          Head Chair: Evan Mallah
+          <br>
+          Crisis Director: Liam Quinn Wohl
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/versailles">
+          <img src="/static/comm_overview/versailles.png" alt="versailles" class="img-thumbnail" style="width: 148px;" alt="Court of Versailles: The Reign of Louis XIV"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/versailles">
+          <h4 class="text-light">
+            Court of Versailles: The Reign of Louis XIV
+          </h4>
+        </a>
+        <p>
+          Head Chair: Aruna Sudarshan
+          <br>
+          Crisis Director: Savanna Slaughter
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/kamehameha">
+          <img src="/static/comm_overview/kamehameha.png" alt="kamehameha" class="img-thumbnail" style="width: 148px;" alt="The First King: Kamehameha&#39;s Council of Chiefs"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/kamehameha">
+          <h4 class="text-light">
+            The First King: Kamehameha's Council of Chiefs
+          </h4>
+        </a>
+        <p>
+          Head Chair: Gamin Kim
+          <br>
+          Crisis Director: Kai Smith
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/khanofkhans">
+          <img src="/static/comm_overview/khanofkhans.png" alt="khanofkhans" class="img-thumbnail" style="width: 148px;" alt="Khan of Khans"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/khanofkhans">
+          <h4 class="text-light">
+            Khan of Khans
+          </h4>
+        </a>
+        <p>
+          Head Chair: Carol Xie
+          <br>
+          Crisis Director: Raahema Arshad
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/adhoc">
+          <img src="/static/comm_overview/adhoc.png" alt="adhoc" class="img-thumbnail" style="width: 148px;" alt="Ad&amp;ndash;Hoc Committee of the Secretary&amp;ndash;General"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/adhoc">
+          <h4 class="text-light">
+            Ad&ndash;Hoc Committee of the Secretary&ndash;General
           </h4>
         </a>
         <p>
           Head Chair: Jessica Wang
           <br>
-          Crisis Director: John McCloud
+          Crisis Director: Phanisri Tummala
         </p>
       </div>
-    </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/reddit">
-          <img src="/static/comm_overview/reddit.png" alt="reddit" class="img-thumbnail" style="width: 148px;" alt="Reddit: /r/BoardOfDirectors "
-        >
-        </a>
+    </div> -->
+      <div class="row">
+      <div class="col-md">
+      <hr style="width: 90%; border-color: white; border-width: 1px;" />
       </div>
-      <div class="col">
-        <a href="/committee/reddit">
-          <h4 class="text-light">
-            Reddit: /r/BoardOfDirectors 
-          </h4>
-        </a>
-        <p>
-          Head Chair: Neil Ming
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2 id="jcc">
+            Joint Crisis Committees
+          </h2>
           <br>
-          Crisis Director: Tasnim Tallman
-        </p>
+        </div>
       </div>
+
+      <div class="row">          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/jccadm">
+            <img src="/static/comm_overview/jccadm.png" alt="jccadm" class="img-thumbnail" style="width: 148px;" alt="Survival of Nixon: Nixon Administration"
+          >
+          </a>
+          <a href="/committee/jccadm">
+            <h4 class="text-light">
+              Survival of Nixon: Nixon Administration
+            </h4>
+          </a>
+          <p>
+            <em>Chair:</em> Mihir Nayar
+            <br>
+            <em>Crisis Director:</em> Qazi Ahmed
+            <br>
+            <em>Coordinating Crisis Director:</em> Anthony Jorge
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/jcclib">
+            <img src="/static/comm_overview/jcclib.png" alt="jcclib" class="img-thumbnail" style="width: 148px;" alt="Survival of Nixon: Council of Liberty "
+          >
+          </a>
+          <a href="/committee/jcclib">
+            <h4 class="text-light">
+              Survival of Nixon: Council of Liberty 
+            </h4>
+          </a>
+          <p>
+            <em>Chair:</em> Tarun Sreedhar
+            <br>
+            <em>Crisis Director:</em> Nicole Ru
+            <br>
+            <em>Coordinating Crisis Director:</em> Anthony Jorge
+          </p> 
+        </div>
     </div>
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/adhoc">
-          <img src="/static/comm_overview/adhoc.png" alt="adhoc" class="img-thumbnail" style="width: 148px;" alt="The Ad-Hoc Committee of the Secretary General"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/adhoc">
-          <h4 class="text-light">
-            The Ad-Hoc Committee of the Secretary General
-          </h4>
-        </a>
-        <p>
-          Head Chair: Tanner Yamada
-          <br>
-          Crisis Director: David Young 
-        </p>
-      </div>
-    </div>
+
+    <!--
     <div class="row">
     <div class="col-md">
     <hr style="width: 90%; border-color: white; border-width: 1px;" />
@@ -363,47 +801,51 @@
           Joint Crisis Committees
         </h2>
       </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/jccallende">
-          <img src="/static/comm_overview/jccallende.png" alt="jccallende" class="img-thumbnail" style="width: 148px;" alt="JCC: Allende&#39;s Government"
+        <a href="/committee/jccadm">
+          <img src="/static/comm_overview/jccadm.png" alt="jccadm" class="img-thumbnail" style="width: 148px;" alt="Survival of Nixon: Nixon Administration"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/jccallende">
+        <a href="/committee/jccadm">
           <h4 class="text-light">
-            JCC: Allende's Government
+            Survival of Nixon: Nixon Administration
           </h4>
         </a>
         <p>
-          Head Chair: Lauren Arias
+          Head Chair: Mihir Nayar
           <br>
-          Crisis Director: John Perkins
+          Crisis Director: Qazi Ahmed
         </p>
       </div>
-    </div>
+    </div> -->
+
+    <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/jccpinochet">
-          <img src="/static/comm_overview/jccpinochet.png" alt="jccpinochet" class="img-thumbnail" style="width: 148px;" alt="JCC: U.S.-Backed Rebels"
+        <a href="/committee/jcclib">
+          <img src="/static/comm_overview/jcclib.png" alt="jcclib" class="img-thumbnail" style="width: 148px;" alt="Survival of Nixon: Council of Liberty "
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/jccpinochet">
+        <a href="/committee/jcclib">
           <h4 class="text-light">
-            JCC: U.S.-Backed Rebels
+            Survival of Nixon: Council of Liberty 
           </h4>
         </a>
         <p>
-          Head Chair: Evan Mallah
+          Head Chair: Tarun Sreedhar
           <br>
-          Crisis Director: Qazi Ahmad
+          Crisis Director: Nicole Ru
         </p>
       </div>
-    </div>
+    </div> -->
   <div class="row">
     <div class="col">
       <p class="lead">
@@ -413,18 +855,20 @@
 </div>
 
     </div>
+    <div>
     <footer class="bg-transperant footer">
       
       <div class=container>
         <span class="text-light" >
           <p style="margin-top: 8px">
-        &copy; Copyright 2018 by UCBMUN.
+        &copy; Copyright 2020 by UCBMUN.
           </p>
         </span>
         
       
       </div>
     </footer>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
