@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       About  - UCBMUN XXVI
+       About  - UCBMUN XXVII
     </title>
   </head>
   <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
@@ -27,7 +35,6 @@
     width: 100%;
     top: 0;
     z-index: 10;
-    justify-content: center;
   "
 >
   <a
@@ -72,9 +79,9 @@
         >
           <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
           <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
-          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Staff</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
           <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
-          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
           <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal;">COVID-19 Policies</a>
         </div>
       </li>
@@ -84,54 +91,7 @@
         
         <a
           class="nav-link dropdown-toggle"
-          href="/committees"
-          id="CommitteesNavbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Committees
-        </a>
-        <div
-          class="dropdown-menu"
-          aria-labelledby="CommitteesNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal;"
-        >
-          <a class="dropdown-item" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#gaandsb" style="width: max-content; max-width: 80vw; white-space: normal;">
-            General Assembly &amp; Specialized Bodies
-          </a>
-          <a class="dropdown-item" href="/committee/sochum" style="width: max-content; max-width: 80vw; white-space: normal;">SOCHUM: Tackling the Digital Era</a>
-          <a class="dropdown-item" href="/committee/bandung" style="width: max-content; max-width: 80vw; white-space: normal;">Bandung: Decolonization and Globalization</a>
-          <a class="dropdown-item" href="/committee/women" style="width: max-content; max-width: 80vw; white-space: normal;">Regional Conference on Women in Latin America and the Caribbean</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#crisis" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/unsc" style="width: max-content; max-width: 80vw; white-space: normal;">UNSC: Iran-Iraq Conflict</a>
-          <a class="dropdown-item" href="/committee/hallyu" style="width: max-content; max-width: 80vw; white-space: normal;">Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016</a>
-          <a class="dropdown-item" href="/committee/kingdoms" style="width: max-content; max-width: 80vw; white-space: normal;">Romance of the Three Kingdoms</a>
-          <a class="dropdown-item" href="/committee/tiktok" style="width: max-content; max-width: 80vw; white-space: normal;">TikTok: The Hype House</a>
-          <a class="dropdown-item" href="/committee/oligarchs" style="width: max-content; max-width: 80vw; white-space: normal;">Russian Oligarchs 2014</a>
-          <a class="dropdown-item" href="/committee/vegas" style="width: max-content; max-width: 80vw; white-space: normal;">Las Vegas Casino Board of Directors</a>
-          <a class="dropdown-item" href="/committee/adhoc" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#jcc" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Joint Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/jccconv" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Convencionistas</a>
-          <a class="dropdown-item" href="/committee/jcccarr" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Carrancistas</a>
-        </div>
-      </li>
-      </li>
-
-      <li class="nav-item dropdown">
-        
-        <a
-          class="nav-link dropdown-toggle"
-          href="/position_papers"
+          href="/handbook"
           id="ResourcesNavbarDropdown"
           role="button"
           data-toggle="dropdown"
@@ -148,21 +108,18 @@
           <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
           <a class="dropdown-item" href="/static/Rules-of-Procedure-UCBMUN-XXVI.pdf" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
           <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
-          <a class="dropdown-item" href="/position_papers" style="width: max-content; max-width: 80vw; white-space: normal;">Position Papers</a>
           <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">General FAQs</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Committees</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">Registration</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/store" style="width: max-content; max-width: 80vw; white-space: normal;">Merch Store</a>
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal;">Travel Team</a>
@@ -174,6 +131,7 @@
     <div id="content" class="text-light">
 <div class="container text-center">
   
+        <div class="row" style="height: 10vh"></div>
           
 
   <div class="row">
@@ -300,9 +258,11 @@
       
       <div class=container>
         <span class="text-light" >
-          <p style="margin-top: 8px">
-        &copy; Copyright 2021 by UCBMUN.
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center;">
+            &copy; Copyright 2023 by UC Berkeley Model UN
           </p>
+          <div class="row" style="height: 5vh"></div>
         </span>
         
       

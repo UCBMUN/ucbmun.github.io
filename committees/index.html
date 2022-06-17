@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Committees Overview  - UCBMUN XXVI
+       Committees Overview  - UCBMUN XXVII
     </title>
   </head>
   <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
@@ -27,7 +35,6 @@
     width: 100%;
     top: 0;
     z-index: 10;
-    justify-content: center;
   "
 >
   <a
@@ -74,55 +81,10 @@
         >
           <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
           <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
-          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Staff</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
           <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
-          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
           <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal;">COVID-19 Policies</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown active">
-        
-        <a
-          class="nav-link dropdown-toggle"
-          href="/committees"
-          id="CommitteesNavbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Committees
-        </a>
-        <div
-          class="dropdown-menu"
-          aria-labelledby="CommitteesNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal;"
-        >
-          <a class="dropdown-item" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#gaandsb" style="width: max-content; max-width: 80vw; white-space: normal;">
-            General Assembly &amp; Specialized Bodies
-          </a>
-          <a class="dropdown-item" href="/committee/sochum" style="width: max-content; max-width: 80vw; white-space: normal;">SOCHUM: Tackling the Digital Era</a>
-          <a class="dropdown-item" href="/committee/bandung" style="width: max-content; max-width: 80vw; white-space: normal;">Bandung: Decolonization and Globalization</a>
-          <a class="dropdown-item" href="/committee/women" style="width: max-content; max-width: 80vw; white-space: normal;">Regional Conference on Women in Latin America and the Caribbean</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#crisis" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/unsc" style="width: max-content; max-width: 80vw; white-space: normal;">UNSC: Iran-Iraq Conflict</a>
-          <a class="dropdown-item" href="/committee/hallyu" style="width: max-content; max-width: 80vw; white-space: normal;">Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016</a>
-          <a class="dropdown-item" href="/committee/kingdoms" style="width: max-content; max-width: 80vw; white-space: normal;">Romance of the Three Kingdoms</a>
-          <a class="dropdown-item" href="/committee/tiktok" style="width: max-content; max-width: 80vw; white-space: normal;">TikTok: The Hype House</a>
-          <a class="dropdown-item" href="/committee/oligarchs" style="width: max-content; max-width: 80vw; white-space: normal;">Russian Oligarchs 2014</a>
-          <a class="dropdown-item" href="/committee/vegas" style="width: max-content; max-width: 80vw; white-space: normal;">Las Vegas Casino Board of Directors</a>
-          <a class="dropdown-item" href="/committee/adhoc" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#jcc" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Joint Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/jccconv" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Convencionistas</a>
-          <a class="dropdown-item" href="/committee/jcccarr" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Carrancistas</a>
         </div>
       </li>
       </li>
@@ -131,7 +93,7 @@
         
         <a
           class="nav-link dropdown-toggle"
-          href="/position_papers"
+          href="/handbook"
           id="ResourcesNavbarDropdown"
           role="button"
           data-toggle="dropdown"
@@ -148,21 +110,20 @@
           <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
           <a class="dropdown-item" href="/static/Rules-of-Procedure-UCBMUN-XXVI.pdf" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
           <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
-          <a class="dropdown-item" href="/position_papers" style="width: max-content; max-width: 80vw; white-space: normal;">Position Papers</a>
           <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">General FAQs</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
+          Committees <span class="sr-only">(current)</span></a
+        >
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">Registration</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/store" style="width: max-content; max-width: 80vw; white-space: normal;">Merch Store</a>
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal;">Travel Team</a>
@@ -174,30 +135,38 @@
     <div id="content" class="text-light">
 <div class="container">
   
+        <div class="row" style="height: 10vh"></div>
           
 
 <div class="row">
     <div class="col">
-      <h4 class="display-4">
-         Committees
+      <h4 class="display-4" style="text-align: center;">
+         COMMITTEES
       </h4>
+      <br>
     </div>
-  </div>
+</div>
+<!-- <div class="row" style="text-align: center">
+  <div class="col"><p><a href="#GENERAL ASSEMBLY AND SPECIALIZED BODIES">GA/SB</a></p></div>
+  <div class="col"><p><a href="#CRISIS COMMITTEES">Crisis</a></p></div>
+  <div class="col"><p><a href="#JOINT CRISIS COMMITTEES">JCC</a></p></div>
+</div> -->
       <div class="row">
       <div class="col-md">
-      <hr style="width: 90%; border-color: white; border-width: 1px;" />
+      <hr id="GENERAL ASSEMBLY AND SPECIALIZED BODIES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
         <div class="col">
-          <h2 id="gaandsb">
-            General Assembly and Specialized Bodies
+          <br>
+          <h2 style="text-align: center">
+            GENERAL ASSEMBLY AND SPECIALIZED BODIES
           </h2>
           <br>
         </div>
       </div>
 
-      <div class="row">          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh;">          
         <div
         class="col"
         style="
@@ -206,23 +175,22 @@
           float: center;
           width: 100%;
           min-width: 350px;
-          min-width: 100px;
           text-align: center;
-          padding-bottom: 5%;
+          padding-bottom: 5vh;
         ">
-          <a href="/committee/sochum">
-            <img src="/static/comm_overview/sochum.png" alt="sochum" class="img-thumbnail" style="width: 148px;" alt="SOCHUM: Tackling the Digital Era"
+          <a href="/committee/ecofin">
+            <img src="/static/comm_overview/ecofin.png" alt="ecofin" class="img-thumbnail" style="width: 148px;" alt="ECOFIN: Corporate Responsibility"
           >
           </a>
-          <a href="/committee/sochum">
+          <a href="/committee/ecofin">
             <h4 class="text-light">
-              SOCHUM: Tackling the Digital Era
+              ECOFIN: Corporate Responsibility
             </h4>
           </a>
           <p>
-            <em>Chair:</em> Avani Yadav 
+            Chair: NEHA JACOB 
             <br>
-            <em>Chair:</em> Aruna Sudarshan
+            Chair: ARUNA SUDARSHAN
           </p> 
         </div>          
         <div
@@ -233,23 +201,22 @@
           float: center;
           width: 100%;
           min-width: 350px;
-          min-width: 100px;
           text-align: center;
-          padding-bottom: 5%;
+          padding-bottom: 5vh;
         ">
-          <a href="/committee/bandung">
-            <img src="/static/comm_overview/bandung.png" alt="bandung" class="img-thumbnail" style="width: 148px;" alt="Bandung: Decolonization and Globalization"
+          <a href="/committee/irish">
+            <img src="/static/comm_overview/irish.png" alt="irish" class="img-thumbnail" style="width: 148px;" alt="Irish Parliament, 1972"
           >
           </a>
-          <a href="/committee/bandung">
+          <a href="/committee/irish">
             <h4 class="text-light">
-              Bandung: Decolonization and Globalization
+              Irish Parliament, 1972
             </h4>
           </a>
           <p>
-            <em>Chair:</em> Priscilla Kim 
+            Chair: CAITLYN WILT 
             <br>
-            <em>Chair:</em> Neha Jacob
+            Chair: VICTOR VILLALOBOS
           </p> 
         </div>          
         <div
@@ -260,23 +227,74 @@
           float: center;
           width: 100%;
           min-width: 350px;
-          min-width: 100px;
           text-align: center;
-          padding-bottom: 5%;
+          padding-bottom: 5vh;
         ">
-          <a href="/committee/women">
-            <img src="/static/comm_overview/women.png" alt="women" class="img-thumbnail" style="width: 148px;" alt="Regional Conference on Women in Latin America and the Caribbean"
+          <a href="/committee/acd">
+            <img src="/static/comm_overview/acd.png" alt="acd" class="img-thumbnail" style="width: 148px;" alt="Asia Cooperation Dialogue, 2022"
           >
           </a>
-          <a href="/committee/women">
+          <a href="/committee/acd">
             <h4 class="text-light">
-              Regional Conference on Women in Latin America and the Caribbean
+              Asia Cooperation Dialogue, 2022
             </h4>
           </a>
           <p>
-            <em>Chair:</em> Ayushi Balan 
+            Chair: DANIELLE KAPPLER 
             <br>
-            <em>Chair:</em> Julie Ma
+            Chair: LANCE DY
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5vh;
+        ">
+          <a href="/committee/tri">
+            <img src="/static/comm_overview/tri.png" alt="tri" class="img-thumbnail" style="width: 148px;" alt="Tricontinental Conference, 1966"
+          >
+          </a>
+          <a href="/committee/tri">
+            <h4 class="text-light">
+              Tricontinental Conference, 1966
+            </h4>
+          </a>
+          <p>
+            Chair: ANASTASIA KALOSHINA 
+            <br>
+            Chair: HAN TSENG
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5vh;
+        ">
+          <a href="/committee/adhoc_ga">
+            <img src="/static/comm_overview/adhoc_ga.png" alt="adhoc_ga" class="img-thumbnail" style="width: 148px;" alt="Ad&amp;ndash;Hoc General Assembly of the Director&amp;ndash;General"
+          >
+          </a>
+          <a href="/committee/adhoc_ga">
+            <h4 class="text-light">
+              Ad&ndash;Hoc General Assembly of the Director&ndash;General
+            </h4>
+          </a>
+          <p>
+            Chair: VISHWAA SOFAT 
+            <br>
+            Chair: ANTONIO KOBE LOPEZ
           </p> 
         </div>
     </div>
@@ -290,7 +308,7 @@
     <div class="row">
       <div class="col">
         <h2 id="gaandsb">
-          General Assembly and Specialized Bodies
+          GENERAL ASSEMBLY AND SPECIALIZED BODIES
         </h2>
       </div>
     </div> -->
@@ -298,21 +316,21 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/sochum">
-          <img src="/static/comm_overview/sochum.png" alt="sochum" class="img-thumbnail" style="width: 148px;" alt="SOCHUM: Tackling the Digital Era"
+        <a href="/committee/ecofin">
+          <img src="/static/comm_overview/ecofin.png" alt="ecofin" class="img-thumbnail" style="width: 148px;" alt="ECOFIN: Corporate Responsibility"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/sochum">
+        <a href="/committee/ecofin">
           <h4 class="text-light">
-            SOCHUM: Tackling the Digital Era
+            ECOFIN: Corporate Responsibility
           </h4>
         </a>
         <p>
-          Head Chair: Avani Yadav
+          Chair: NEHA JACOB
           <br>
-          Crisis Director: Aruna Sudarshan
+          Chair: ARUNA SUDARSHAN
         </p>
       </div>
     </div> -->
@@ -320,21 +338,21 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/bandung">
-          <img src="/static/comm_overview/bandung.png" alt="bandung" class="img-thumbnail" style="width: 148px;" alt="Bandung: Decolonization and Globalization"
+        <a href="/committee/irish">
+          <img src="/static/comm_overview/irish.png" alt="irish" class="img-thumbnail" style="width: 148px;" alt="Irish Parliament, 1972"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/bandung">
+        <a href="/committee/irish">
           <h4 class="text-light">
-            Bandung: Decolonization and Globalization
+            Irish Parliament, 1972
           </h4>
         </a>
         <p>
-          Head Chair: Priscilla Kim
+          Head Chair: CAITLYN WILT
           <br>
-          Crisis Director: Neha Jacob
+          Crisis Director: VICTOR VILLALOBOS
         </p>
       </div>
     </div> -->
@@ -342,39 +360,214 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/women">
-          <img src="/static/comm_overview/women.png" alt="women" class="img-thumbnail" style="width: 148px;" alt="Regional Conference on Women in Latin America and the Caribbean"
+        <a href="/committee/acd">
+          <img src="/static/comm_overview/acd.png" alt="acd" class="img-thumbnail" style="width: 148px;" alt="Asia Cooperation Dialogue, 2022"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/women">
+        <a href="/committee/acd">
           <h4 class="text-light">
-            Regional Conference on Women in Latin America and the Caribbean
+            Asia Cooperation Dialogue, 2022
           </h4>
         </a>
         <p>
-          Head Chair: Ayushi Balan
+          Head Chair: DANIELLE KAPPLER
           <br>
-          Crisis Director: Julie Ma
+          Crisis Director: LANCE DY
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/tri">
+          <img src="/static/comm_overview/tri.png" alt="tri" class="img-thumbnail" style="width: 148px;" alt="Tricontinental Conference, 1966"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/tri">
+          <h4 class="text-light">
+            Tricontinental Conference, 1966
+          </h4>
+        </a>
+        <p>
+          Head Chair: ANASTASIA KALOSHINA
+          <br>
+          Crisis Director: HAN TSENG
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/adhoc_ga">
+          <img src="/static/comm_overview/adhoc_ga.png" alt="adhoc_ga" class="img-thumbnail" style="width: 148px;" alt="Ad&amp;ndash;Hoc General Assembly of the Director&amp;ndash;General"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/adhoc_ga">
+          <h4 class="text-light">
+            Ad&ndash;Hoc General Assembly of the Director&ndash;General
+          </h4>
+        </a>
+        <p>
+          Head Chair: VISHWAA SOFAT
+          <br>
+          Crisis Director: ANTONIO KOBE LOPEZ
         </p>
       </div>
     </div> -->
       <div class="row">
       <div class="col-md">
-      <hr style="width: 90%; border-color: white; border-width: 1px;" />
+      <hr id="CRISIS COMMITTEES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
         <div class="col">
-          <h2 id="crisis">
-            Crisis Committees
+          <br>
+          <h2 style="text-align: center">
+            CRISIS COMMITTEES
           </h2>
           <br>
         </div>
       </div>
 
-      <div class="row">          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh;">          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/uc">
+            <img src="/static/comm_overview/uc.png" alt="uc" class="img-thumbnail" style="width: 148px;" alt="Governator and Friends: UC Regents, 2007"
+          >
+          </a>
+          <a href="/committee/uc">
+            <h4 class="text-light">
+              Governator and Friends: UC Regents, 2007
+            </h4>
+          </a>
+          <p> 
+            Chair: STEPHEN SAW
+            <br>
+            Crisis Director: SABRINA BAUR
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/bb">
+            <img src="/static/comm_overview/bb.png" alt="bb" class="img-thumbnail" style="width: 148px;" alt="&#34;F*** You and Your Eyebrows:&#34; Breaking Bad"
+          >
+          </a>
+          <a href="/committee/bb">
+            <h4 class="text-light">
+              "F*** You and Your Eyebrows:" Breaking Bad
+            </h4>
+          </a>
+          <p> 
+            Chair: HELEN YANG
+            <br>
+            Crisis Director: TARUN SREEHDAR
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/singapore">
+            <img src="/static/comm_overview/singapore.png" alt="singapore" class="img-thumbnail" style="width: 148px;" alt="All by M(ala)yself: Parliament of Singapore, 1965"
+          >
+          </a>
+          <a href="/committee/singapore">
+            <h4 class="text-light">
+              All by M(ala)yself: Parliament of Singapore, 1965
+            </h4>
+          </a>
+          <p> 
+            Chair: JEFFREY ZHOU
+            <br>
+            Crisis Director: SLAYDEN FERNANDEZ
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/goa">
+            <img src="/static/comm_overview/goa.png" alt="goa" class="img-thumbnail" style="width: 148px;" alt="Go(a) Away! The Goa Inquisition, 1535"
+          >
+          </a>
+          <a href="/committee/goa">
+            <h4 class="text-light">
+              Go(a) Away! The Goa Inquisition, 1535
+            </h4>
+          </a>
+          <p> 
+            Chair: ANYA SHAH
+            <br>
+            Crisis Director: ARHANT GHANTA
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/rupaul">
+            <img src="/static/comm_overview/rupaul.png" alt="rupaul" class="img-thumbnail" style="width: 148px;" alt="Drag Her!: RuPaul&#39;s Drag Race Board of Advisors"
+          >
+          </a>
+          <a href="/committee/rupaul">
+            <h4 class="text-light">
+              Drag Her!: RuPaul's Drag Race Board of Advisors
+            </h4>
+          </a>
+          <p> 
+            Chair: DIVYA VEMULAPALLI
+            <br>
+            Crisis Director: SABINA DHILLON
+          </p> 
+        </div>          
         <div
         class="col"
         style="
@@ -387,148 +580,18 @@
           padding-bottom: 5%;
         ">
           <a href="/committee/unsc">
-            <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Iran&amp;ndash;Iraq Conflict"
+            <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Crisis in Central America"
           >
           </a>
           <a href="/committee/unsc">
             <h4 class="text-light">
-              UNSC: Iran&ndash;Iraq Conflict
+              UNSC: Crisis in Central America
             </h4>
           </a>
-          <p>            
-            <em>Chair:</em> Serina Li
+          <p> 
+            Chair: EMMA LAPINSKY
             <br>
-            <em>Crisis Director:</em> Sharicka Zutshi
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/hallyu">
-            <img src="/static/comm_overview/hallyu.png" alt="hallyu" class="img-thumbnail" style="width: 148px;" alt="Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016"
-          >
-          </a>
-          <a href="/committee/hallyu">
-            <h4 class="text-light">
-              Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016
-            </h4>
-          </a>
-          <p>            
-            <em>Chair:</em> Gamin Kim
-            <br>
-            <em>Crisis Director:</em> Helen Yang
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/kingdoms">
-            <img src="/static/comm_overview/kingdoms.png" alt="kingdoms" class="img-thumbnail" style="width: 148px;" alt="Romance of the Three Kingdoms"
-          >
-          </a>
-          <a href="/committee/kingdoms">
-            <h4 class="text-light">
-              Romance of the Three Kingdoms
-            </h4>
-          </a>
-          <p>            
-            <em>Chair:</em> Stephen Saw
-            <br>
-            <em>Crisis Director:</em> Carol Xie
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/tiktok">
-            <img src="/static/comm_overview/tiktok.png" alt="tiktok" class="img-thumbnail" style="width: 148px;" alt="TikTok: The Hype House"
-          >
-          </a>
-          <a href="/committee/tiktok">
-            <h4 class="text-light">
-              TikTok: The Hype House
-            </h4>
-          </a>
-          <p>            
-            <em>Chair:</em> Ali Hasan
-            <br>
-            <em>Crisis Director:</em> Kaavya Thanigaivelan
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/oligarchs">
-            <img src="/static/comm_overview/oligarchs.png" alt="oligarchs" class="img-thumbnail" style="width: 148px;" alt="Russian Oligarchs 2014"
-          >
-          </a>
-          <a href="/committee/oligarchs">
-            <h4 class="text-light">
-              Russian Oligarchs 2014
-            </h4>
-          </a>
-          <p>            
-            <em>Chair:</em> Ransom Miller
-            <br>
-            <em>Crisis Director:</em> Jet Situ
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/vegas">
-            <img src="/static/comm_overview/vegas.png" alt="vegas" class="img-thumbnail" style="width: 148px;" alt="Las Vegas Casino Board of Directors"
-          >
-          </a>
-          <a href="/committee/vegas">
-            <h4 class="text-light">
-              Las Vegas Casino Board of Directors
-            </h4>
-          </a>
-          <p>            
-            <em>Chair:</em> Jeffrey Zhou
-            <br>
-            <em>Crisis Director:</em> Lily Moser
+            Crisis Director: DANIEL LIU
           </p> 
         </div>          
         <div
@@ -551,10 +614,10 @@
               Ad&ndash;Hoc Committee of the Secretary&ndash;General
             </h4>
           </a>
-          <p>            
-            <em>Chair:</em> Phanisri Tummala
+          <p> 
+            Chair: ANTHONY JORGE
             <br>
-            <em>Crisis Director:</em> Anthony Jorge
+            Crisis Director: SHARICKA ZUTSHI
           </p> 
         </div>
     </div>
@@ -568,7 +631,7 @@
     <div class="row">
       <div class="col">
         <h2 id="crisis">
-          Crisis Committees
+          CRISIS COMMITTEES
         </h2>
       </div>
     </div> -->
@@ -576,131 +639,131 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
+        <a href="/committee/uc">
+          <img src="/static/comm_overview/uc.png" alt="uc" class="img-thumbnail" style="width: 148px;" alt="Governator and Friends: UC Regents, 2007"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/uc">
+          <h4 class="text-light">
+            Governator and Friends: UC Regents, 2007
+          </h4>
+        </a>
+        <p>
+          Head Chair: STEPHEN SAW
+          <br>
+          Crisis Director: SABRINA BAUR
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/bb">
+          <img src="/static/comm_overview/bb.png" alt="bb" class="img-thumbnail" style="width: 148px;" alt="&#34;F*** You and Your Eyebrows:&#34; Breaking Bad"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/bb">
+          <h4 class="text-light">
+            "F*** You and Your Eyebrows:" Breaking Bad
+          </h4>
+        </a>
+        <p>
+          Head Chair: HELEN YANG
+          <br>
+          Crisis Director: TARUN SREEHDAR
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/singapore">
+          <img src="/static/comm_overview/singapore.png" alt="singapore" class="img-thumbnail" style="width: 148px;" alt="All by M(ala)yself: Parliament of Singapore, 1965"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/singapore">
+          <h4 class="text-light">
+            All by M(ala)yself: Parliament of Singapore, 1965
+          </h4>
+        </a>
+        <p>
+          Head Chair: JEFFREY ZHOU
+          <br>
+          Crisis Director: SLAYDEN FERNANDEZ
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/goa">
+          <img src="/static/comm_overview/goa.png" alt="goa" class="img-thumbnail" style="width: 148px;" alt="Go(a) Away! The Goa Inquisition, 1535"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/goa">
+          <h4 class="text-light">
+            Go(a) Away! The Goa Inquisition, 1535
+          </h4>
+        </a>
+        <p>
+          Head Chair: ANYA SHAH
+          <br>
+          Crisis Director: ARHANT GHANTA
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
+        <a href="/committee/rupaul">
+          <img src="/static/comm_overview/rupaul.png" alt="rupaul" class="img-thumbnail" style="width: 148px;" alt="Drag Her!: RuPaul&#39;s Drag Race Board of Advisors"
+        >
+        </a>
+      </div>
+      <div class="col">
+        <a href="/committee/rupaul">
+          <h4 class="text-light">
+            Drag Her!: RuPaul's Drag Race Board of Advisors
+          </h4>
+        </a>
+        <p>
+          Head Chair: DIVYA VEMULAPALLI
+          <br>
+          Crisis Director: SABINA DHILLON
+        </p>
+      </div>
+    </div> -->
+
+    <!--
+    <div class="row" style="padding: 20px">
+      <div class="col-xsm-4">
         <a href="/committee/unsc">
-          <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Iran&amp;ndash;Iraq Conflict"
+          <img src="/static/comm_overview/unsc.png" alt="unsc" class="img-thumbnail" style="width: 148px;" alt="UNSC: Crisis in Central America"
         >
         </a>
       </div>
       <div class="col">
         <a href="/committee/unsc">
           <h4 class="text-light">
-            UNSC: Iran&ndash;Iraq Conflict
+            UNSC: Crisis in Central America
           </h4>
         </a>
         <p>
-          Head Chair: Serina Li
+          Head Chair: EMMA LAPINSKY
           <br>
-          Crisis Director: Sharicka Zutshi
-        </p>
-      </div>
-    </div> -->
-
-    <!--
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/hallyu">
-          <img src="/static/comm_overview/hallyu.png" alt="hallyu" class="img-thumbnail" style="width: 148px;" alt="Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/hallyu">
-          <h4 class="text-light">
-            Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016
-          </h4>
-        </a>
-        <p>
-          Head Chair: Gamin Kim
-          <br>
-          Crisis Director: Helen Yang
-        </p>
-      </div>
-    </div> -->
-
-    <!--
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/kingdoms">
-          <img src="/static/comm_overview/kingdoms.png" alt="kingdoms" class="img-thumbnail" style="width: 148px;" alt="Romance of the Three Kingdoms"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/kingdoms">
-          <h4 class="text-light">
-            Romance of the Three Kingdoms
-          </h4>
-        </a>
-        <p>
-          Head Chair: Stephen Saw
-          <br>
-          Crisis Director: Carol Xie
-        </p>
-      </div>
-    </div> -->
-
-    <!--
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/tiktok">
-          <img src="/static/comm_overview/tiktok.png" alt="tiktok" class="img-thumbnail" style="width: 148px;" alt="TikTok: The Hype House"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/tiktok">
-          <h4 class="text-light">
-            TikTok: The Hype House
-          </h4>
-        </a>
-        <p>
-          Head Chair: Ali Hasan
-          <br>
-          Crisis Director: Kaavya Thanigaivelan
-        </p>
-      </div>
-    </div> -->
-
-    <!--
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/oligarchs">
-          <img src="/static/comm_overview/oligarchs.png" alt="oligarchs" class="img-thumbnail" style="width: 148px;" alt="Russian Oligarchs 2014"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/oligarchs">
-          <h4 class="text-light">
-            Russian Oligarchs 2014
-          </h4>
-        </a>
-        <p>
-          Head Chair: Ransom Miller
-          <br>
-          Crisis Director: Jet Situ
-        </p>
-      </div>
-    </div> -->
-
-    <!--
-    <div class="row" style="padding: 20px">
-      <div class="col-xsm-4">
-        <a href="/committee/vegas">
-          <img src="/static/comm_overview/vegas.png" alt="vegas" class="img-thumbnail" style="width: 148px;" alt="Las Vegas Casino Board of Directors"
-        >
-        </a>
-      </div>
-      <div class="col">
-        <a href="/committee/vegas">
-          <h4 class="text-light">
-            Las Vegas Casino Board of Directors
-          </h4>
-        </a>
-        <p>
-          Head Chair: Jeffrey Zhou
-          <br>
-          Crisis Director: Lily Moser
+          Crisis Director: DANIEL LIU
         </p>
       </div>
     </div> -->
@@ -720,27 +783,28 @@
           </h4>
         </a>
         <p>
-          Head Chair: Phanisri Tummala
+          Head Chair: ANTHONY JORGE
           <br>
-          Crisis Director: Anthony Jorge
+          Crisis Director: SHARICKA ZUTSHI
         </p>
       </div>
     </div> -->
       <div class="row">
       <div class="col-md">
-      <hr style="width: 90%; border-color: white; border-width: 1px;" />
+      <hr id="JOINT CRISIS COMMITTEES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
         <div class="col">
-          <h2 id="jcc">
-            Joint Crisis Committees
+          <br>
+          <h2 style="text-align: center">
+            JOINT CRISIS COMMITTEES
           </h2>
           <br>
         </div>
       </div>
 
-      <div class="row">          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh;">          
         <div
         class="col"
         style="
@@ -752,21 +816,21 @@
           text-align: center;
           padding-bottom: 5%;
         ">
-          <a href="/committee/jccconv">
-            <img src="/static/comm_overview/jccconv.png" alt="jccconv" class="img-thumbnail" style="width: 148px;" alt="Mexican Revolution: Convencionistas"
+          <a href="/committee/jcc_aus">
+            <img src="/static/comm_overview/jcc_aus.png" alt="jcc_aus" class="img-thumbnail" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash; The Commonwealth of Australia"
           >
           </a>
-          <a href="/committee/jccconv">
+          <a href="/committee/jcc_aus">
             <h4 class="text-light">
-              Mexican Revolution: Convencionistas
+              Birds of Prey: The Great Emu Wars, 1932 &mdash; The Commonwealth of Australia
             </h4>
           </a>
-          <p>
-            <em>Chair:</em> Smiti Mangla
+          <p> 
+            Chair: RANSOM MILLER  
             <br>
-            <em>Crisis Director:</em> Bim-Ray Yau
+            Crisis Director: DIL SEN
             <br>
-            <em>Coordinating Crisis Director:</em> Liam Quinn Wohl
+            Coordinating Crisis Director: BRENNAN DAI
           </p> 
         </div>          
         <div
@@ -780,21 +844,21 @@
           text-align: center;
           padding-bottom: 5%;
         ">
-          <a href="/committee/jcccarr">
-            <img src="/static/comm_overview/jcccarr.png" alt="jcccarr" class="img-thumbnail" style="width: 148px;" alt="Mexican Revolution: Carrancistas"
+          <a href="/committee/jcc_emu">
+            <img src="/static/comm_overview/jcc_emu.png" alt="jcc_emu" class="img-thumbnail" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash; Emus"
           >
           </a>
-          <a href="/committee/jcccarr">
+          <a href="/committee/jcc_emu">
             <h4 class="text-light">
-              Mexican Revolution: Carrancistas
+              Birds of Prey: The Great Emu Wars, 1932 &mdash; Emus
             </h4>
           </a>
-          <p>
-            <em>Chair:</em> Tarun Sreedhar
+          <p> 
+            Chair: LAIA MALBURET-BREUIL  
             <br>
-            <em>Crisis Director:</em> Kobe Lopez
+            Crisis Director: AKASH MAHAJAN
             <br>
-            <em>Coordinating Crisis Director:</em> Liam Quinn Wohl
+            Coordinating Crisis Director: BRENNAN DAI
           </p> 
         </div>
     </div>
@@ -808,7 +872,7 @@
     <div class="row">
       <div class="col">
         <h2 id="jcc">
-          Joint Crisis Committees
+          JOINT CRISIS COMMITTEES
         </h2>
       </div>
     </div> -->
@@ -816,21 +880,21 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/jccconv">
-          <img src="/static/comm_overview/jccconv.png" alt="jccconv" class="img-thumbnail" style="width: 148px;" alt="Mexican Revolution: Convencionistas"
+        <a href="/committee/jcc_aus">
+          <img src="/static/comm_overview/jcc_aus.png" alt="jcc_aus" class="img-thumbnail" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash; The Commonwealth of Australia"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/jccconv">
+        <a href="/committee/jcc_aus">
           <h4 class="text-light">
-            Mexican Revolution: Convencionistas
+            Birds of Prey: The Great Emu Wars, 1932 &mdash; The Commonwealth of Australia
           </h4>
         </a>
         <p>
-          Head Chair: Smiti Mangla
+          Head Chair: RANSOM MILLER
           <br>
-          Crisis Director: Bim-Ray Yau
+          Crisis Director: DIL SEN
         </p>
       </div>
     </div> -->
@@ -838,21 +902,21 @@
     <!--
     <div class="row" style="padding: 20px">
       <div class="col-xsm-4">
-        <a href="/committee/jcccarr">
-          <img src="/static/comm_overview/jcccarr.png" alt="jcccarr" class="img-thumbnail" style="width: 148px;" alt="Mexican Revolution: Carrancistas"
+        <a href="/committee/jcc_emu">
+          <img src="/static/comm_overview/jcc_emu.png" alt="jcc_emu" class="img-thumbnail" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash; Emus"
         >
         </a>
       </div>
       <div class="col">
-        <a href="/committee/jcccarr">
+        <a href="/committee/jcc_emu">
           <h4 class="text-light">
-            Mexican Revolution: Carrancistas
+            Birds of Prey: The Great Emu Wars, 1932 &mdash; Emus
           </h4>
         </a>
         <p>
-          Head Chair: Tarun Sreedhar
+          Head Chair: LAIA MALBURET&amp;ndash;BREUIL
           <br>
-          Crisis Director: Kobe Lopez
+          Crisis Director: AKASH MAHAJAN
         </p>
       </div>
     </div> -->
@@ -870,9 +934,11 @@
       
       <div class=container>
         <span class="text-light" >
-          <p style="margin-top: 8px">
-        &copy; Copyright 2021 by UCBMUN.
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center;">
+            &copy; Copyright 2023 by UC Berkeley Model UN
           </p>
+          <div class="row" style="height: 5vh"></div>
         </span>
         
       

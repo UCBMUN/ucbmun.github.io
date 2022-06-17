@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Home  - UCBMUN XXVI
+       Home  - UCBMUN XXVII
     </title>
   </head>
   <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
@@ -27,7 +35,6 @@
     width: 100%;
     top: 0;
     z-index: 10;
-    justify-content: center;
   "
 >
   <a
@@ -74,9 +81,9 @@
         >
           <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
           <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
-          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Staff</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
           <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
-          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
           <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal;">COVID-19 Policies</a>
         </div>
       </li>
@@ -86,54 +93,7 @@
         
         <a
           class="nav-link dropdown-toggle"
-          href="/committees"
-          id="CommitteesNavbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Committees
-        </a>
-        <div
-          class="dropdown-menu"
-          aria-labelledby="CommitteesNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal;"
-        >
-          <a class="dropdown-item" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#gaandsb" style="width: max-content; max-width: 80vw; white-space: normal;">
-            General Assembly &amp; Specialized Bodies
-          </a>
-          <a class="dropdown-item" href="/committee/sochum" style="width: max-content; max-width: 80vw; white-space: normal;">SOCHUM: Tackling the Digital Era</a>
-          <a class="dropdown-item" href="/committee/bandung" style="width: max-content; max-width: 80vw; white-space: normal;">Bandung: Decolonization and Globalization</a>
-          <a class="dropdown-item" href="/committee/women" style="width: max-content; max-width: 80vw; white-space: normal;">Regional Conference on Women in Latin America and the Caribbean</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#crisis" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/unsc" style="width: max-content; max-width: 80vw; white-space: normal;">UNSC: Iran-Iraq Conflict</a>
-          <a class="dropdown-item" href="/committee/hallyu" style="width: max-content; max-width: 80vw; white-space: normal;">Hallyu: Korean Ministry of Culture, Sports, and Tourism 2016</a>
-          <a class="dropdown-item" href="/committee/kingdoms" style="width: max-content; max-width: 80vw; white-space: normal;">Romance of the Three Kingdoms</a>
-          <a class="dropdown-item" href="/committee/tiktok" style="width: max-content; max-width: 80vw; white-space: normal;">TikTok: The Hype House</a>
-          <a class="dropdown-item" href="/committee/oligarchs" style="width: max-content; max-width: 80vw; white-space: normal;">Russian Oligarchs 2014</a>
-          <a class="dropdown-item" href="/committee/vegas" style="width: max-content; max-width: 80vw; white-space: normal;">Las Vegas Casino Board of Directors</a>
-          <a class="dropdown-item" href="/committee/adhoc" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees#jcc" style="width: max-content; max-width: 80vw; white-space: normal;">
-            Joint Crisis Committees
-          </a>
-          <a class="dropdown-item" href="/committee/jccconv" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Convencionistas</a>
-          <a class="dropdown-item" href="/committee/jcccarr" style="width: max-content; max-width: 80vw; white-space: normal;">Mexican Revolution: Carrancistas</a>
-        </div>
-      </li>
-      </li>
-
-      <li class="nav-item dropdown">
-        
-        <a
-          class="nav-link dropdown-toggle"
-          href="/position_papers"
+          href="/handbook"
           id="ResourcesNavbarDropdown"
           role="button"
           data-toggle="dropdown"
@@ -150,21 +110,18 @@
           <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
           <a class="dropdown-item" href="/static/Rules-of-Procedure-UCBMUN-XXVI.pdf" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
           <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
-          <a class="dropdown-item" href="/position_papers" style="width: max-content; max-width: 80vw; white-space: normal;">Position Papers</a>
           <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">General FAQs</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Committees</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">Registration</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/store" style="width: max-content; max-width: 80vw; white-space: normal;">Merch Store</a>
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">Sponsors</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal;">Travel Team</a>
@@ -185,7 +142,7 @@
   "
 >
   <video
-    style="width: 110vw; height: 100%; object-fit: cover;"
+    style="width: 110vw; height: 100%; object-fit:cover;"
     autoplay
     muted
     loop
@@ -193,105 +150,121 @@
     <source src="/static/ucbmunIntro.webm" type="video/webm" />
   </video>
 </div>
-<div style="width:95vw; align:center; padding-left:6.5vw;">
+
+<div style="width:100vw; align-items: center; padding-left:5vw; padding-right:5vw">
   
+        <div class="row" style="height: 10vh"></div>
           
 
-  <div class="row filler-space" style="margin-right:0px"></div>
-  <div class="row" style="margin-right:0px">
+
+  <div class="row" style="height: 10vh"></div>
+
+  <div class="row">
     <div class="col">
-      <h3 class="display-3" style="text-align: left; padding-left:6vw">
-         UCBMUN XXVI
+      <h3 class="display-3" style="text-align: center;">
+         UCBMUN XXVII
       </h3>
     </div>
   </div>
-  <div class="row" style="margin-right:0px; padding-left:6vw;">
+
+  <div class="row">
     <div class="col">
-      <p class="lead" style="text-align: left;">
-        March 3<sup>rd</sup> to March 6<sup>th</sup>, 2022
-      </p>
+      <h4 style="text-align: center;">UC Berkeley Model UN</h4>
     </div>
   </div>
-  <div class="row" style="text-align: left;" style="margin-right:0px; padding-left:6vw;">
+
+  <div class="row">
+    <div class="col">
+      <h4 style="text-align: center;">
+        March 2<sup>nd</sup> to March 5<sup>th</sup>, 2023
+      </h4>
+    </div>
+  </div>
+
+  <div class="row" style="height: 10vh"></div>
+  <div class="row" style="text-align: center;">
     <div class="col">
       <img
         src="/static/ucbmun_bear.png"
-        style="max-width: 418px; width: 90vw; padding-left:6vw; padding-right:6vw"
+        style="width: 60vw; max-width: 512px; padding-left:6vw; padding-right:6vw;"
         alt="UCBMUN Bear"
       />
     </div>
   </div>
-  <div class="row filler-space" style="margin-right:0px"></div>
-  <br />
-  <h2 style="text-align: center;">
-    Letter from the Secretary-General
-  </h2>
-  <br>
-  <div class="row text-left">
-    <div
-      class="column"
-      style="
-        padding-left: 15%;
-        padding-right: 15%;
-      "
-    >
-  <img
-    src="/static/secretariat/emma.png"
+
+  <div class="row filler-space"></div>
+
+
+
+  <div
+    class="column"
     style="
-      padding-right: 2%;
-      float: left;
-      width: 95%;
-      max-width: 256px;
-      display: block;
+      padding-left: 10%;
+      padding-right: 10%;
+      background-color: #032c4e;
     "
-    alt="emma"
-  />
+  >
+    <div class="row" style="height: 10vh"></div>
+    <h2 style="text-align: center; background-color: #032c4e;">
+      LETTER FROM THE SECRETARY-GENERAL
+    </h2>
+    <div class="row" style="height: 10vh"></div>
+    <img
+      src="/static/sg_pic.png"
+      style="
+        padding-right: 2%;
+        float: left;
+        width: 90%;
+        max-width: 256px;
+        display: block;
+      "
+    />
     <p>
       Dear Esteemed Delegates,
     </p>
     <p>
-      My name is Emma Lapinsky and I am the Secretary General for the 26<sup>th</sup> session of UC Berkeley’s Model United Nations Conference (UCBMUN XXVI). On behalf of my Secretariat and staff, it is my honor to invite all of you to the heart of San Francisco’s Financial District once again to debate current and pressing global issues and collaborate with some of the brightest students from around the world.
+      My name is Supriya Sharma, and I am thrilled to be the Secretary-General for the 27th iteration of UC Berkeley's premier collegiate Model United Nations Conference (UCBMUN XXVII). On behalf of all my Secretariat and Staff, it is my pleasure to invite you to San Francisco once again to debate, create policy, and meet other delegates from across the globe. Additionally, we are excited to announce that we will be hosting our conference this year at a new location, the Intercontinental San Francisco, a hotel in Union Square, in an area with so much to offer its visitors.
     </p>
     <p>
-      We hope this conference will offer you a gateway into the city life of San Francisco, a city which represents progress and innovation. These are principles we hope are reflected in our twelve enriching and engaging committees. From discussing the issues within our new digital lives to delving into the world of Korean entertainment, all the way to discussing issues of decolonization for newly independent African and Asian states, delegates will be challenged to craft creative and comprehensive solutions to tackle whatever quandary their committee throws at them. While you are here, we hope you also take the time to explore the city, more than even just the few blocks surrounding the hotel. At UCBMUN, however, we also want to stress the support and well-being of our delegates is our top concern, so if you ever have any issue at all, please do not hesitate to flag down any of our staffers.
+      Located in Union Square, our conference will aim to channel San Francisco's tenant of ‘progress above all.’ Whether you are working towards building your drug trade and avoiding the attention of Federal agents in our Breaking Bad Committee, debating the fate of RuPaul's Drag Race, or discussing Ireland's status in the EEC in Irish Parliament, our committees will challenge and dare delegates to think beyond the basics. While you are here, we hope you also take the time to explore the city, more than even just a few blocks surrounding the hotel. At UCBMUN, however, we would like to stress that the support and well-being of our delegates is our top concern; if you ever have any issues, please do not hesitate to flag down any of our staffers.
     </p>
     <p>
-      In the city where the historic UN charter was signed, hosted by a university that birthed the Free Speech Movement, UCBMUN XXVI promises to channel these ideals into the competitive environment we cultivate. With that said, it is my pleasure to invite you to San Francisco from March 3<sup>rd</sup>, 2022 to March 6<sup>th</sup>, 2022 for a UCBMUN like no other.
+      Once again, it is my absolute honor to invite you to our conference in the city that birthed the historic UN charter hosted by the university home to the Free Speech Movement. Join us from March 2nd, 2023, to March 5th, 2023, for an iconic UCBMUN.
     </p>
-    <p style="padding: 0; margin: 0">
+    <p>
       Best Regards,
-  <br><br>
-  <img
-    src="/static/sg_signature.png"
-    style="
-      padding-right: 2%;
-      float: left;
-      width: 100%;
-      max-width: 120px;
-      display: block;
-    "
-  />
-  <br>
-      <br />
-      Emma Lapinsky
-      <br />
-      <i>Secretary-General,</i> UCBMUN XXVI
-      <br />
-      <a href="mailto:secretarygeneral@ucbmun.org"
-        >secretarygeneral@ucbmun.org</a><br><br>
     </p>
+    <img
+      src="/static/sg_signature.png"
+      style="
+        padding-right: 2%;
+        float: left;
+        width: 30%;
+        min-width: 150px;
+        display: block;
+      "
+    />
+    <br><br>
+    <br />
+    Supriya Sharma
+    <br />
+    Secretary-General, UCBMUN XXVII
+    <br />
+    <a href="mailto:secretarygeneral@ucbmun.org">secretarygeneral@ucbmun.org</a><br><br>
   </div>
-    </div>
-    
+</div>
+
     </div>
     <div>
     <footer class="bg-transperant footer">
       
       <div class=container>
         <span class="text-light" >
-          <p style="margin-top: 8px">
-        &copy; Copyright 2021 by UCBMUN.
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center;">
+            &copy; Copyright 2023 by UC Berkeley Model UN
           </p>
+          <div class="row" style="height: 5vh"></div>
         </span>
         
       
