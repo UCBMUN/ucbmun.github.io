@@ -177,6 +177,21 @@
 </nav>
     </header>
     <div id="content" class="text-light">
+
+<div id="recruitmentModal" class="modal fade">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" style="color: black">Fall 2022 Recruitment</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+              <p style="color: black">This page is for the annual UCBMUN conference. Fall 2022 recruitment information can be found on our travel team website at <a href="https://mun.berkeley.edu/join.html">https://mun.berkeley.edu/join.html</a>.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
 <div
   style="
     text-align: center;
@@ -202,6 +217,8 @@
         <div class="row" style="height: 10vh"></div>
           
 
+
+  
 
   <div class="row" style="height: 10vh"></div>
 
@@ -342,5 +359,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script>
   </body>
 </html>
