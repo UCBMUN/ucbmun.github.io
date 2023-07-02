@@ -15,8 +15,9 @@
 
     
 
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
+    
 
     
 
@@ -26,15 +27,16 @@
        Secretariat  - UCBMUN XXVII
     </title>
   </head>
-  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
+  <body style="padding-top: 0px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"
+  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
   style="
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 10;
+    color: white !important;
   "
 >
   <a
@@ -42,7 +44,7 @@
     style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      src="/static/ucbmun_logo_white.png"
       style="max-width: 70px; width: 70vw;"
   /></a>
   <button
@@ -71,6 +73,7 @@
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
+          style="color:aliceblue;"
         >
           ABOUT
         </a>
@@ -79,11 +82,12 @@
           aria-labelledby="ABOUTNavbarDropdown"
           style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
-          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
-          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
-          <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal;">COVID-19 Policies</a>
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Conference Events</a>
+          <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">COVID-19 Policies</a>
         </div>
       </li>
       </li>
@@ -98,6 +102,7 @@
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
+          style="color:aliceblue;"
         >
           RESOURCES
         </a>
@@ -106,76 +111,30 @@
           aria-labelledby="RESOURCESNavbarDropdown"
           style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a class="dropdown-item" href="/app" style="width: max-content; max-width: 80vw; white-space: normal;">App Download</a>
-          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
-          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
-          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
-          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
-        </div>
-      </li>
-      </li>
-
-      <li class="nav-item dropdown">
-        
-        <a
-          class="nav-link dropdown-toggle"
-          href="/committees"
-          id="COMMITTEESNavbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          COMMITTEES
-        </a>
-        <div
-          class="dropdown-menu"
-          aria-labelledby="COMMITTEESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal;"
-        >
-          <a class="dropdown-item" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            LARGE GENERAL ASSEMBLIES
-          </a>
-          <a class="dropdown-item" href="/committee/unodc" style="width: max-content; max-width: 80vw; white-space: normal;">UN Office on Drugs and Crime</a>
-          <a class="dropdown-item" href="/committee/irish" style="width: max-content; max-width: 80vw; white-space: normal;">Irish Parliament, 1972</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            MIDSIZE GENERAL ASSEMBLIES/SPECIALIZED BODIES
-          </a>
-          <a class="dropdown-item" href="/committee/acd" style="width: max-content; max-width: 80vw; white-space: normal;">Asia Cooperation Dialogue, 2022</a>
-          <a class="dropdown-item" href="/committee/tri" style="width: max-content; max-width: 80vw; white-space: normal;">Tricontinental Conference, 1966</a>
-          <a class="dropdown-item" href="/committee/adhoc_ga" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc General Assembly of the Director-General</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            CRISIS COMMITTEES
-          </a>
-          <a class="dropdown-item" href="/committee/uc" style="width: max-content; max-width: 80vw; white-space: normal;">The Governator n&#39; Friends: UC Regents, 2007</a>
-          <a class="dropdown-item" href="/committee/bb" style="width: max-content; max-width: 80vw; white-space: normal;">&#34;F*** You and Your Eyebrows&#34;: Breaking Bad</a>
-          <a class="dropdown-item" href="/committee/singapore" style="width: max-content; max-width: 80vw; white-space: normal;">All by M(ala)yself: Parliament of Singapore, 1965</a>
-          <a class="dropdown-item" href="/committee/goa" style="width: max-content; max-width: 80vw; white-space: normal;">Go(a) Away! The Goa Inquisition</a>
-          <a class="dropdown-item" href="/committee/rupaul" style="width: max-content; max-width: 80vw; white-space: normal;">Drag Her!: RuPaul&#39;s Drag Race Board of Advisors</a>
-          <a class="dropdown-item" href="/committee/unsc" style="width: max-content; max-width: 80vw; white-space: normal;">UNSC: Crisis in Central America</a>
-          <a class="dropdown-item" href="/committee/jcc_aus" style="width: max-content; max-width: 80vw; white-space: normal;">Birds of Prey: The Great Emu Wars, 1932 - The Commonwealth of Australia</a>
-          <a class="dropdown-item" href="/committee/jcc_emu" style="width: max-content; max-width: 80vw; white-space: normal;">Birds of Prey: The Great Emu Wars, 1932 - Dromaius novaehollandiae</a>
-          <a class="dropdown-item" href="/committee/adhoc" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc Committee of the Secretary-General</a>
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">General FAQs</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal;">TRAVEL TEAM</a>
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">SPONSORS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">TRAVEL TEAM</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light">
+    <div id="content" class="text-light" style="padding-top:0rem !important;">
 <div class="container">
   
         <div class="row" style="height: 10vh"></div>
@@ -206,15 +165,78 @@
       "
     >
       <img
-        src="/static/secretariat/priya.png"
+        src="/static/secretariat/harsh.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h4>SUPRIYA SHARMA</h4>
+      <h4>Harsh Kumbhat</h4>
       Secretary-General
       <p>
         <a href="mailto: secretarygeneral@ucbmun.org"
           >secretarygeneral@ucbmun.org</a
         >
+      </p>
+      <div style="text-align: left;">
+        Harsh Kumbhat <em> (he/him/his) </em> is a third year at Cal, studying film, data science, and creative writing! Harsh is an international student, hailing from Kolkata, India, and wholeheartedly believes that no other city comes close to his hometown. He joined UCBMUN his freshman year, and has been in love with the club ever since, being involved both as a competitive delegate and an USG prior to his current position of Secretary-General. Outside of the club, Harsh spends his time writing and making his own films, playing football (he insists it’s not called soccer), and reading every book he can get his hands on. Harsh is honored to serve as Secretary-General, and is extremely excited to make UCBMUN an unforgettable experience!
+      </div>
+    </div>
+
+    <div
+      class="col"
+      style="
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        float: center;
+        text-align: center;
+        background-color: #032c4e;
+        width: 300px;
+        min-width: 300px;
+        margin: 2%;
+      "
+    >
+      <img
+        src="/static/secretariat/sehr.png"
+        style="width: 256px; padding-bottom: 5%;"
+      />
+      <h4>Sehr Ali Dada</h4>
+      Director-General
+      <p>
+        <a href="mailto: directorgeneral@ucbmun.org"
+          >directorgeneral@ucbmun.org</a
+        >
+      </p>
+      <div style="text-align: left;">
+        Sehr <em> (she/her/hers) </em> is a junior from Lahore, Pakistan. She is majoring in Political Science and double minoring in Comparative Literature and Environmental Policy, Management, and Sciences. Her keen interest in debates, global politics, and creative problem solving drew her to UCBMUN. Besides UCBMUN, Sehr spends most of her time rewatching her favorite shows, listening to music, or swimming laps in the pool — that is if she’s not on her nth cup of coffee at the cafe or library cramming her studies. Sehr is extremely excited to see what delegates have in store for UCBMUN XXVII, and hopes that everyone has as great a time as we did planning it!
+ 		      </div>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 7%; padding-left: 5%; padding-right: 5%;  column-gap: 10vw;">
+    <div
+      class="col"
+      style="
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        float: center;
+        text-align: center;
+        background-color: #032c4e;
+        width: 300px;
+        min-width: 300px;
+        margin: 2%;
+      "
+    >
+      <img
+        src="/static/secretariat/priya.png"
+        style="width: 256px; padding-bottom: 5%;"
+      />
+      <h3>Supriya Sharma</h3>
+      President
+      
+      <p>
+        <a href="mailto: chiefofstaff@ucbmun.org">chiefofstaff@ucbmun.org</a>
       </p>
       <div style="text-align: left;">
         Priya <em>(she/her/hers)</em> is a third-year at Cal, double majoring in Economics and Inequality Studies with a minor in Public Policy. She is originally from Brewster, New York, and makes sure to never let anyone forget that she hails from the East Coast. Priya joined UCBMUN as soon as she came to Berkeley, in Fall 2020, and has loved it ever since. She joined primarily as a competitive delegate, but finds a sincere love in balancing both conference and competition. UCBMUN has allowed her to meet some of her favorite people in the world, and she is endlessly grateful for the organization and the joy it brings her. Outside of UCBMUN, Priya is involved in Greek Life at Cal, the ASUC, and non-profit work regarding voting equality. In her free time, she enjoys hiking Berkeley's many trails, cooking, and spending time with friends.		      </div>
@@ -236,78 +258,17 @@
       "
     >
       <img
-      src="/static/secretariat/kaito.png"
+        src="/static/secretariat/olivia.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h4>JUSTIN KAITO CHURCH</h4>
-      Director-General
-      <p>
-        <a href="mailto: directorgeneral@ucbmun.org"
-          >directorgeneral@ucbmun.org</a
-        >
-      </p>
-      <div style="text-align: left;">
-        Kaito <em>(he/they)</em> is a junior from Oceanside, California, and is currently studying chemical biology and global studies (specifically development in Asia). He’s had the opportunity to do Model UN since the freshman year of high school, and has inspired to want to do international work that has elements of STEM. Outside of MUN, he is also the president and music director of a student orchestra that plays music from anime and video games, and can be heard complaining about chemistry and contemplating whether to do another music class. Kaito is honored and excited to make UCBMUN a memorable experience for all at this years conference. 		      </div>
-    </div>
-  </div>
-
-  <div class="row" style="padding-top: 7%; padding-left: 5%; padding-right: 5%;  column-gap: 10vw;">
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: #032c4e;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-      "
-    >
-      <img
-        src="/static/secretariat/vishwaa.png"
-        style="width: 256px; padding-bottom: 5%;"
-      />
-      <h3>VISHWAA SOFAT</h3>
-      President
-      
-      <p>
-        <a href="mailto: chiefofstaff@ucbmun.org">chiefofstaff@ucbmun.org</a>
-      </p>
-      <div style="text-align: left;">
-        Vishwaa <em>(he/him/his)</em> is a junior from New York City, double majoring in Political Science and STS with a Public Policy minor, which he hopes to combine for a career in public service. Having participated in Model UN throughout high school, MUN holds a special place in his heart. He values the opportunity to learn about new issues, recognize how imperfect our world is, and work collectively with other delegates towards a solution—perhaps not always a perfect one. Alongside Model UN, he runs his own civics initiative, is involved in research on campus, and writes for the Daily Californian. In his free time, you can find him bantering over how the East Coast is the superior coast, playing soccer with friends, or in line waiting to order from Yogurt Park. Vishwaa is looking forward to the conference and providing delegates, especially those in his AdHoc committee, with plenty of unforgettable memories!		      </div>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: #032c4e;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-      "
-    >
-      <img
-      src="/static/secretariat/sehr.png"
-      style="width: 256px; padding-bottom: 5%;"
-      />
-      <h3>SEHR ALI DADA</h3>
+      <h3>Olivia Lapinsky</h3>
       Chief of Staff, Generalized
       
       <p>
         <a href="mailto: chiefofstaff@ucbmun.org">chiefofstaff@ucbmun.org</a>
       </p>
       <p style="text-align: left;">
-        Sehr <em>(she/her/hers)</em> is a sophomore from Lahore, Pakistan. She is majoring in Political Science and double minoring in Comparative Literature and Environmental Policy, Management, and Sciences. Her keen interest in debates, global politics, and creative problem solving drew her to UCBMUN. Besides UCBMUN, Sehr spends most of her time rewatching her favorite shows, listening to music, or swimming laps in the pool — that is if she’s not on her nth cup of coffee at the cafe or library cramming her studies. Sehr is extremely excited to see what delegates have in store for UCBMUN XXVII, and hopes that everyone has as great a time as we did planning it!		      </p>
+        Olivia <em>(she/her/hers)</em> is a sophomore from Seattle, Washington majoring in Economics and minoring in Public Policy and Data Science. After competing in Mock Trial all throughout high school, she developed a love for debate and civic discourse that drew her to UCBMUN. Also passionate about nonprofit work, educational equity, and marketing, she lobbies for student rights via one-on-one casework and policy projects in Berkeley’s Student Advocate’s Office and serves on the marketing team for the Berkeley Economic Review. In her free time, she enjoys baking, trying new coffee shops with friends, watching mystery movies, and obsessing over Taylor Swift. She is so excited to help create an amazing conference experience for delegates at UCBMUN XXVIII!		      </p>
     </div>
   </div>
 
@@ -328,17 +289,17 @@
       "
     >
       <img
-      src="/static/secretariat/aishi.png"
-      style="width: 256px; padding-bottom: 5%;"
+        src="/static/secretariat/young.png"
+        style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>AISHI GULATI</h3>
+      <h3>Minyoung Kim</h3>
       Chief of Staff, Internal
       
       <p>
         <a href="mailto: chiefofstaff@ucbmun.org">chiefofstaff@ucbmun.org</a>
       </p>
       <p style="text-align: left;">
-        Aishi <em>(she/her/hers)</em> is a sophomore originally from Houston, Texas. She is double majoring in Economics and Global Studies and hoping to minor in Politics, Philosophy, and the Law. She joined UCBMUN the first semester of her freshman year because of her interest in debate and policy and has made lots of great memories in the club since then. Besides UCBMUN, Aishi is involved in a pre-law organization and student-interest activism internship. Outside of campus organizations, she spends all her time tutoring, lifting weights, and trying to make time for her hobbies, which include growing plants, art, and reading. 9/10 times she can be seen with her best friend (who she met through UCBMUN). She also likes listening to Glass Animals and crosses her fingers that she can go to one of their concerts some day. Aishi is incredibly excited to see all the hard work delegates and staff put in play out at conference!		      </p>
+        Minyoung <em>(he/him/his)</em> is a sophomore from Southern California, majoring in political science. He joined UCBMUN in the Spring semester of his freshmen year to build upon his interests of international affairs and government - something he has come to realize makes up the more rewarding half of MUN. In his first year staffing, he plans to provide delegates with a conference they could be proud to compete in. Outside of UCBMUN he is involved within Phi Alpha Delta, UC Berkeley's premier pre-law fraternity, the ASUC judicial council, and the CSO program under UCPD. In his downtime he can be found discussing shows, movies, or why the Lakers will definitively win it all the next season. Minyoung looks forward to meeting delegates at what will be an exciting conference.		      </p>
     </div>
 
     <div
@@ -357,17 +318,17 @@
       "
     >
       <img
-      src="/static/secretariat/drishti.png"
-      style="width: 256px; padding-bottom: 5%;"
+        src="/static/secretariat/gargee.png"
+        style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>DRISHTI GUPTA</h3>
+      <h3>Gargee Piplani</h3>
       Chief of Staff, External
       
       <p>
         <a href="mailto: external@ucbmun.org">external@ucbmun.org</a>
       </p>
       <p style="text-align: left;">
-        Drishti <em>(she/her/hers)</em> is a sophomore majoring in Data Science & Statistics, with a minor in public health. She is originally from Fremont, California (about 40 minutes away from Cal). Drishti competed in parliamentary debate throughout high school, and chose to apply to UCBMUN to try out something new and have the experience of staffing and organizing a conference. Outside of UCBMUN, she is super passionate about expanding accessibility of debate and civic education. In her free time, you can probably find Drishti in front of the TV watching a cricket match (Go India!), or editing and making a Tiktok on her account. Drishti is super excited to meet all of you at the conference, and can't wait for this to be the best UCBMUN yet!		      </p>
+        Gargee <em>(she/her/hers)</em> is a sophomore at UC Berkeley from San Ramon, California studying Computer Science, Data Science, and Business Administration. Her interest in MUN started in high school and her positive experiences in the activity led her to continue in college. Outside of UCBMUN, you can find Gargee watching Jeopardy!, running, and searching for the best cold brew around campus. Alongside the rest of secretariat, Gargee looks forward to helping organize a successful conference. Feel free to contact her at gargee@berkeley.edu if you have any questions or concerns. 		      </p>
     </div>
   </div>
 
@@ -388,108 +349,46 @@
       "
     >
       <img
-        src="/static/secretariat/harsh.png"
+        src="/static/secretariat/adi.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>HARSH KUMBHAT</h3>
-      USG of Crisis and Specialized Bodies
-      
-      <p>
-        <a href="mailto: usg-crisis@ucbmun.org">usg-crisis@ucbmun.org</a>
-      </p>
-      <div style="text-align: left;">
-        Harsh Kumbhat <em>(he/him/his)</em> is a sophomore studying film and creative writing at Cal! Harsh has always wanted to become an artist of some sort, and wants to use his work to cause and inform political change. On any given day, you can find this film nerd scribbling away in his little notebook, coming up with half-baked script ideas, writing terrible short stories and even worse poetry.
-        Harsh is an international student and spent all his life in India. Having grown up in Kolkata, where one is always engulfed in local culture, he's interested in a plethora of other things. From cooking and eating new types of food to performing stand-up comedy and writing satire - and of course, competing at Model UN conferences - Harsh dabbles in a little bit of everything. Most of the time though, you can probably find him snuggled up in bed, watching a sappy rom-com (500 Days of Summer crushes him to this day), crunching on a bowl of cheese popcorn.
-        Harsh is extremely excited for this edition of UCBMUN and hopes to make it an unforgettable experience for all attending! Feel free to email Harsh at harshkumbhat@berkeley.edu if want to share any film hot takes, have a great butter chicken recipe, or just simply want to have a chat!"		      </div>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: #032c4e;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-      "
-    >
-      <img
-      src="/static/secretariat/rhea.png"
-      style="width: 256px; padding-bottom: 5%;"
-      />
-      <h3>RHEA VOHRA</h3>
-      USG of GA and Specialized Bodies
-      
-      <p>
-        <a href="mailto: usg-sbga@ucbmun.org">usg-sbga@ucbmun.org</a>
-      </p>
-      <p style="text-align: left;">
-        Rhea Vohra <em>(she/her/hers)</em> is a second year student majoring in Political Science, and her hometown is Memphis, Tennessee. She enjoyed attending MUN conferences in high school and recently staffed the prior UCB MUN conference as an Assistant Crisis Director. She is incredibly excited to serve as USG of GA and Spec Bods for UCBMUN XXVII this year!       </p>
-    </div>
-  </div>
-
-  <div class="row" style="padding-top: 7%; padding-left: 5%; padding-right: 5%; column-gap: 10vw;">
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: #032c4e;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-      "
-    >
-      <img
-      src="/static/secretariat/smiti.png"
-      style="width: 256px; padding-bottom: 5%;"
-      />
-      <h3>SMITI MANGLA</h3>
-      USG of Crisis
-      
-      <p>
-        <a href="mailto: usg-crisis@ucbmun.org">usg-crisis@ucbmun.org</a>
-      </p>
-      <p style="text-align: left;">
-        Smiti <em>(she/her/hers)</em> is a fourth–year from Renton, Washington majoring in Molecular and Cell Biology, and minoring in Public Policy. MUN has been one of the greatest highlights of her college experience and she is honored to be able to give back this year by being on UCBMUN XXVII's secretariat! Smiti is most certainly partial to crisis committees, and she cannot wait to see what crazy ideas delegates will bring to the conference! Outside of MUN and school, Smiti can be found obsessing over the MCU, reading about history, or watching one of her favorite sitcoms for the millionth time. She is also particularly fond of hanging out with friends and studying together at aesthetic coffee shops. Smiti cannot wait to meet all the delegates and she hopes everyone will make memories that last a lifetime!		      </p>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: #032c4e;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-      "
-    >
-      <img
-      src="/static/secretariat/grace.png"
-      style="width: 256px; padding-bottom: 5%;"
-      />
-      <h3>GRACE WEN</h3>
+      <h3>Adinath Lane</h3>
       USG of Specialized Crisis
       
       <p>
         <a href="mailto: usg-jcc@ucbmun.org">usg-jcc@ucbmun.org</a>
       </p>
       <div style="text-align: left;">
-        Grace is a second-year majoring in History of Art with minors in Global Studies and East Asian Languages and Cultures. Though she spent the majority of her high school participating in Mock Trial, she's had a longstanding love for Model UN, international affairs, and, needless to say, history. She is currently conducting research on the little-known visual legacy of the gulag system in Kazakhstan through an examination of photographs and state-produced images, bringing together her passion for geopolitics and art history. In her free time, you can find her wasting her money on tea, writing poetry, making documentaries, and museum hopping with friends. Grace is incredibly excited to be your USG and looks forward to seeing you all at UCBMUN XXVII!		      </div>
+        Adi <em>(he/him/his)</em> is a sophomore majoring in Public Health and Molecular & Cell Biology! Born in Delhi but raised in Palo Alto, Adi loves the diversity present in everything the Bay Area has to offer. Adi joined MUN in his freshman year in an effort to explore new activities at Berkeley, and loved his time as a staffer on the Goa Inquisition committee at last year’s conference. His comfort music oscillates between 80s rock and 2000s Bollywood, but feel free to offer him your recommendations if you spot him! In his free time, Adi likes to hike the Bay’s many beautiful trails, volunteer at a local elementary school, and keep his inner dinosaur kid alive by admiring Berkeley’s T. Rex fossil exhibit. He can’t wait to be your USG at an amazing UCBMUN XXVIII!		      </div>
+    </div>
+
+    <div
+      class="col"
+      style="
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        float: center;
+        text-align: center;
+        background-color: #032c4e;
+        width: 300px;
+        min-width: 300px;
+        margin: 2%;
+      "
+    >
+      <img
+        src="/static/secretariat/shahbano.png"
+        style="width: 256px; padding-bottom: 5%;"
+      />
+      <h3>Shahbano Haroon</h3>
+      USG of GA and Specialized Bodies
+      
+      <p>
+        <a href="mailto: usg-sbga@ucbmun.org">usg-sbga@ucbmun.org</a>
+      </p>
+      <p style="text-align: left;">
+        Shahbano is a sophomore from Karachi, Pakistan majoring in Political Science and Economics. Having participated in MUN throughout her highschool career, she developed a passion for international relations and debate, and looked forward to joining UCBMUN the moment she committed to Cal. In her free time, Shahbano can be found playing football on the glade, trying all the different flavors at Salt and Straw and searching for new gnocchi places in San Francisco (she truly seems to have an unhealthy obsession). Shahbano is extremely excited to see what delegates have in store for UCBMUN XXVIII, and hopes that everyone has as great a time participating as we did planning it!       </p>
     </div>
   </div>
 
@@ -510,17 +409,77 @@
       "
     >
       <img
-      src="/static/secretariat/stas.png"
-      style="width: 256px; padding-bottom: 5%;"
+        src="/static/secretariat/teeron.png"
+        style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>ANASTASIA KALOSHINA</h3>
+      <h3>Teeron Hajebi</h3>
+      USG of Crisis
+      
+      <p>
+        <a href="mailto: usg-crisis@ucbmun.org">usg-crisis@ucbmun.org</a>
+      </p>
+      <p style="text-align: left;">
+        Teeron <em> (he/him/his) </em>is a sophomore from the Bay Area studying Computer Science while hoping to pick up minors in Math and Forestry. He has been participating in Model UN since his first year of high school and joined the club last spring as an outlet to escape the world of STEM. Outside of MUN, he teaches a class on the history of rock music, volunteers at the computing facility, races on the ski team, and climbs in the Berkeley hills. Teeron hopes every delegate has an enjoyable experience while at UCBMUN, both in and outside of committee. 		      </p>
+    </div>
+
+    <div
+      class="col"
+      style="
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        float: center;
+        text-align: center;
+        background-color: #032c4e;
+        width: 300px;
+        min-width: 300px;
+        margin: 2%;
+      "
+    >
+      <img
+        src="/static/secretariat/maanas.png"
+        style="width: 256px; padding-bottom: 5%;"
+      />
+      <h3>Maanas Shah</h3>
+      USG of Crisis
+      
+      <p>
+        <a href="mailto: usg-crisis@ucbmun.org">usg-crisis@ucbmun.org</a>
+      </p>
+      <div style="text-align: left;">
+        Maanas <em> (he/him/his) </em> is a second-year from Pleasanton, California majoring in Computer Science with minors in Physics and Data Science. This is his 9th year in MUN, having competed at conferences since 6th grade, and over the years it has grown to be one of his most favorite passions and he's glad to have the chance to continue his journey with his friends in UCBMUN! Outside of MUN, Maanas loves both playing and designing board games and video games; from quick 30 minute party games to massive day-long strategy marathons, he'll take any chance he can get to wrangle his friends into his latest unwise financial decision. Feel free to email Maanas at maanas_shah@berkeley.edu if want to share anything gaming related, from having an interest in game design principles, to just being interested in some recommendations, or simply just to have a chat!		      </div>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 7%; padding-left: 5%; padding-right: 5%; column-gap: 10vw;">
+    <div
+      class="col"
+      style="
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        float: center;
+        text-align: center;
+        background-color: #032c4e;
+        width: 300px;
+        min-width: 300px;
+        margin: 2%;
+      "
+    >
+      <img
+        src="/static/secretariat/jackson.png"
+        style="width: 256px; padding-bottom: 5%;"
+      />
+      <h3>Jackson Englar-Carlson</h3>
       Director of Business Relations
       
       <p>
         <a href="mailto: sponsorships@ucbmun.org">sponsorships@ucbmun.org</a>
       </p>
       <div style="text-align: left;">
-        Anastasia <em>(she/her/hers)</em> is a senior from Bethesda, Maryland studying Political Science with a minor in City Planning. She joined UCBMUN her junior year after participating in Mock Trial in high school and wanting to pursue a debate activity relevant to her interest in International Relations. Since then she has enjoyed the opportunity to compete, travel, and meet great friends within UCBMUN and on the circuit. Outside of UCBMUN, Anastasia is involved in the Berkeley Art Museum and Pacific Film Archive’s student film committee as well as Cal Figure skating. In her free time she enjoys crochet and exploring the beautiful nature the Bay Area and California have to offer. "		      </div>
+        Jackson <em> (he/him/his) </em> is a sophomore double majoring in political science and public health with a minor in public policy. He's originally from Huntington Beach, California, and this is his 6th year in MUN, having started in high school. Jackson is a crisis delegate at heart, and loves anything sci-fi or anything contemporary. While he loves UCBMUN, he does have a life outside of it, usually practicing taekwondo, working for the government in some capacity, and exploring the Bay! He's excited for everyone to have a fantastic conference!		      </div>
     </div>
 
     <div
@@ -539,17 +498,17 @@
       "
     >
       <img
-        src="/static/secretariat/lance.png"
+        src="/static/secretariat/drishti.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>LANCE DY</h3>
+      <h3>Drishti Gupta</h3>
       Director of Finance
       
       <p>
         <a href="mailto: finance@ucbmun.org">finance@ucbmun.org</a>
       </p>
       <p style="text-align: left;">
-        Lance <em>(he/him/his)</em> is a sophomore from Manila, Philippines studying Political Economy and Business Administration. Seeking to improve his negotiation and public speaking skills, he joined his high school’s Model UN team which he went on to lead in his senior year and whose delegates he still trains to this day. Since attending his first conference three years ago, Model UN has seen him through thick and thin—from the countless leisurely Zoom calls turned emergency meetings to the thrill of running around campus during in-person conference with math textbooks and past-due worksheets on hand. Apart from UCBMUN, he does social impact consulting and looks to get more involved in research, student government, and environmental advocacy in the coming years. In his spare time, Lance peruses random articles for hours on end, indulges in philosophical banter, curates itineraries for his next getaway, overanalyzes the occasional documentary or hit TV series, and spends time with family and friends. He looks forward to a successful conference and wishes delegates all the best!		      </p>
+        Drishti <em> (she/her/hers) </em> is a third year majoring in Data Science. She is originally from Fremont, California (about 40 minutes away from Cal). Drishti competed in parliamentary debate throughout high school, and chose to apply to UCBMUN to try out something new and have the experience of staffing and organizing a conference. Outside of UCBMUN, she is super passionate about expanding accessibility of debate and civic education. In her free time, you can probably find Drishti in front of the TV watching a cricket match (Go India!), or raving about Taylor Swift. Drishti is super excited to meet all of you at the conference, and can't wait for this to be the best UCBMUN yet!		      </p>
     </div>
   </div>
 
@@ -570,17 +529,17 @@
       "
     >
       <img
-        src="/static/secretariat/helen.png"
+        src="/static/secretariat/anousha.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>HELEN YANG</h3>
+      <h3>Anousha Athreya</h3>
       Director of Technology &amp; Operations
       
       <p>
         <a href="mailto: technology@ucbmun.org">technology@ucbmun.org</a>
       </p>
       <div style="text-align: left;">
-        Helen <em>(she/her/hers)</em> is a senior pursuing a double major in Computer Science and Business Administration. She has lived in 13 cities in the US, Canada, and China, but calls Cal and the Bay Area home. As a member of her high school MUN team, she developed a passion for international relations and debate, and looked forward to joining UCBMUN the moment she committed to Cal. Throughout her time at Cal, the club became not only an outlet for her interests, but also a welcoming family and a safe space for discussion and thought. When she is not busy with UCBMUN, she can be found crying over bugs in her code, binge reading sci&ndash;fi novels, and listening to BTS and blackbear. Helen is incredibly excited to help create an unforgettable conference experience for all delegates, and cannot wait to meet everyone during conference weekend.
+        Anousha <em> (she/her/hers) </em> is a sophomore pursuing Electrical Engineering and Computer Science with minors in Data Science and Public Policy. Within her field of study, she is passionate about researching brain health and electrotechnology, learning about better ways to visualize and map the brain. She joined MUN her freshman year after competing in speech and debate in high school to learn more about international relations and security studies. In her free time, you can find her listening to the Arctic Monkeys, rewatching Community or Psych for the umpteenth time, or exploring new libraries. Anousha is extremely excited for UCBMUN XXVIII and looks forward to an amazing conference experience! 
       </div>
     </div>
 
@@ -600,17 +559,17 @@
       "
     >
       <img
-        src="/static/secretariat/tarun.png"
+        src="/static/secretariat/milad.png"
         style="width: 256px; padding-bottom: 5%;"
       />
-      <h3>TARUN SREEDHAR</h3>
-      Director of Technology &amp; Design
+      <h3>Milad Brown</h3>
+      Director of Technology &amp; Systems Design
       
       <p>
         <a href="mailto: technology@ucbmun.org">technology@ucbmun.org</a>
       </p>
       <p style="text-align: left;">
-        Tarun Sreedhar <em>(he/him/his)</em> is one of UCBMUN XXVII's Directors of Tech and is excited for conference! He is from the East Bay, and as a senior at Cal, he is studying Computer Science and Public Policy. He's been involved in MUN in both the high school and college circuits for 8 years now. Besides MUN, he's also involved in entrepreneurship and sports. He's looking forward to a great conference!
+        Milad is a sophomore from the Bay Area studying CS. He joined UCBMUN immediately after coming to Berkeley in Fall '22. His one true love is building cool things with tech. He can usually be found in the gym or the kitchen. If you find him at conference, ask him for skincare advice or anabolic recipes. He's looking forward to an amazing UCBMUN 2024!
       </p>
     </div>
   </div>
@@ -659,10 +618,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
-  <!-- <script type="text/javascript">
-    $(window).on('load', function() {
-        $('#recruitmentModal').modal('show');
-    });
-  </script> -->
   </body>
 </html>

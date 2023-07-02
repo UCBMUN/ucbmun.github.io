@@ -15,8 +15,9 @@
 
     
 
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
+    
 
     
 
@@ -26,15 +27,16 @@
        Committees Overview  - UCBMUN XXVII
     </title>
   </head>
-  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
+  <body style="padding-top: 0px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"
+  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
   style="
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 10;
+    color: white !important;
   "
 >
   <a
@@ -42,7 +44,7 @@
     style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      src="/static/ucbmun_logo_white.png"
       style="max-width: 70px; width: 70vw;"
   /></a>
   <button
@@ -71,6 +73,7 @@
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
+          style="color:aliceblue;"
         >
           ABOUT
         </a>
@@ -79,11 +82,12 @@
           aria-labelledby="ABOUTNavbarDropdown"
           style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
-          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
-          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
-          <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal;">COVID-19 Policies</a>
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Conference Events</a>
+          <a class="dropdown-item" href="/covid" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">COVID-19 Policies</a>
         </div>
       </li>
       </li>
@@ -98,6 +102,7 @@
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
+          style="color:aliceblue;"
         >
           RESOURCES
         </a>
@@ -106,76 +111,30 @@
           aria-labelledby="RESOURCESNavbarDropdown"
           style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a class="dropdown-item" href="/app" style="width: max-content; max-width: 80vw; white-space: normal;">App Download</a>
-          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
-          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
-          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
-          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
-        </div>
-      </li>
-      </li>
-
-      <li class="nav-item dropdown">
-        
-        <a
-          class="nav-link dropdown-toggle"
-          href="/committees"
-          id="COMMITTEESNavbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          COMMITTEES
-        </a>
-        <div
-          class="dropdown-menu"
-          aria-labelledby="COMMITTEESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal;"
-        >
-          <a class="dropdown-item" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            LARGE GENERAL ASSEMBLIES
-          </a>
-          <a class="dropdown-item" href="/committee/unodc" style="width: max-content; max-width: 80vw; white-space: normal;">UN Office on Drugs and Crime</a>
-          <a class="dropdown-item" href="/committee/irish" style="width: max-content; max-width: 80vw; white-space: normal;">Irish Parliament, 1972</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            MIDSIZE GENERAL ASSEMBLIES/SPECIALIZED BODIES
-          </a>
-          <a class="dropdown-item" href="/committee/acd" style="width: max-content; max-width: 80vw; white-space: normal;">Asia Cooperation Dialogue, 2022</a>
-          <a class="dropdown-item" href="/committee/tri" style="width: max-content; max-width: 80vw; white-space: normal;">Tricontinental Conference, 1966</a>
-          <a class="dropdown-item" href="/committee/adhoc_ga" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc General Assembly of the Director-General</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">
-            CRISIS COMMITTEES
-          </a>
-          <a class="dropdown-item" href="/committee/uc" style="width: max-content; max-width: 80vw; white-space: normal;">The Governator n&#39; Friends: UC Regents, 2007</a>
-          <a class="dropdown-item" href="/committee/bb" style="width: max-content; max-width: 80vw; white-space: normal;">&#34;F*** You and Your Eyebrows&#34;: Breaking Bad</a>
-          <a class="dropdown-item" href="/committee/singapore" style="width: max-content; max-width: 80vw; white-space: normal;">All by M(ala)yself: Parliament of Singapore, 1965</a>
-          <a class="dropdown-item" href="/committee/goa" style="width: max-content; max-width: 80vw; white-space: normal;">Go(a) Away! The Goa Inquisition</a>
-          <a class="dropdown-item" href="/committee/rupaul" style="width: max-content; max-width: 80vw; white-space: normal;">Drag Her!: RuPaul&#39;s Drag Race Board of Advisors</a>
-          <a class="dropdown-item" href="/committee/unsc" style="width: max-content; max-width: 80vw; white-space: normal;">UNSC: Crisis in Central America</a>
-          <a class="dropdown-item" href="/committee/jcc_aus" style="width: max-content; max-width: 80vw; white-space: normal;">Birds of Prey: The Great Emu Wars, 1932 - The Commonwealth of Australia</a>
-          <a class="dropdown-item" href="/committee/jcc_emu" style="width: max-content; max-width: 80vw; white-space: normal;">Birds of Prey: The Great Emu Wars, 1932 - Dromaius novaehollandiae</a>
-          <a class="dropdown-item" href="/committee/adhoc" style="width: max-content; max-width: 80vw; white-space: normal;">Ad-Hoc Committee of the Secretary-General</a>
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">General FAQs</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal; color:#032c4e;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal;">TRAVEL TEAM</a>
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">SPONSORS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mun.berkeley.edu/" style="width: max-content; max-width: 80vw; white-space: normal; color:aliceblue;">TRAVEL TEAM</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light">
+    <div id="content" class="text-light" style="padding-top:0rem !important;">
 <div class="container">
   
         <div class="row" style="height: 10vh"></div>
@@ -216,14 +175,14 @@
           text-align: center;
           padding-bottom: 5vh;
         ">
-          <a href="/committee/unodc">
-            <img src="/static/comm_overview/unodc.png" alt="unodc" style="width: 148px;" alt="UN Office on Drugs and Crime"
+          <a href="/committee/ecofin">
+            <img src="/static/comm_overview/ecofin.png" alt="ecofin" style="width: 148px;" alt="ECOFIN: Corporate Responsibility"
           >
           </a>
           <br><br>
-          <a href="/committee/unodc">
+          <a href="/committee/ecofin">
             <h4 class="text-light">
-              UN Office on Drugs and Crime
+              ECOFIN: Corporate Responsibility
             </h4>
           </a>
           <p>
@@ -298,7 +257,7 @@
             </h4>
           </a>
           <p> 
-            <em>Chair &#8212;</em> ANTONIO MARTIN
+            <em>Chair &#8212;</em> DANIELLE KAPPLER
             <br>
             <em>Chair &#8212;</em> LANCE DY
           </p> 
@@ -386,13 +345,13 @@
           padding-bottom: 5%;
         ">
           <a href="/committee/uc">
-            <img src="/static/comm_overview/uc.png" alt="uc" style="width: 148px;" alt="The Governator n&#39; Friends: UC Regents, 2007"
+            <img src="/static/comm_overview/uc.png" alt="uc" style="width: 148px;" alt="Governator and Friends: UC Regents, 2007"
           >
           </a>
           <br><br>
           <a href="/committee/uc">
             <h4 class="text-light">
-              The Governator n' Friends: UC Regents, 2007
+              Governator and Friends: UC Regents, 2007
             </h4>
           </a>
           <p> 
@@ -452,7 +411,7 @@
           <p> 
             <em>Chair &#8212;</em> JEFFREY ZHOU  
             <br>
-            <em>Crisis Director &#8212;</em> EMILY KIM
+            <em>Crisis Director &#8212;</em> SLAYDEN FERNANDEZ
           </p> 
         </div>          
         <div
@@ -467,13 +426,13 @@
           padding-bottom: 5%;
         ">
           <a href="/committee/goa">
-            <img src="/static/comm_overview/goa.png" alt="goa" style="width: 148px;" alt="Go(a) Away! The Goa Inquisition"
+            <img src="/static/comm_overview/goa.png" alt="goa" style="width: 148px;" alt="Go(a) Away! The Goa Inquisition, 1535"
           >
           </a>
           <br><br>
           <a href="/committee/goa">
             <h4 class="text-light">
-              Go(a) Away! The Goa Inquisition
+              Go(a) Away! The Goa Inquisition, 1535
             </h4>
           </a>
           <p> 
@@ -577,13 +536,13 @@
           padding-bottom: 5%;
         ">
           <a href="/committee/jcc_emu">
-            <img src="/static/comm_overview/jcc_emu.png" alt="jcc_emu" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash;  Dromaius novaehollandiae"
+            <img src="/static/comm_overview/jcc_emu.png" alt="jcc_emu" style="width: 148px;" alt="Birds of Prey: The Great Emu Wars, 1932 &amp;mdash; Emus"
           >
           </a>
           <br><br>
           <a href="/committee/jcc_emu">
             <h4 class="text-light">
-              Birds of Prey: The Great Emu Wars, 1932 &mdash;  Dromaius novaehollandiae
+              Birds of Prey: The Great Emu Wars, 1932 &mdash; Emus
             </h4>
           </a>
           <p> 
@@ -672,10 +631,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
-  <!-- <script type="text/javascript">
-    $(window).on('load', function() {
-        $('#recruitmentModal').modal('show');
-    });
-  </script> -->
   </body>
 </html>
