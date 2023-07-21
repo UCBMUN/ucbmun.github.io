@@ -70,8 +70,11 @@ figure {
 }
 
 .bg-mini {
-  color: white;
   background-color: transparent;
+}
+
+.bg-textcolor {
+  color: white;
 }
 
 .bg-darkish {
@@ -106,8 +109,10 @@ figure {
     height: 15vh;
   }
   .bg-mini {
-    color: #032c4e !important;
     background-color: white !important;
+  }
+  .bg-textcolor {
+    color: #032c4e !important;
   }
 }
 
