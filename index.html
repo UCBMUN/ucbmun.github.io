@@ -357,6 +357,124 @@
     </div>
   </div>
 
+  <!--start countdown logic-->
+  <meta charset="UTF-8" />
+  <title>Countdown to UCBMUN XXIX</title>
+  <style>
+    /* Center the countdown container */
+    .countdown-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    /* Countdown styling */
+    .countdown {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      max-width: 80px;
+    }
+
+    /* Time unit styling */
+    .time-unit {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin: 0 6.5px;
+      gap: 9px; /* Increased spacing between number and label */
+    }
+
+    /* Adjust the font size and spacing for the number */
+    .time-unit .number {
+      font-size: 39px;
+      font-family: "Roboto", Arial, sans-serif;
+      line-height: 1;
+      /* width: 60px; Fixed width for consistent spacing */
+      text-align: right;
+    }
+
+    /* Adjust the font size and spacing for the label */
+    .time-unit .label {
+      font-size: 35.1px;
+      font-family: "Open Sans", Arial, sans-serif;
+      line-height: 1;
+      /* Removed margin-left as gap handles spacing */
+    }
+  </style>
+  <div class="countdown-container">
+    <div class="countdown" id="countdown">
+      <div class="time-unit">
+        <div id="days" class="number">0</div>
+        <div id="days-label" class="label">Days</div>
+      </div>
+      <div class="time-unit">
+        <div id="hours" class="number">0</div>
+        <div id="hours-label" class="label">Hours</div>
+      </div>
+      <div class="time-unit">
+        <div id="minutes" class="number">0</div>
+        <div id="minutes-label" class="label">Minutes</div>
+      </div>
+      <div class="time-unit">
+        <div id="seconds" class="number">0</div>
+        <div id="seconds-label" class="label">Seconds</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set the target date for the countdown
+    const targetDate = new Date("February 27, 2025 23:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      // Ensure distance is not negative
+      const adjustedDistance = Math.max(0, distance);
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(adjustedDistance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (adjustedDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (adjustedDistance % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const seconds = Math.floor((adjustedDistance % (1000 * 60)) / 1000);
+
+      // Pad numbers with leading spaces for consistent width
+      const paddedDays = String(days).padStart(3, " ");
+      const paddedHours = String(hours).padStart(2, " ");
+      const paddedMinutes = String(minutes).padStart(2, " ");
+      const paddedSeconds = String(seconds).padStart(2, " ");
+
+      // Display the countdown in the countdown div
+      document.getElementById("days").innerHTML = paddedDays;
+      document.getElementById("hours").innerHTML = paddedHours;
+      document.getElementById("minutes").innerHTML = paddedMinutes;
+      document.getElementById("seconds").innerHTML = paddedSeconds;
+
+      document.getElementById("days-label").innerHTML =
+        days === 1 ? "Day" : "Days";
+      document.getElementById("hours-label").innerHTML =
+        hours === 1 ? "Hour" : "Hours";
+      document.getElementById("minutes-label").innerHTML =
+        minutes === 1 ? "Minute" : "Minutes";
+      document.getElementById("seconds-label").innerHTML =
+        seconds === 1 ? "Second" : "Seconds";
+    }
+
+    // Update the countdown immediately when the page loads
+    updateCountdown();
+
+    // Update the countdown every second
+    const countdownFunction = setInterval(updateCountdown, 1000);
+  </script>
+
+  <!--end countdown logic-->
+
   <!---<div class="row">
         <div class="col">
           <h4 style="text-align: center;">
