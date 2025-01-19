@@ -285,23 +285,40 @@
 </nav>
     </header>
     <div id="content" class="text-light" style="padding-top:5rem !important;">
+
 <!--class for white background-->
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     .full-background {
-      all: unset; /* Optional, but be cautious */
+      /* /* all: unset;  */
   background-color: white;
   width: 100%; /* Spans full width of parent/container */
   /* min-height: 50vh;  */
-  margin: 0;
+  /* margin: 0; */
   /* margin-top: 50vh;  */
-  padding: 0;
-  position: relative; /* Keeps it relative for child positioning */
-  display: block;
-  overflow: hidden; /* Prevents content from overflowing */
+  /* padding: 0; */
+  /* position: relative;  */
+  /* display: block; */
+  /* overflow: hidden;  */
     }
+    .full-background, .full-background * {
+      color: black;
+      font-family: 'Merriweather', serif;
+      
+    }
+
+    body {
+      background: url("/static/comm_backgrounds/britain.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 0;
+}
   </style>
   </head>
+  
 <div class="container text-center">
   
         <div class="row" style="height: 10vh"></div>
@@ -313,8 +330,9 @@
       <img src="/static/comm_overview/britain.png" style="width: 30vw;"
         >
         <br>
-          <em style="font-size: smaller;">Source: Kronheim, Joseph. “The White Ship.” The Oldie, 8 June 2021, https://www.theoldie.co.uk/blog/the-900th-anniversary-of-the-worst-ever-royal-disaster. Accessed 16 June 2024.</em>
-      <h1>
+        <br>
+        
+      <h1 style="font-size: 3rem; text-align: center;">
         White Ship Wrecked: The British Anarchy Period, 1135
       </h1>
       
@@ -323,8 +341,8 @@
   <div class="row">
     <div class="col">
     <p class="text-light">
-      <em>Background Guide coming soon!</em>
-      <br>
+      <!-- <em>Background Guide coming soon!</em>  -->
+       <!-- uncomment this, or move it elsewhere, just experimenting with aesthetics-->
 
       <p> 
 
@@ -335,15 +353,19 @@
           >britain@ucbmun.org</a>
         </h3>-->
       <br>
+      <br>
     </p>
     </div>
   </div>
-  <!--start white background here-->
+  <!--start white background here-->  
+</div>
+<div class="full-background">
+  <div class="container text-center">
   <div class="col" style="          float: center;
   width: 98%;
   min-width: 300px;
   text-align: left;
-  background-color: #032c4e;
+  background-color: white;
   padding: 5%;
   margin: -3%;
   margin-left: 1%;
@@ -354,6 +376,13 @@
   padding-bottom: 3%
   "
 >
+<br>
+ <br>
+ <div style="font-size: 2rem;">
+  About the Committee
+ </div>
+ <br>
+
     <p>In the year 1120, the sinking of the White Ship off the Normandy coast marked a pivotal turning point in English history. On board was William Adelin, the sole legitimate son and heir of King Henry I of England. Tragically, the vessel struck a submerged rock shortly after departing from Barfleur, causing it to sink. Despite rescue efforts, including attempts to save the heir to the throne, most passengers perished in the icy waters of the English Channel.</p>
 
 <p>The death of William Adelin disrupted the English succession. With no apparent heir and lacking a strong male heir, King Henry I sought to secure the throne for his daughter Matilda. However, his passing in 1135 triggered a bitter civil war known as The Anarchy. This conflict saw Matilda contend against her cousin Stephen of Blois, who claimed the throne with the backing of numerous nobles.</p>
@@ -362,9 +391,15 @@
                                          
 <p>As a collection of prominent English political hopefuls, advisors, and allies from all sides, you are responsible for navigating this succession crisis to secure the throne. To do so, you must balance a desire for personal power with the security of the empire, as carrying on with political infighting for too long could leave the British Empire vulnerable to outside threats. Whether you decide to support Matilda, Stephen, or an unknown entity in their quest for the monarchy, you will need to act with both diplomacy and cunning as you forge alliances, negotiate power, and navigate the complex political and social climate of the time. </p>
 
+    
   </div>
   <br>
   <br>
+  <hr style="border: 0; border-top: 1px solid black; margin: 20px 0; size: 10px;">
+  <div style="font-size: 2rem; position: relative; top: 25px; ">
+    Meet the Dais
+   </div>
+  <!-- <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;"> -->
   <!-- -->
   <div class="row text-left">
     <div
@@ -374,7 +409,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -408,7 +443,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -430,8 +465,11 @@
         Rishit Pradhan
         <br>
           Crisis Director, White Ship Wrecked: The British Anarchy Period, 1135 
+        
       </div>
+      
     </div>
+    
 
 
     <!-- <div class="col-md-4">
@@ -451,7 +489,32 @@
       	White Ship Wrecked: The British Anarchy Period, 1135
       </p>
     </div> -->
+    
   </div>
+  <div class="col" style="          float: center;
+  width: 98%;
+  min-width: 300px;
+  max-width: 100%;
+  text-align: left;
+  background-color: white;
+  padding: 5%;
+  margin: -3%;
+  margin-left: 1%;
+  margin-right: -5%; 
+  padding-right: 5%; 
+  padding-left:5%; 
+  padding-top: 3%; 
+  padding-bottom: 3%; 
+  overflow-wrap: break-word;  /* Ensures long links wrap */
+  word-wrap: break-word;      /* Legacy support */
+  word-break: break-word;     /* Forces breaks within words */
+  "
+>
+<p style="font-size: 1.2em;">Image Citations</p>
+   <p>&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;<a href="Kronheim, Joseph. “The White Ship.” The Oldie, 8 June 2021, https://www.theoldie.co.uk/blog/the-900th-anniversary-of-the-worst-ever-royal-disaster. Accessed 16 June 2024." target="_blank" style="color: blue; font-size: 0.8em">Kronheim, Joseph. “The White Ship.” The Oldie, 8 June 2021, https://www.theoldie.co.uk/blog/the-900th-anniversary-of-the-worst-ever-royal-disaster. Accessed 16 June 2024.</a></p>
+   <p>&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;<a href="https://www.historyextra.com/period/page/127/" target="_blank" style="color: blue; font-size: 0.8em">https://www.historyextra.com/period/page/127/</a></p>
+
+</div>
   <br>
   <br>
   <!-- <div class="row text-left">
@@ -474,16 +537,31 @@
     </div>
   </div> -->
     <!-- -->
+    
+  </div>    
+</div>
 </div>
 
 
-
 <!--end white background block-->
+
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
+
+<head>
+  <style>
+.tail-background {
+      /* /* all: unset;  */
+  background-color: #032c4e;
+  width: 100%; /* Spans full width of parent/container */
+}
+
+  </style>
+</head>
+<div class="tail-background">
       <div class=container>
         <span class="text-light" >
           <div class="row" style="height: 5vh"></div>
@@ -514,6 +592,7 @@
           <div class="row" style="height: 5vh"></div>
         </span>
         
+      </div>
       
       </div>
     </footer>

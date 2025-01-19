@@ -285,23 +285,40 @@
 </nav>
     </header>
     <div id="content" class="text-light" style="padding-top:5rem !important;">
+
 <!--class for white background-->
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     .full-background {
-      all: unset; /* Optional, but be cautious */
+      /* /* all: unset;  */
   background-color: white;
   width: 100%; /* Spans full width of parent/container */
   /* min-height: 50vh;  */
-  margin: 0;
+  /* margin: 0; */
   /* margin-top: 50vh;  */
-  padding: 0;
-  position: relative; /* Keeps it relative for child positioning */
-  display: block;
-  overflow: hidden; /* Prevents content from overflowing */
+  /* padding: 0; */
+  /* position: relative;  */
+  /* display: block; */
+  /* overflow: hidden;  */
     }
+    .full-background, .full-background * {
+      color: black;
+      font-family: 'Merriweather', serif;
+      
+    }
+
+    body {
+      background: url("/static/comm_backgrounds/stranger_things.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 0;
+}
   </style>
   </head>
+  
 <div class="container text-center">
   
         <div class="row" style="height: 10vh"></div>
@@ -313,8 +330,9 @@
       <img src="/static/comm_overview/stranger_things.png" style="width: 30vw;"
         >
         <br>
-          <em style="font-size: smaller;">Source: Netflix, Stranger Things</em>
-      <h1>
+        <br>
+        
+      <h1 style="font-size: 3rem; text-align: center;">
         Stranger Things Have Happened: Hawkins City Council, 1986
       </h1>
       
@@ -323,8 +341,8 @@
   <div class="row">
     <div class="col">
     <p class="text-light">
-      <em>Background Guide coming soon!</em>
-      <br>
+      <!-- <em>Background Guide coming soon!</em>  -->
+       <!-- uncomment this, or move it elsewhere, just experimenting with aesthetics-->
 
       <p> 
 
@@ -335,15 +353,19 @@
           >stranger_things@ucbmun.org</a>
         </h3>-->
       <br>
+      <br>
     </p>
     </div>
   </div>
-  <!--start white background here-->
+  <!--start white background here-->  
+</div>
+<div class="full-background">
+  <div class="container text-center">
   <div class="col" style="          float: center;
   width: 98%;
   min-width: 300px;
   text-align: left;
-  background-color: #032c4e;
+  background-color: white;
   padding: 5%;
   margin: -3%;
   margin-left: 1%;
@@ -354,6 +376,13 @@
   padding-bottom: 3%
   "
 >
+<br>
+ <br>
+ <div style="font-size: 2rem;">
+  About the Committee
+ </div>
+ <br>
+
     <p>It is the summer of 1986 in Hawkins, Indiana. The once-small town known for its simplistic charm and quiet suburban life is quickly overshadowed by a string of eerie and supernatural events that continue to plague those living within Hawkins. Recently, residents have begun reporting instances of strange behavior seen within members of their community. When interviewing the reported cases, the affected victims have described themselves as going through intense as well disturbing hallucinations, which many have stated they felt as if they were re-living their darkest fears. This odd &quot;&quot;disease&quot;&quot; appears to be fatal as well, as there has been a growing correlation between the reported victims and the disfigured bodies found throughout this once heartwarming little town.</p>
 
 <p>In light of these harrowing events, it is your responsibility as a board member of the Hawkins City Council to act swiftly and decisively when addressing the concerns of the ongoing situation. With your position, you have an obligation to figure out who is behind these attacks while also uncovering the secrets within Hawkins. Although it may be argued secrets such as these should never be revealed. As a board member, you must work with the rest of the council to figure out the best way to utilize and split current resources, how to balance collaboration with law enforcement agents while maintaining transparency, what actions should be taken to ensure mass hysteria or fear-mongering doesn't fall upon the citizens, and much more.</p>
@@ -362,9 +391,15 @@
 
 <p>With the rise in fatalities, time is of the essence. Will the council act fast enough to uncover the root cause of these supernatural occurrences? Or will members put their trust in those with bloodied hands? The residents of Hawkins look to you to ensure their safety and the safety of those around them. It is your duty to take command.</p>
 
+    
   </div>
   <br>
   <br>
+  <hr style="border: 0; border-top: 1px solid black; margin: 20px 0; size: 10px;">
+  <div style="font-size: 2rem; position: relative; top: 25px; ">
+    Meet the Dais
+   </div>
+  <!-- <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;"> -->
   <!-- -->
   <div class="row text-left">
     <div
@@ -374,7 +409,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -408,7 +443,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -430,8 +465,11 @@
         Jomari Encarnacion
         <br>
           Crisis Director, Stranger Things Have Happened: Hawkins City Council, 1986 
+        
       </div>
+      
     </div>
+    
 
 
     <!-- <div class="col-md-4">
@@ -451,7 +489,32 @@
       	Stranger Things Have Happened: Hawkins City Council, 1986
       </p>
     </div> -->
+    
   </div>
+  <div class="col" style="          float: center;
+  width: 98%;
+  min-width: 300px;
+  max-width: 100%;
+  text-align: left;
+  background-color: white;
+  padding: 5%;
+  margin: -3%;
+  margin-left: 1%;
+  margin-right: -5%; 
+  padding-right: 5%; 
+  padding-left:5%; 
+  padding-top: 3%; 
+  padding-bottom: 3%; 
+  overflow-wrap: break-word;  /* Ensures long links wrap */
+  word-wrap: break-word;      /* Legacy support */
+  word-break: break-word;     /* Forces breaks within words */
+  "
+>
+<p style="font-size: 1.2em;">Image Citations</p>
+   <p>&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;<a href="Netflix, Stranger Things" target="_blank" style="color: blue; font-size: 0.8em">Netflix, Stranger Things</a></p>
+   <p>&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;<a href="https://locations.fandom.com/wiki/Hawkins_High_School" target="_blank" style="color: blue; font-size: 0.8em">https://locations.fandom.com/wiki/Hawkins_High_School</a></p>
+
+</div>
   <br>
   <br>
   <!-- <div class="row text-left">
@@ -474,16 +537,31 @@
     </div>
   </div> -->
     <!-- -->
+    
+  </div>    
+</div>
 </div>
 
 
-
 <!--end white background block-->
+
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
+
+<head>
+  <style>
+.tail-background {
+      /* /* all: unset;  */
+  background-color: #032c4e;
+  width: 100%; /* Spans full width of parent/container */
+}
+
+  </style>
+</head>
+<div class="tail-background">
       <div class=container>
         <span class="text-light" >
           <div class="row" style="height: 5vh"></div>
@@ -514,6 +592,7 @@
           <div class="row" style="height: 5vh"></div>
         </span>
         
+      </div>
       
       </div>
     </footer>

@@ -285,23 +285,40 @@
 </nav>
     </header>
     <div id="content" class="text-light" style="padding-top:5rem !important;">
+
 <!--class for white background-->
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     .full-background {
-      all: unset; /* Optional, but be cautious */
+      /* /* all: unset;  */
   background-color: white;
   width: 100%; /* Spans full width of parent/container */
   /* min-height: 50vh;  */
-  margin: 0;
+  /* margin: 0; */
   /* margin-top: 50vh;  */
-  padding: 0;
-  position: relative; /* Keeps it relative for child positioning */
-  display: block;
-  overflow: hidden; /* Prevents content from overflowing */
+  /* padding: 0; */
+  /* position: relative;  */
+  /* display: block; */
+  /* overflow: hidden;  */
     }
+    .full-background, .full-background * {
+      color: black;
+      font-family: 'Merriweather', serif;
+      
+    }
+
+    body {
+      background: url("/static/comm_backgrounds/mafia.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 0;
+}
   </style>
   </head>
+  
 <div class="container text-center">
   
         <div class="row" style="height: 10vh"></div>
@@ -313,8 +330,9 @@
       <img src="/static/comm_overview/mafia.png" style="width: 30vw;"
         >
         <br>
-          <em style="font-size: smaller;">Source: Pinterest</em>
-      <h1>
+        <br>
+        
+      <h1 style="font-size: 3rem; text-align: center;">
         Pasta and Pistols: The Sicilian Mafia, 1865
       </h1>
       
@@ -323,8 +341,8 @@
   <div class="row">
     <div class="col">
     <p class="text-light">
-      <em>Background Guide coming soon!</em>
-      <br>
+      <!-- <em>Background Guide coming soon!</em>  -->
+       <!-- uncomment this, or move it elsewhere, just experimenting with aesthetics-->
 
       <p> 
 
@@ -335,15 +353,19 @@
           >mafia@ucbmun.org</a>
         </h3>-->
       <br>
+      <br>
     </p>
     </div>
   </div>
-  <!--start white background here-->
+  <!--start white background here-->  
+</div>
+<div class="full-background">
+  <div class="container text-center">
   <div class="col" style="          float: center;
   width: 98%;
   min-width: 300px;
   text-align: left;
-  background-color: #032c4e;
+  background-color: white;
   padding: 5%;
   margin: -3%;
   margin-left: 1%;
@@ -354,6 +376,13 @@
   padding-bottom: 3%
   "
 >
+<br>
+ <br>
+ <div style="font-size: 2rem;">
+  About the Committee
+ </div>
+ <br>
+
     <p>Buongiorno Delegates!</p>
 
 <p>As dawn breaks over the Sicilian hills, the shadows of Palermo stir with whispers of power, betrayal, and ambition. You, the esteemed members of Cosa Nostra&rsquo;s inner circle, are here to navigate the treacherous waters of crime, loyalty, and influence. The year is 1865, a time of shifting power within the mafia. In this world, every glance holds a secret, every handshake seals a deal, and every smile hides a dagger. Your decisions will shape the future of the mafia empire, and nothing is as it seems. Expect a journey filled with clandestine meetings, high-stakes negotiations, and unexpected twists.</p>
@@ -361,9 +390,15 @@
 <p>Just when you think you&rsquo;ve secured your position, an unforeseen turn will challenge your wit and resolve. In the shadows, power struggles brew, and reputations are always at stake. The law enforcement&rsquo;s grip tightens, and amidst this chaos, only the cunning will survive. Every move must be meticulously planned, every word carefully chosen. The consequences are as unpredictable as they are severe. Let us embark on this extraordinary journey together, where the stakes are high and the outcomes uncertain. A Presto!</p>
 
 <p>Each participant will assume the role of a high-ranking mafia member, each with their own ambitions, loyalties, and secrets. The committee is tasked with reestablishing control, managing alliances, and securing the mafia&rsquo;s future. Key decisions must be made about whether to escalate the conflict, seek peace with rivals, or forge new alliances with international criminal networks. As government forces close in and public opinion sways, every move could mean the difference between maintaining the empire or seeing it crumble.</p>
+    
   </div>
   <br>
   <br>
+  <hr style="border: 0; border-top: 1px solid black; margin: 20px 0; size: 10px;">
+  <div style="font-size: 2rem; position: relative; top: 25px; ">
+    Meet the Dais
+   </div>
+  <!-- <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;"> -->
   <!-- -->
   <div class="row text-left">
     <div
@@ -373,7 +408,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -407,7 +442,7 @@
           width: 100%;
           min-width: 300px;
           text-align: center;
-          background-color: #032c4e;
+          background-color: white;
           padding: 5%;
           margin: 2%;
         "
@@ -429,8 +464,11 @@
         Jasmine Mah
         <br>
           Crisis Director, Pasta and Pistols: The Sicilian Mafia, 1865 
+        
       </div>
+      
     </div>
+    
 
 
     <!-- <div class="col-md-4">
@@ -450,7 +488,32 @@
       	Pasta and Pistols: The Sicilian Mafia, 1865
       </p>
     </div> -->
+    
   </div>
+  <div class="col" style="          float: center;
+  width: 98%;
+  min-width: 300px;
+  max-width: 100%;
+  text-align: left;
+  background-color: white;
+  padding: 5%;
+  margin: -3%;
+  margin-left: 1%;
+  margin-right: -5%; 
+  padding-right: 5%; 
+  padding-left:5%; 
+  padding-top: 3%; 
+  padding-bottom: 3%; 
+  overflow-wrap: break-word;  /* Ensures long links wrap */
+  word-wrap: break-word;      /* Legacy support */
+  word-break: break-word;     /* Forces breaks within words */
+  "
+>
+<p style="font-size: 1.2em;">Image Citations</p>
+   <p>&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;<a href="Pinterest" target="_blank" style="color: blue; font-size: 0.8em">Pinterest</a></p>
+   <p>&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;<a href="https://www.history.com/author/history/topics/page/183" target="_blank" style="color: blue; font-size: 0.8em">https://www.history.com/author/history/topics/page/183</a></p>
+
+</div>
   <br>
   <br>
   <!-- <div class="row text-left">
@@ -473,16 +536,31 @@
     </div>
   </div> -->
     <!-- -->
+    
+  </div>    
+</div>
 </div>
 
 
-
 <!--end white background block-->
+
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
+
+<head>
+  <style>
+.tail-background {
+      /* /* all: unset;  */
+  background-color: #032c4e;
+  width: 100%; /* Spans full width of parent/container */
+}
+
+  </style>
+</head>
+<div class="tail-background">
       <div class=container>
         <span class="text-light" >
           <div class="row" style="height: 5vh"></div>
@@ -513,6 +591,7 @@
           <div class="row" style="height: 5vh"></div>
         </span>
         
+      </div>
       
       </div>
     </footer>
