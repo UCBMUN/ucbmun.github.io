@@ -69,14 +69,6 @@ figure {
   border-radius: 10px;
 }
 
-.bg-mini {
-  background-color: transparent;
-}
-
-.bg-textcolor {
-  color: white;
-}
-
 .bg-darkish {
   background-color: #858d93 !important;
 }
@@ -104,15 +96,9 @@ figure {
     background-color: #454d54 !important;
   }
 }
-@media all and (max-width: 390px) {
+@media all and (max-width: 391px) {
   .filler-space {
     height: 15vh;
-  }
-  .bg-mini {
-    background-color: white !important;
-  }
-  .bg-textcolor {
-    color: #032c4e !important;
   }
 }
 

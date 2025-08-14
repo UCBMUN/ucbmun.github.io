@@ -11,45 +11,41 @@
       }
     </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
 
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Markazi+Text:wght@600&family=Nunito+Sans&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
 
     
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Committees Overview  - UCBMUN XXIX
+       Committees Overview  - UCBMUN XXX
     </title>
   </head>
-  <body style="padding-top: 0px; width: 100%; overflow-x: hidden;">
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
+  class="navbar navbar-expand-lg navbar-dark justify-content-center"
   style="
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    color: white !important;
+    background-color:#323232
   "
 >
   <a
     class="navbar-brand header-font align-bottom"
-    style="text-align: center"
+    style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def.png"
-      style="max-width: 18vh; width: 18vh"
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
   /></a>
-
   <button
     class="navbar-toggler"
     type="button"
@@ -59,355 +55,108 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-      <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-      <style>
-        svg {
-          fill: #ffffff;
-        }
-      </style>
-      <path
-        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-      />
-    </svg>
+    <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto justify-content-center bg-mini"></li>
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/about"
           id="ABOUTNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           ABOUT
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="ABOUTNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/about"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Overview</a
-          >
-          <a
-            class="dropdown-item"
-            href="/awards"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Awards</a
-          >
-          <a
-            class="dropdown-item"
-            href="/staff"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Secretariat</a
-          >
-          <a
-            class="dropdown-item"
-            href="/schedule"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Schedule</a
-          >
-          <a
-            class="dropdown-item"
-            href="/events"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Events</a
-          >
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
         </div>
-      </li></li>
+      </li>
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/handbook"
           id="RESOURCESNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           RESOURCES
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="RESOURCESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/handbook"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Delegate Handbook</a
-          >
-          <a
-            class="dropdown-item"
-            href="/rules"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Rules of Procedure</a
-          >
-          <a
-            class="dropdown-item"
-            href="/hotels"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Hotels and Flights</a
-          >
-          <a
-            class="dropdown-item"
-            href="/faq"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Policies</a
-          >
-          <a
-            class="dropdown-item"
-            href="/explore"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Explore SF</a
-          >
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Policies</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/committees"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >COMMITTEES</a
-        >
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/register"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >REGISTRATION</a
-        >
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/sponsors"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >SPONSORS</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="https://mun.studentorg.berkeley.edu/travel.html"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >TRAVEL TEAM</a
-        >
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light" style="padding-top:5rem !important;">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    .full-background {
-      /* /* all: unset;  */
-  background-color: white;
-  width: 100%; /* Spans full width of parent/container */
-  /* min-height: 50vh;  */
-  /* margin: 0; */
-  /* margin-top: 50vh;  */
-  /* padding: 0; */
-  /* position: relative;  */
-  /* display: block; */
-  /* overflow: hidden;  */
-    }
-    .full-background, .full-background * {
-      color: black;
-      font-family: 'Merriweather', serif;
-      
-    }
-
-    body {
-      background: url("/static/committees/committees.jpeg") no-repeat center center fixed; */
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-bottom: 0;
-}
-button {
-    background: lightgrey;
-    border: 3px solid white;
-    border-color: #FFFFFF;
-    color:  white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-  }
-  .register-button {
-            display: inline-block;
-            padding: 15px 30px;
-            text-align: center;
-            font-size: 16px;
-            color: #636363;
-            border: 2px solid #636363;
-            background-color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .register-button:hover {
-            color: white;
-            background-color: black;
-            border: 2px solid black;
-        }
-        .tail-background {
-      /* /* all: unset;  */
-  background-color: #032c4e;
-  width: 100%; /* Spans full width of parent/container */
-}
-  </style>
-  </head>
-
+    <div id="content" class="text-light">
 <div class="container">
-  <br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h1 style="font-size: 4rem; text-align: center;">
-		COMMITTEES
-	  </h1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-  </div>
   
         <div class="row" style="height: 10vh"></div>
           
 
-  <div class="full-background" style="">  
-    <div class="container">
 <div class="row">
     <div class="col">
-
+      <h4 class="display-4" style="text-align: center;">
+         COMMITTEES
+      </h4>
       <br>
     </div>
 </div>
       <div class="row">
       <div class="col-md">
-      <hr id="LARGE GENERAL ASSEMBLIES" style="width: 100%; border-color: white; border-width: 0px;" />
+      <hr id="GENERAL ASSEMBLIES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
         <div class="col">
           <br>
           <h2 style="text-align: center">
-            LARGE GENERAL ASSEMBLIES
+            GENERAL ASSEMBLIES
           </h2>
           <br>
         </div>
       </div>
 
-      <!--start white background test-->
-
-      
-
-    <div class="row" style="background-color: white; padding-top: 8vh; margin: 2%;opacity: 0.9;">          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh; margin: 2%;">          
         <div
         class="col"
         style="
@@ -419,20 +168,20 @@ button {
           text-align: center;
           padding-bottom: 5vh;
         ">
-          <a href="/committee/ilo">
-            <img src="/static/comm_overview/ilo.png" alt="ilo" style="width: 250px;" alt="International Labour Organization"
+          <a href="/committee/disec">
+            <img src="/static/comm_overview/disec.png" alt="disec" style="width: 148px;" alt="Disarmament and International Security Council"
           >
           </a>
           <br><br>
-          <a href="/committee/ilo">
-            <h4 class="text">
-              International Labour Organization
+          <a href="/committee/disec">
+            <h4 class="text-light">
+              Disarmament and International Security Council
             </h4>
           </a>
           <p>
-            <em>Chair &#8212;</em> Christina Mueller 
+            <em>Chair &#8212;</em> SARA KHEMANI 
             <br>
-            <em>Chair &#8212;</em> Mye Makornwattana
+            <em>Chair &#8212;</em> ANOUSHA ATHREYA
           </p> 
         </div>          
         <div
@@ -446,47 +195,70 @@ button {
           text-align: center;
           padding-bottom: 5vh;
         ">
-          <a href="/committee/who">
-            <img src="/static/comm_overview/who.png" alt="who" style="width: 250px;" alt="World Health Organization"
+          <a href="/committee/gadhoc">
+            <img src="/static/comm_overview/gadhoc.png" alt="gadhoc" style="width: 148px;" alt="General Assembly Ad-Hoc of the Director General"
           >
           </a>
           <br><br>
-          <a href="/committee/who">
-            <h4 class="text">
-              World Health Organization
+          <a href="/committee/gadhoc">
+            <h4 class="text-light">
+              General Assembly Ad-Hoc of the Director General
             </h4>
           </a>
           <p>
-            <em>Chair &#8212;</em> Arhant Ghanta 
+            <em>Chair &#8212;</em> CHRISTINA MUELLER 
             <br>
-            <em>Chair &#8212;</em> Anousha Athreya
+            <em>Chair &#8212;</em> DYLAN NOKELBY
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5vh;
+        ">
+          <a href="/committee/unicef">
+            <img src="/static/comm_overview/unicef.png" alt="unicef" style="width: 148px;" alt="United Nations Children&#39;s Fund"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/unicef">
+            <h4 class="text-light">
+              United Nations Children's Fund
+            </h4>
+          </a>
+          <p>
+            <em>Chair &#8212;</em> ADINATH LANE 
+            <br>
+            <em>Chair &#8212;</em> SAMEERA MENON
           </p> 
         </div>
     </div>
       <div class="row">
       <div class="col-md">
-      <hr id="MIDSIZE GENERAL ASSEMBLIES/SPECIALIZED BODIES" style="width: 100%; border-color: white; border-width: 0px;" />
+      <hr id="SPECIALIZED BODIES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
         <div class="col">
           <br>
           <h2 style="text-align: center">
-            MIDSIZE GENERAL ASSEMBLIES/SPECIALIZED BODIES
+            SPECIALIZED BODIES
           </h2>
           <br>
         </div>
       </div>
 
-      <!--start white background test-->
-
-      
-
-    <div class="row" style="background-color: white; padding-top: 8vh; margin: 2%;opacity: 0.9;">          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh; margin: 2%;">          
         <div
         class="col"
         style="
-          padding-left: 2.5%;
+          padding-left: 5%;
           padding-right: 5%;
           float: center;
           width: 100%;
@@ -494,26 +266,26 @@ button {
           text-align: center;
           padding-bottom: 5%;
         ">
-          <a href="/committee/food">
-            <img src="/static/comm_overview/food.png" alt="food" style="width: 300px;" alt="Caviar, Champagne, and Truffles: Les Excellentes Cuisines du Monde"
+          <a href="/committee/panem">
+            <img src="/static/comm_overview/panem.png" alt="panem" style="width: 148px;" alt="From Ashes to Acts: the Panem Peace Conference"
           >
           </a>
           <br><br>
-          <a href="/committee/food">
-            <h4 class="text">
-              Caviar, Champagne, and Truffles: Les Excellentes Cuisines du Monde
+          <a href="/committee/panem">
+            <h4 class="text-light">
+              From Ashes to Acts: the Panem Peace Conference
             </h4>
           </a>
-          <p> 
-            <em>Chair &#8212;</em> Jackson Englar-Carlson
+          <p>
+            <em>Chair &#8212;</em> ESHAL NAQVI
             <br>
-            <em>Chair &#8212;</em> Olivia Bruner
+            <em>Chair &#8212;</em> ANNA LIEGGI
           </p> 
         </div>          
         <div
         class="col"
         style="
-          padding-left: 2.5%;
+          padding-left: 5%;
           padding-right: 5%;
           float: center;
           width: 100%;
@@ -521,26 +293,26 @@ button {
           text-align: center;
           padding-bottom: 5%;
         ">
-          <a href="/committee/hollywood">
-            <img src="/static/comm_overview/hollywood.png" alt="hollywood" style="width: 300px;" alt="Lights, Camera, Strike: The 2023 Hollywood Strikes"
+          <a href="/committee/unsc">
+            <img src="/static/comm_overview/unsc.png" alt="unsc" style="width: 148px;" alt="License to Quill: Congress of Vienna, 1812&amp;mdash;United Nations Security Council"
           >
           </a>
           <br><br>
-          <a href="/committee/hollywood">
-            <h4 class="text">
-              Lights, Camera, Strike: The 2023 Hollywood Strikes
+          <a href="/committee/unsc">
+            <h4 class="text-light">
+              License to Quill: Congress of Vienna, 1812&mdash;United Nations Security Council
             </h4>
           </a>
-          <p> 
-            <em>Chair &#8212;</em> Joanna Zhu
+          <p>
+            <em>Chair &#8212;</em> PALOMA CORONA
             <br>
-            <em>Chair &#8212;</em> Sara Khemani
+            <em>Crisis Director &#8212;</em> MARVIN YEN
           </p> 
         </div>          
         <div
         class="col"
         style="
-          padding-left: 2.5%;
+          padding-left: 5%;
           padding-right: 5%;
           float: center;
           width: 100%;
@@ -548,26 +320,26 @@ button {
           text-align: center;
           padding-bottom: 5%;
         ">
-          <a href="/committee/adhoc_ga">
-            <img src="/static/comm_overview/adhoc_ga.png" alt="adhoc_ga" style="width: 300px;" alt="Ad&amp;ndash;Hoc General Assembly of the Director&amp;ndash;General"
+          <a href="/committee/trump">
+            <img src="/static/comm_overview/trump.png" alt="trump" style="width: 148px;" alt="“Solving American Carnage”: the First Cabinet of Donald Trump"
           >
           </a>
           <br><br>
-          <a href="/committee/adhoc_ga">
-            <h4 class="text">
-              Ad&ndash;Hoc General Assembly of the Director&ndash;General
+          <a href="/committee/trump">
+            <h4 class="text-light">
+              “Solving American Carnage”: the First Cabinet of Donald Trump
             </h4>
           </a>
-          <p> 
-            <em>Chair &#8212;</em> Paloma Corona
+          <p>
+            <em>Chair &#8212;</em> JACKSON ENGLAR-CARLSON
             <br>
-            <em>Chair &#8212;</em> Drishti Gupta
+            <em>Chair &#8212;</em> OLIVIA BRUNER
           </p> 
         </div>
     </div>
       <div class="row">
       <div class="col-md">
-      <hr id="CRISIS COMMITTEES" style="width: 100%; border-color: white; border-width: 0px;" />
+      <hr id="CRISIS COMMITTEES" style="width: 100%; border-color: white; border-width: 2px;" />
       </div>
       </div>
       <div class="row">
@@ -580,260 +352,7 @@ button {
         </div>
       </div>
 
-      <!--start white background test-->
-
-      
-
-    <div class="row" style="background-color: white; padding-top: 8vh; margin: 2%;opacity: 0.9;">          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/alexander">
-            <img src="/static/comm_overview/alexander.png" alt="alexander" style="width: 240px;" alt="Alexander the Not-So-Great: The Macedonian Invasion of India, 327 BCE
-"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/alexander">
-            <h4 class="text">
-              Alexander the Not-So-Great: The Macedonian Invasion of India, 327 BCE
-
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Sam Wang
-            <br> 
-            <em>Crisis Director &#8212;</em> Maanas Shah
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/theranos">
-            <img src="/static/comm_overview/theranos.png" alt="theranos" style="width: 240px;" alt="Now We&#39;ve Got Bad Blood: Theranos Board of Directors"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/theranos">
-            <h4 class="text">
-              Now We've Got Bad Blood: Theranos Board of Directors
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Emma Solomon
-            <br> 
-            <em>Crisis Director &#8212;</em> Jade Mon
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/pedro">
-            <img src="/static/comm_overview/pedro.png" alt="pedro" style="width: 240px;" alt="Little Prince, Big Problems: The Brazilian Regency Era, 1831"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/pedro">
-            <h4 class="text">
-              Little Prince, Big Problems: The Brazilian Regency Era, 1831
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Mckenzie Diep
-            <br> 
-            <em>Crisis Director &#8212;</em> Jayda Carroll
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/stranger_things">
-            <img src="/static/comm_overview/stranger_things.png" alt="stranger_things" style="width: 240px;" alt="Stranger Things Have Happened: Hawkins City Council, 1986"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/stranger_things">
-            <h4 class="text">
-              Stranger Things Have Happened: Hawkins City Council, 1986
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Teeron Hajebi
-            <br> 
-            <em>Crisis Director &#8212;</em> Jomari Encarnacion
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/mafia">
-            <img src="/static/comm_overview/mafia.png" alt="mafia" style="width: 240px;" alt="Pasta and Pistols: The Sicilian Mafia, 1865"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/mafia">
-            <h4 class="text">
-              Pasta and Pistols: The Sicilian Mafia, 1865
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Dylan Nokleby
-            <br> 
-            <em>Crisis Director &#8212;</em> Jasmine Mah
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/britain">
-            <img src="/static/comm_overview/britain.png" alt="britain" style="width: 240px;" alt="White Ship Wrecked: The British Anarchy Period, 1135"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/britain">
-            <h4 class="text">
-              White Ship Wrecked: The British Anarchy Period, 1135
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Gargee Piplani
-            <br> 
-            <em>Crisis Director &#8212;</em> Rishit Pradhan
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/zombies">
-            <img src="/static/comm_overview/zombies.png" alt="zombies" style="width: 240px;" alt="JCC–Brainz over Brawn: The Siege of San Francisco, Zombies"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/zombies">
-            <h4 class="text">
-              JCC–Brainz over Brawn: The Siege of San Francisco, Zombies
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Josephine Yasuda
-            <br> 
-            <em>Crisis Director &#8212;</em> Milad Brown 
-            <br>
-            <em>Coordinating Crisis Director</em> &#8212; Claire Sawyer
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/humans">
-            <img src="/static/comm_overview/humans.png" alt="humans" style="width: 240px;" alt="JCC–Brainz over Brawn: The Siege of San Francisco, Humans"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/humans">
-            <h4 class="text">
-              JCC–Brainz over Brawn: The Siege of San Francisco, Humans
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Akash Mahajan
-            <br> 
-            <em>Crisis Director &#8212;</em> Ernesto Cortez 
-            <br>
-            <em>Coordinating Crisis Director</em> &#8212; Claire Sawyer
-          </p> 
-        </div>          
-        <div
-        class="col"
-        style="
-          padding-left: 5%;
-          padding-right: 5%;
-          float: center;
-          width: 100%;
-          min-width: 350px;
-          text-align: center;
-          padding-bottom: 5%;
-        ">
-          <a href="/committee/unsc">
-            <img src="/static/comm_overview/unsc.png" alt="unsc" style="width: 240px;" alt="This is Guinea-Bissau Crazy: United Nations Security Council, 2013"
-          >
-          </a>
-          <br><br>
-          <a href="/committee/unsc">
-            <h4 class="text">
-              This is Guinea-Bissau Crazy: United Nations Security Council, 2013
-            </h4>
-          </a>
-          <p> 
-            <em>Chair &#8212;</em> Nishita Belur
-            <br> 
-            <em>Crisis Director &#8212;</em> Marvin Yen
-          </p> 
-        </div>          
+    <div class="row" style="background-color: #032c4e; padding-top: 5vh; margin: 2%;">          
         <div
         class="col"
         style="
@@ -846,19 +365,239 @@ button {
           padding-bottom: 5%;
         ">
           <a href="/committee/adhoc">
-            <img src="/static/comm_overview/adhoc.png" alt="adhoc" style="width: 240px;" alt="Ad&amp;ndash;Hoc Committee of the Secretary&amp;ndash;General"
+            <img src="/static/comm_overview/adhoc.png" alt="adhoc" style="width: 148px;" alt="Ad&amp;ndash;Hoc of the Secretary&amp;ndash;General"
           >
           </a>
           <br><br>
           <a href="/committee/adhoc">
-            <h4 class="text">
-              Ad&ndash;Hoc Committee of the Secretary&ndash;General
+            <h4 class="text-light">
+              Ad&ndash;Hoc of the Secretary&ndash;General
             </h4>
           </a>
-          <p>
-            <em>Chair &#8212;</em> Harsh Kumbhat
+          <p> 
+            <em>Chair &#8212;</em> NICHOLAS CARONE  
             <br>
-            <em>Crisis Director &#8212;</em> Sehr Ali Dada
+            <em>Crisis Director &#8212;</em> RORY MILLER
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/ghosts">
+            <img src="/static/comm_overview/ghosts.png" alt="ghosts" style="width: 148px;" alt="Grave Concerns: A Paranormal Crisis in Mexico City"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/ghosts">
+            <h4 class="text-light">
+              Grave Concerns: A Paranormal Crisis in Mexico City
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> NASTAASIA HAQ  
+            <br>
+            <em>Crisis Director &#8212;</em> TYLER PAING
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/stark">
+            <img src="/static/comm_overview/stark.png" alt="stark" style="width: 148px;" alt="Iron Management: Stark Industries Board of Directors"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/stark">
+            <h4 class="text-light">
+              Iron Management: Stark Industries Board of Directors
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> TANYA ANAND  
+            <br>
+            <em>Crisis Director &#8212;</em> KARIS MORASCH
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/atlantis">
+            <img src="/static/comm_overview/atlantis.png" alt="atlantis" style="width: 148px;" alt="Making Waves: the Emergence of Atlantis"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/atlantis">
+            <h4 class="text-light">
+              Making Waves: the Emergence of Atlantis
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> OLIVIA LAPINSKY  
+            <br>
+            <em>Crisis Director &#8212;</em> AVA VOLMAN
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/caliph">
+            <img src="/static/comm_overview/caliph.png" alt="caliph" style="width: 148px;" alt="Sacred Souls and Fickle Fools: The House of Wisdom Crisis in the Caliph&#39;s Court"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/caliph">
+            <h4 class="text-light">
+              Sacred Souls and Fickle Fools: The House of Wisdom Crisis in the Caliph's Court
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> MAANAS SHAH  
+            <br>
+            <em>Crisis Director &#8212;</em> ANUSHKA RAJASEKHAR
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/samurai">
+            <img src="/static/comm_overview/samurai.png" alt="samurai" style="width: 148px;" alt="The Last Samurai: Republic of Ezo, 1869"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/samurai">
+            <h4 class="text-light">
+              The Last Samurai: Republic of Ezo, 1869
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> GARGEE PIPLANI  
+            <br>
+            <em>Crisis Director &#8212;</em> WILL BAKER
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/tsar">
+            <img src="/static/comm_overview/tsar.png" alt="tsar" style="width: 148px;" alt="The Snow Glows Red on the Mountain Tonight: Tsar Nicholas II&#39;s Council, 1905"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/tsar">
+            <h4 class="text-light">
+              The Snow Glows Red on the Mountain Tonight: Tsar Nicholas II's Council, 1905
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> MILAD BROWN  
+            <br>
+            <em>Crisis Director &#8212;</em> RISHIT PRADHAN
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/capulets">
+            <img src="/static/comm_overview/capulets.png" alt="capulets" style="width: 148px;" alt="Violent Delights, Violent Ends: Romeo and Juliet, House of Capulets- JCC"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/capulets">
+            <h4 class="text-light">
+              Violent Delights, Violent Ends: Romeo and Juliet, House of Capulets- JCC
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> SOPHIA MARTINEZ  
+            <br>
+            <em>Crisis Director &#8212;</em> IAN STURAK 
+            <br>
+            <em>Coordinating Crisis Director</em> &#8212; PATRICK BENNETT
+          </p> 
+        </div>          
+        <div
+        class="col"
+        style="
+          padding-left: 5%;
+          padding-right: 5%;
+          float: center;
+          width: 100%;
+          min-width: 350px;
+          text-align: center;
+          padding-bottom: 5%;
+        ">
+          <a href="/committee/montagues">
+            <img src="/static/comm_overview/montagues.png" alt="montagues" style="width: 148px;" alt="Violent Delights, Violent Ends: Romeo and Juliet, House of Montagues- JCC"
+          >
+          </a>
+          <br><br>
+          <a href="/committee/montagues">
+            <h4 class="text-light">
+              Violent Delights, Violent Ends: Romeo and Juliet, House of Montagues- JCC
+            </h4>
+          </a>
+          <p> 
+            <em>Chair &#8212;</em> GENEVIEVE STUBBLEFIELD  
+            <br>
+            <em>Crisis Director &#8212;</em> ANITA WHITE 
+            <br>
+            <em>Coordinating Crisis Director</em> &#8212; PATRICK BENNETT
           </p> 
         </div>
     </div>
@@ -869,47 +608,42 @@ button {
     </div>
   </div>
 </div>
-</div>
-</div>
-<!--end white background test-->
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
-<div class="tail-background">
-  <div class=container>
-    <span class="text" >
-      <div class="row" style="height: 5vh"></div>
-      <div class="row">
-        <div class="col" style="width: 20vw">
-        <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
-          <img
-            src="/static/instagram.png"
-            style="width: 3vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@ucbmun</strong>
-        </a>
-        </div>
-        <div class="col" style="width: 20vw"></div>
-        <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
-          <img
-            src="/static/facebook.png"
-            style="width: 2vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@UCBMUNconference</strong>
-        </a>
-        </div>
-      </div>
-      <div class="row" style="height: 5vh"></div>
-      <p style="margin-top: 12px; text-align: center; color: white">
-        &copy; Copyright 2023 by UC Berkeley Model UN
-      </p>
-      <div class="row" style="height: 5vh"></div>
-    </span>
-    
-  </div>
-  
+      <div class=container>
+        <span class="text-light" >
+          <div class="row" style="height: 5vh"></div>
+          <div class="row">
+            <div class="col" style="width: 20vw">
+            <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
+              <img
+                src="/static/instagram.png"
+                style="width: 3vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@ucbmun</strong>
+            </a>
+            </div>
+            <div class="col" style="width: 20vw"></div>
+            <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
+              <img
+                src="/static/facebook.png"
+                style="width: 2vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@UCBMUNconference</strong>
+            </a>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center; color: white">
+            &copy; Copyright 2025 by UC Berkeley Model UN
+          </p>
+          <div class="row" style="height: 5vh"></div>
+        </span>
+        
+      
       </div>
     </footer>
     </div>
@@ -917,5 +651,10 @@ button {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <!-- <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script> -->
   </body>
 </html>

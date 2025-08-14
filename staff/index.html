@@ -11,45 +11,41 @@
       }
     </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
 
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Markazi+Text:wght@600&family=Nunito+Sans&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
 
     
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Secretariat  - UCBMUN XXIX
+       Secretariat  - UCBMUN XXX
     </title>
   </head>
-  <body style="padding-top: 0px; width: 100%; overflow-x: hidden;">
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
+  class="navbar navbar-expand-lg navbar-dark justify-content-center"
   style="
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    color: white !important;
+    background-color:#323232
   "
 >
   <a
     class="navbar-brand header-font align-bottom"
-    style="text-align: center"
+    style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def.png"
-      style="max-width: 18vh; width: 18vh"
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
   /></a>
-
   <button
     class="navbar-toggler"
     type="button"
@@ -59,1020 +55,599 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-      <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-      <style>
-        svg {
-          fill: #ffffff;
-        }
-      </style>
-      <path
-        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-      />
-    </svg>
+    <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto justify-content-center bg-mini"></li>
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/about"
           id="ABOUTNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           ABOUT
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="ABOUTNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/about"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Overview</a
-          >
-          <a
-            class="dropdown-item"
-            href="/awards"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Awards</a
-          >
-          <a
-            class="dropdown-item"
-            href="/staff"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Secretariat</a
-          >
-          <a
-            class="dropdown-item"
-            href="/schedule"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Schedule</a
-          >
-          <a
-            class="dropdown-item"
-            href="/events"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Events</a
-          >
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
         </div>
-      </li></li>
+      </li>
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/handbook"
           id="RESOURCESNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           RESOURCES
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="RESOURCESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/handbook"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Delegate Handbook</a
-          >
-          <a
-            class="dropdown-item"
-            href="/rules"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Rules of Procedure</a
-          >
-          <a
-            class="dropdown-item"
-            href="/hotels"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Hotels and Flights</a
-          >
-          <a
-            class="dropdown-item"
-            href="/faq"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Policies</a
-          >
-          <a
-            class="dropdown-item"
-            href="/explore"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Explore SF</a
-          >
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Policies</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/committees"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >COMMITTEES</a
-        >
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/register"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >REGISTRATION</a
-        >
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/sponsors"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >SPONSORS</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="https://mun.studentorg.berkeley.edu/travel.html"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >TRAVEL TEAM</a
-        >
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light" style="padding-top:5rem !important;">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    .full-background {
-      /* /* all: unset;  */
-  background-color: white;
-  width: 100%; /* Spans full width of parent/container */
-  /* min-height: 50vh;  */
-  /* margin: 0; */
-  /* margin-top: 50vh;  */
-  /* padding: 0; */
-  /* position: relative;  */
-  /* display: block; */
-  /* overflow: hidden;  */
-    }
-    .full-background, .full-background * {
-      color: black;
-      font-family: 'Merriweather', serif;
-      
-    }
-
-    body {
-      background: url("/static/about_pics/secretariat.jpg") no-repeat center center fixed; */
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-bottom: 0;
-}
-button {
-    background: lightgrey;
-    border: 3px solid white;
-    border-color: #FFFFFF;
-    color:  white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-  }
-  .register-button {
-            display: inline-block;
-            padding: 15px 30px;
-            text-align: center;
-            font-size: 16px;
-            color: #636363;
-            border: 2px solid #636363;
-            background-color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .register-button:hover {
-            color: white;
-            background-color: black;
-            border: 2px solid black;
-        }
-        .tail-background {
-      /* /* all: unset;  */
-  background-color: #032c4e;
-  width: 100%; /* Spans full width of parent/container */
-}
-  </style>
-  </head>
+    <div id="content" class="text-light">
 <div class="container">
-  </div>
-  <br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h1 style="font-size: 4rem; text-align: center;">
-		SECRETARIAT
-	  </h1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
   
         <div class="row" style="height: 10vh"></div>
           
 
-  <div class="full-background" style="">
-    <div class="container">
   <div class="row">
     <div class="col">
-      
+      <h4 class="display-4 text-center">
+          SECRETARIAT
+      </h4>
     </div>
   </div>
 
-  <div
-    class="row"
-    style="
-      padding-top: 5%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/adi.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h4>Adinath Lane</h4>
-      Secretary-General
-      <p>
-        <a href="mailto: secretarygeneral@mun.berkeley.edu"
-          >secretarygeneral@mun.berkeley.edu</a
-        >
-      </p>
-      <div style="text-align: left">
-        Adi <em> (he/him/his) </em> is a third-year at Cal majoring in Molecular
-        and Cell Biology as well as Public Health! Adi entered UCBMUN in his
-        freshman year having never participated in Model United Nations. He’s so
-        glad that he joined—the community has some of the most talented,
-        friendly, and creative individuals he has ever met. Adi has loved
-        staffing prior UCBMUNs as a USG and ACD (Go Goa!); born in Delhi but
-        raised in the Bay, he appreciates how MUN
-        committees capture the collaboration and communication necessary when
-        people with very different perspectives interact. Outside of MUN, you’ll
-        find him listening to his Dad Rock and Bollywood playlists, taking power
-        naps in the sun, and walking through Berkeley’s dinosaur exhibits. Your
-        Secretary-General is incredibly excited for a fantastic UCBMUN XXIX, and
-        can't wait to see you then!
+  <div class="row" style="padding-top: 5%; padding-left: 5%; padding-right: 5%; column-gap: 10vw;">
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/audrey.png"
+            alt="Audrey Watson headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Audrey Watson</h4>
+        <p><em>Secretary General</em></p>
+        <p>
+          
+            <a href="mailto: secretarygeneral@mun.berkeley.edu">secretarygeneral@mun.berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Audrey (she/her/hers) is a third-year student at Cal studying Neuroscience. Audrey is from Santa Cruz, California, and participated in MUN for 3 years in high school, where she grew her love for political debate and pretending to solve world issues on the weekend. Audrey joined UCBMUN in her freshman year after looking for an outlet for her love of debate, and she has loved learning about college MUN through her time staffing UCBMUN as an ACD and a USG of Crisis in the past two UCBMUNs. In her free time, you will probably find Audrey behind her camera taking photos for her portfolio, obsessively watching college women's basketball to prepare for March, or curled up with a blanket and a good book. She is so proud of the hard work that her incredible co-lead, Cheyenne, and wonderful Secretariat have put into this conference and cannot wait to see what UCBMUN XXX has in store for us! See you all in March!</p>
+
+            </div>
+          
+        </p>
       </div>
-    </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/cheyenne.png"
+            alt="Cheyenne Jemison headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Cheyenne Jemison</h4>
+        <p><em>Director General</em></p>
+        <p>
+          
+            <a href="mailto: directorgeneral@mun.berkeley.edu">directorgeneral@mun.berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Cheyene (she/her/hers) is a junior from Inglewood, California (Home of the SoFi) majoring in Political Science and History. She has always wanted to do MUN since high school, but never got the chance, so here she is now competing on the collegiate scale! What Cheyene enjoys most about MUN is meeting people from all over the circuit and solving the goofiest of crisis problems. Her interests outside of MUN are reading, exploring SF, thrifting, and playing video games! She is so delighted to be your Director General for UCBMUN XXX!</p>
 
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/olivia.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h4>Olivia Lapinsky</h4>
-      Director-General
-      <p>
-        <a href="mailto: directorgeneral@mun.berkeley.edu"
-          >directorgeneral@mun.berkeley.edu</a
-        >
-      </p>
-      <div style="text-align: left">
-        Olivia <em> (she/her/hers) </em> is a third-year at UC Berkeley
-        originally from Seattle, Washington studying Political Economy and
-        Public Policy. As a high school Mock Trial kid, she developed a love for
-        debate and civic discourse that drew her to UCBMUN during the spring of
-        her freshman year. Since then, she has competed, staffed both UCBMUN and
-        the club's high school conference, and most recently served as Chief of
-        Staff Generalized for UCBMUN XXVIII. She has met some of her best
-        friends in UCBMUN and truly appreciates the incredible people in the
-        organization. In her free time, you can find her baking, watching murder
-        mystery movies, completing her daily rotation of NYT mini games, and
-        annoying her friends with her Taylor Swift obsession. She is so excited
-        to be your Director-General and is confident that UCBMUN XXIX will be
-        the best yet!
+            </div>
+          
+        </p>
       </div>
-    </div>
-  </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/nicholas.png"
+            alt="Nicholas Carone headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Nicholas Carone</h4>
+        <p><em>President</em></p>
+        <p>
+          
+            <a href="mailto: nicholascarone@berkeley.edu">nicholascarone@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Nick is a third-year student at Berkeley, majoring in Political Science and Film. Nick joined UCBMUN in his freshman year, spring 2024, and has loved it ever since. He joined primarily as a competitive delegate but found a sincere love for balancing both conference and competition, last spring having served as USG of Crisis on UCBMUN’s secretariat. This organization has allowed Nicholas to find a community of talented and hardworking individuals, and he is endlessly grateful for the organization and every person he has had the opportunity to meet through MUN. In his free time, Nick can be found on a basketball court, rolling on a jiu-jitsu mat, or watching way too long, way too niche YouTube video essays. He is super excited to see what amazing ideas our visiting delegates bring to the table at UCBMUN XXX!</p>
 
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/christina.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Christina Mueller</h3>
-      Co-President
-      <p>
-        <a href="mailto: christinajm@berkeley.edu">christinajm@berkeley.edu</a>
-      </p>
-      <div style="text-align: left">
-        Christina <em>(she/her/hers)</em> is a third-year at Cal, majoring in
-        Political Science and minoring in Public Policy and Gender & Women’s
-        Studies. Christina joined UCBMUN as soon as she came to Berkeley, in
-        Fall 2022, and has loved it ever since. She joined primarily as a
-        competitive delegate but found a sincere love in balancing both
-        conference and competition having served as a Chair for the past two
-        iterations of UCBMUN. This organization has allowed Christina to find a
-        community of incredible and hardworking individuals, and she is
-        endlessly grateful for the organization and every person she has had the
-        opportunity to meet through MUN. In her free time, you can find her
-        sitting on the Glade, curating her Spotify playlist, and spending time
-        with friends. She is super excited to see what is in store for this
-        year’s UCBMUN and knows it will be the best one yet!
+            </div>
+          
+        </p>
       </div>
-    </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/katie.png"
+            alt="Katie Tran headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Katie Tran</h4>
+        <p><em>Chief of Staff—Generalized</em></p>
+        <p>
+          
+            <a href="mailto: katieqtr@berkeley.edu">katieqtr@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Katie Tran (she/her/hers) is a Junior from Orange County, California, majoring in Psychology and planning to minor in Education. She joined UCBMUN to have an excuse to dress up in WBA often, but stayed for the lovely people, circuit-wide, amazing experiences, and the energy rush within the committee. Outside of UCBMUN, you'll spot Katie on campus with an iced matcha latte in her hand. You'll spot Katie off campus with the same. You'll probably spot Katie with an iced matcha latte in hand around UCBMUN XXX as well. In her free time, Katie circles through her dozens of arts and crafts hobbies, enjoys shopping and thrifting, and also plays video games! You may or may not see her on Cookie Run Kingdom during UCBMUN XXX's lunchtime. Katie is extremely excited to staff UCBMUN XXX as Chief of Staff Generalized, and can't wait to see you at the ODS table!</p>
 
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/laia.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Laia Malburet-Breuil</h3>
-      Co-President
-      <p>
-        <a href="mailto: laia.malburetbreuil@berkeley.edu"
-          >laia.malburetbreuil@berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Laia <em>(she/her)</em> is a political science and media studies major
-        entering her fourth and last year at Cal. She joined UCBMUN her very
-        first semester and has found her closest friends in the organization.
-        She has staffed the past three iterations of UCBMUN, and also acted as
-        the Secretary-General of our high school conference, BearMUN 2023. She
-        is delighted to be staffing Ad-Hoc GA for the second time this year! In
-        addition to staffing, Laia also enjoys competing in committees of all
-        kinds on the circuit. In her free time, she loves to go out with
-        friends, read, and fulfill her challenge of studying at every library on
-        campus!
-      </p>
-    </div>
-  </div>
-
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/cate.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Cate Menotti</h3>
-      Chief of Staff, Generalized
-      <p>
-        <a href="mailto: catecm@berkeley.edu">catecm@berkeley.edu</a>
-      </p>
-      <p style="text-align: left">
-        Cate <em> (she/her/hers) </em> is a freshman at UC Berkeley from Albany,
-        California (just north of Berkeley!) studying Political Science and Data
-        Science. Although the past year was her first year ever in MUN, she
-        joined after years in high school participating in Youth & Government,
-        which sparked her interest in the club. Outside of UCBMUN, you might
-        find Cate exploring the Bay Area and its beautiful parks, reading,
-        listening to music, going to spin and pilates classes, or just hanging
-        out with friends around campus. She can't wait to to meet you all and
-        help make a successful UCBMUN XXIX alongside the rest of secretariat!
-      </p>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/nastaasia.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Nastaasia Haq</h3>
-      Chief of Staff, External
-      <p>
-        <a href="mailto: registration@mun.berkeley.edu"
-          >registration@mun.berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Nastaasia <em>(she/her/hers)</em> is a sophomore from Lahore, Pakistan,
-        studying Chemical Engineering, though she is seriously considering
-        switching to the pre-med track. Having participated in Model UN since
-        the eighth grade, she is a self-proclaimed "professional yapper". Apart
-        from UCBMUN, you can find her learning Bollywood dance routines all over
-        campus or talking everybody's ear off about her unhealthy obsession with
-        axolotls. She is a massive fan of cricket (always supporting Pakistan)
-        and can often be found stressing out during the last few overs of a
-        match. Nastaasia is super excited to meet everyone and hopes to make
-        this year’s UCBMUN the most memorable one yet!
-      </p>
-    </div>
-  </div>
-
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/romi.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Romi Lisboa</h3>
-      Chief of Staff, Internal
-      <p>
-        <a href="mailto: romilisboa@berkeley.edu">romilisboa@berkeley.edu</a>
-      </p>
-      <div style="text-align: left">
-        Romi <em>(she/her/hers)</em> is a sophomore at UC Berkeley majoring in
-        English and Political Science. Originally from Torrance, California,
-        Romi has come to love the vibrant atmosphere of Berkeley, though she
-        cherishes her hometown and its beautiful beaches. She joined UCBMUN her
-        freshman year to explore new activities at Cal and has fallen in love
-        with staffing and competing ever since. Outside of MUN, Romi enjoys
-        reading and writing short fiction, swimming, listening to a wide range
-        of music (whether 60s/70s rock or musical theatre soundtracks), writing
-        for The Daily Californian, and taking bike rides along the beach! Romi
-        is incredibly excited to help make conference a fun experience for
-        delegates and can’t wait to see what’s in store for UCBMUN XXIX!
+            </div>
+          
+        </p>
       </div>
-    </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/hannah.png"
+            alt="Hannah Fielder headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Hannah Fielder</h4>
+        <p><em>Chief of Staff—Internal</em></p>
+        <p>
+          
+            <a href="mailto: hannahaudreyfielder@berkeley.edu">hannahaudreyfielder@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Hannah (she/her/hers) is a sophomore at UC Berkeley majoring in English with a minor in Politics, Philosophy, and Law. Hannah is originally from Long Beach, California,where she enjoys frolicking on the Southern California beaches or driving down Pacific Coast Highway listening to music. Despite being from sunny Southern California, she has a special love for the vibrance, beauty, and nature Berkeley provides. She joined UCBMUN in her freshman year to expand her interests in policy and debating. Since then, Hannah has grown a special love for MUN, especially when it comes to staffing! In her free time, you can find Hannah listening to music on her stereo system, remixing songs that probably shouldn’t be mixed together, or reading a Franz Kafka book. Hannah is super excited to be your Chief of Staff, Internal, and can’t wait to see what UCBMUN XXX has in store for all you amazing delegates!</p>
 
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/sameera.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Sameera Menon</h3>
-      USG of GA and Specialized Bodies
-      <p>
-        <a href="mailto: sameeramenon@berkeley.edu"
-          >sameeramenon@berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Sameera <em>(she/her/hers)</em> is a junior from Orange County,
-        California majoring in Public Health. Sameera joined UCBMUN in an effort
-        to expand her interests, and stayed for the community and worldly views
-        it offers. Sameera’s perfect day starts with thrifting, followed by
-        painting in a park and completed with a froyo run. Her current
-        obsessions are: cherries, kitschy room decor, and making UCBMUN XXIX the
-        best conference yet!
-      </p>
-    </div>
-  </div>
-
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/audrey.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Audrey Watson</h3>
-      USG of Crisis
-      <p>
-        <a href="mailto: audreywatson@berkeley.edu"
-          >audreywatson@berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Audrey Watson <em>(she/her/hers)</em> is a second year at Cal studying
-        Chemistry. Audrey is originally from Santa Cruz, California but
-        surprisingly does not know how to surf. In high school she participated
-        in MUN for 3 years and that is where she grew her love for political
-        debate and pretending to solve world issues on the weekend. Audrey
-        joined UCBMUN in her freshman year after looking for an outlet for her
-        love of debate and she has loved learning about college MUN through her
-        time staffing UCBMUN last year (shoutout to the T-series committee!). In
-        her free time, you will probably find Audrey behind her camera taking
-        photos for her portfolio or curled up with a blanket and a good book.
-        She is so excited for what this UCBMUN has in store this year and she
-        cannot wait to be your USG and have the best time!
-      </p>
-    </div>
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/anushka.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Anushka Rajasekhar</h3>
-      USG of Crisis
-      <p>
-        <a href="mailto: anushkarv@berkeley.edu">anushkarv@berkeley.edu</a>
-      </p>
-      <div style="text-align: left">
-        Anushka <em>(she/her)</em> is a 2nd year here at Cal, from the Bay Area,
-        majoring in Geophysics with a minor in Philosophy. She has been dabbling
-        in MUN since middle school, and has loved the community and silliness
-        that she has found with collegiate MUN. She is an absolute volcano
-        enthusiast, and will engage in anything volcano, lava, or geology
-        related (go nature). She is also pre-law and loves literature -- she
-        will happily engage in any and all moral and legal debates. In her free
-        time, Anushka loves to explore the outdoors, eat sugar, read
-        philosophical literature (Kierkegaard fanatic), and endlessly make
-        random playlists. She is super excited to be your USG of Crisis and make
-        UCBMUN XXIX an enjoyable conference for all delegates!
+            </div>
+          
+        </p>
       </div>
-    </div>
-  </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/valerie.png"
+            alt="Valerie Mondragon headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Valerie Mondragon</h4>
+        <p><em>Chief of Staff—External</em></p>
+        <p>
+          
+            <a href="mailto: registration@mun.berkeley.edu">registration@mun.berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Valerie Mondragon (she/her/hers) is a second-year student at UC Berkeley studying Astrophysics and Political Science. She grew up in Littlerock, CA, and loves the Mexican food there. In high school, Valerie dabbled in mock trial and student government. Wanting to continue her love for public speaking, she joined UCBMUN in the fall of her freshman year and experienced Model UN for the first time. After her first competition, she fell in love with the creativity, humor, and community in MUN. In her free time, Valerie enjoys listening to music, solving New York Times crossword puzzles, and watching anything spooky. She also loves exploring new coffee shops, especially on rainy days. She’s excited to meet everyone and help make UCBMUN XXX incredible alongside the rest of the Secretariat!</p>
 
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/nick.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Nicholas Carone</h3>
-      USG of Specialized Crisis
-      <p>
-        <a href="mailto: nicholascarone@berkeley.edu"
-          >nicholascarone@berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Nicholas is a sophomore from Los Angeles, majoring in political science.
-        He joined UCBMUN in the Spring semester of his freshmen year to build
-        upon his interests in public speaking and negotiations. Outside of
-        UCBMUN he is involved with volunteering at local Berkeley food pantries,
-        coaching youth basketball, or Berkeley's Greek Life. For hobbies, Nick
-        can be found hooping on a basketball court, rolling on a jiu-jitsu mat,
-        or watching way too long YouTube video essays. Nick looks forward to
-        meeting all of the amazing delegates that makes UCBMUN what it is on
-        what will be a special weekend.
-      </p>
-    </div>
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/jomari.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Jomari Encarnacion</h3>
-      Director of Business Relations
-      <p>
-        <a href="mailto: jomariencarnacion@berkeley.edu"
-          >jomariencarnacion@berkeley.edu</a
-        >
-      </p>
-      <div style="text-align: left">
-        Jomari Encarnacion <em> (she/her) </em> is a senior at UC Berkeley from
-        Orange County, majoring in Political Science and minoring in History.
-        Since high school, Jomari has always been invested in public speaking
-        and exploring social and political topics through her extracurriculars,
-        which is why she decided to join UC Berkeley's MUN team. In high school,
-        she was a part of the YMCA Youth and Government and mock trial club,
-        while at her community college, she joined the Speech and Debate team.
-        Outside of MUN, she enjoys reading, vinyl collecting, binge-watching
-        movies (mostly really bad rom-coms), and cooking. She is enthusiastic to
-        see everyone at UCBMUN this year and is glad to be your UCBMUN's
-        Director of Business Relations!
+            </div>
+          
+        </p>
       </div>
-    </div>
-  </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/dhriti.png"
+            alt="Dhriti Somas headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Dhriti Somas</h4>
+        <p><em>USG of General Assemblies</em></p>
+        <p>
+          
+            <a href="mailto: dhriti_somas@berkeley.edu">dhriti_somas@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Dhriti (she/her/hers) is a second-year student at UC Berkeley majoring in English, originally from New Jersey. Her interest in political discourse began in high school as a public policy debater, which eventually led her to join Model UN at UC Berkeley. Dhriti enjoys the competitive aspect of MUN and is especially grateful for the opportunity to learn from peers and competitors, while also getting to travel, explore new cities, and meet new people along the way. In her free time, Dhriti enjoys watching Miraculous Ladybug and New Girl, knitting, and eating Subway. She is excited to be staffing this year’s iteration of UCBMUN and looks forward to contributing to the conference experience.</p>
 
-  <div
-    class="row"
-    style="
-      padding-top: 7%;
-      padding-left: 5%;
-      padding-right: 5%;
-      column-gap: 10vw;
-    "
-  >
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/sam.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Sam Wang</h3>
-      Director of Technology
-      <p>
-        <a href="mailto: linchiunwang@berkeley.edu"
-          >linchiunwang@berkeley.edu</a
-        >
-      </p>
-      <p style="text-align: left">
-        Sam Wang <em> (he/him/his) </em> is a second-year at UC Berkeley
-        majoring in computer science. He is originally from Claremont,
-        California (home of the Claremont Colleges). Sam joined UCBMUN his
-        freshman year, hoping to continue his public speaking arc from high
-        school speech and debate. He’s now involved in the club as a competitive
-        delegate, BearMUN staffer, and UCBMUN Secretariat member. Being a rare
-        CS major in Model UN, Sam hopes to contribute his technical skills
-        through the Director of Technology role. Outside of MUN, Sam is
-        passionate about education reform and improving student outcomes,
-        working as a researcher in the School of Education and a college
-        admissions mentor. He also loves playing violin, partaking in community
-        service, and writing for the university paper. Sam is incredibly excited
-        to be one of your Directors of Technology and to meet all of you!
-      </p>
-    </div>
-    <div
-      class="col"
-      style="
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        float: center;
-        text-align: center;
-        background-color: white;
-        width: 300px;
-        min-width: 300px;
-        margin: 2%;
-        opacity: 0.9;
-      "
-    >
-      <img
-        src="/static/secretariat/maanas.png"
-        style="width: 256px; padding-bottom: 5%"
-      />
-      <h3>Maanas Shah</h3>
-      Director of Technology
-      <p>
-        <a href="mailto: maanas_shah@berkeley.edu">maanas_shah@berkeley.edu</a>
-      </p>
-      <div style="text-align: left">
-        Maanas <em> (he/him/his) </em> is a third-year from Pleasanton,
-        California majoring in Computer Science with minors in Physics and Data
-        Science. This is his 9th year in MUN, having competed at conferences
-        since 6th grade, and over the years it has grown to be one of his most
-        favorite passions and he's glad to have the chance to continue his
-        journey with his friends in UCBMUN! Outside of MUN, Maanas loves both
-        playing and designing board games and video games; from quick 30 minute
-        party games to massive day-long strategy marathons, he'll take any
-        chance he can get to wrangle his friends into his latest unwise
-        financial decision. Feel free to email Maanas at
-        maanas_shah@berkeley.edu if want to share anything gaming related, from
-        having an interest in game design principles, to just being interested
-        in some recommendations, or simply just to have a chat!
+            </div>
+          
+        </p>
       </div>
-    </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/penelope.png"
+            alt="Penelope Dupre headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Penelope Dupre</h4>
+        <p><em>USG of Specialized Bodies</em></p>
+        <p>
+          
+            <a href="mailto: penelopeolivia@berkeley.edu">penelopeolivia@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Penelope (she/her) is a fourth-year student at Cal studying history. Originally from Sonoma County, you can usually find her at the coast surfing or hanging around in the redwoods. She did not do MUN in high school; rather, she found love for speech and debate (Penelope is actually very shy). Upon joining UCBMUN, she found a community where the balance of seriousness and fun made her jump out of her comfort zone. UCBMUN allowed her to meet some of the coolest and most intelligent people. Other than university, Penelope enjoys making pottery, backpacking, playing chess, and cooking for people. Music-wise, she is currently into Phantogram, Beach House, ELO, Siouxsie and the Banshees, and Fleetwood Mac. She is thrilled to serve as your USG, and cannot wait to see what's in store for the delegates at UCBMUN XXX!</p>
+
+            </div>
+          
+        </p>
+      </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/fiona.png"
+            alt="Fiona Salisbury headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Fiona Salisbury</h4>
+        <p><em>USG of Crisis Committees</em></p>
+        <p>
+          
+            <a href="mailto: fionasalisbury@berkeley.edu">fionasalisbury@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Fiona (she/her/hers) is a third-year student at Berkeley studying Global Studies, Political Science, and Korean Language! Her love for traveling, exploring other cultures, and politics has driven her passion for foreign affairs, which led her to want to try MUN. She joined UCBMUN in her sophomore spring despite never participating in MUN before, but she quickly developed a love for debating and the incredible community at UCBMUN. Outside of MUN, you can find her getting involved in the Berkeley dance community, visiting the numerous cafes and boba shops around Cal, trying (often unsuccessfully) to keep up with new Kpop releases, and attempting to learn too many languages on Duolingo. Fiona is incredibly excited for UCBMUN XXX, and she cannot wait to be your USG of Crisis.</p>
+
+            </div>
+          
+        </p>
+      </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/starr.png"
+            alt="Starr Wilkens headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Starr Wilkens</h4>
+        <p><em>USG of Crisis Committees</em></p>
+        <p>
+          
+            <a href="mailto: starr_wilkens@berkeley.edu">starr_wilkens@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Starr is a transfer student from San Diego studying Global Studies and Cognitive Science. She had no MUN experience before coming to Berkeley, but soon realized how much fun competing is and how amazing the people are. In her free time, Starr likes to skateboard and scroll through Instagram reels. Starting as an ACD for UCBMUN XXIX’s UNSC committee, she is excited about the opportunities for growth that being on Secretariat will give her, and she is excited to be a USG of Crisis this year!</p>
+
+            </div>
+          
+        </p>
+      </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/daniel.png"
+            alt="Daniel Dolan headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Daniel Dolan</h4>
+        <p><em>Director of Business Relations</em></p>
+        <p>
+          
+            <a href="mailto: danield05@berkeley.edu">danield05@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Daniel Dolan is a junior at UC Berkeley from San Diego, majoring in Economics and Political Science and minoring in History. Daniel has always been interested in applying public speaking and social skills to political practice, which is why he joined UC Berkeley Model UN. Outside of MUN, he enjoys reading, traveling, hanging out with friends, and exploring more of the Bay Area. Daniel is quite enthusiastic to see everyone at UCBMUN this year and looks forward to serving as your UCBMUN Director of Business Relations!</p>
+
+            </div>
+          
+        </p>
+      </div>
+    
+      <div
+        class="col"
+        style="
+          padding-left: 3vw;
+          padding-right: 3vw;
+          padding-top: 3vw;
+          padding-bottom: 3vw;
+          float: center;
+          text-align: center;
+          background-color: #032c4e;
+          width: 300px;
+          min-width: 300px;
+          margin: 2%;
+        "
+      >
+        <img
+          
+            src="/static/secretariat/steve.png"
+            alt="Stefan Caiazzo headshot"
+            style="width: 256px; padding-bottom: 5%;"
+          
+        />
+        <h4>Stefan Caiazzo</h4>
+        <p><em>Director of Technology</em></p>
+        <p>
+          
+            <a href="mailto: scai12@berkeley.edu">scai12@berkeley.edu</a>
+          
+        </p>
+        <p>
+          
+            <div style="text-align: left;">
+              <p>Stefan is a second-year, chemical engineering major at UC Berkeley. Hailing from Long Island, New York, he was in high school MUN and decided to continue his delegate status in uni. While idle, Stefan enjoys collecting effigies and souvenirs, speaking Italian to himself in the mirror, and compiling incredibly long playlists where he refuses to skip songs after starting. Embracing his overattentive eye, you can find Stefan fabricating elaborate blue compositions through photography or drawing caricaturized portraits of friends and family. Whether studying history or new languages, he thoroughly enjoys learning and embracing new cultures. Obsessed with both old and new, Stefan appreciates technology and is excited to be the director of such in UCBMUN XXX.</p>
+
+            </div>
+          
+        </p>
+      </div>
+    
   </div>
-</div>
-</div>
-</div>
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
-<div class="tail-background">
-  <div class=container>
-    <span class="text-light" >
-      <div class="row" style="height: 5vh"></div>
-      <div class="row">
-        <div class="col" style="width: 20vw">
-        <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
-          <img
-            src="/static/instagram.png"
-            style="width: 3vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@ucbmun</strong>
-        </a>
-        </div>
-        <div class="col" style="width: 20vw"></div>
-        <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
-          <img
-            src="/static/facebook.png"
-            style="width: 2vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@UCBMUNconference</strong>
-        </a>
-        </div>
-      </div>
-      <div class="row" style="height: 5vh"></div>
-      <p style="margin-top: 12px; text-align: center; color: white">
-        &copy; Copyright 2023 by UC Berkeley Model UN
-      </p>
-      <div class="row" style="height: 5vh"></div>
-    </span>
-    
-  </div>
-  
+      <div class=container>
+        <span class="text-light" >
+          <div class="row" style="height: 5vh"></div>
+          <div class="row">
+            <div class="col" style="width: 20vw">
+            <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
+              <img
+                src="/static/instagram.png"
+                style="width: 3vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@ucbmun</strong>
+            </a>
+            </div>
+            <div class="col" style="width: 20vw"></div>
+            <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
+              <img
+                src="/static/facebook.png"
+                style="width: 2vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@UCBMUNconference</strong>
+            </a>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center; color: white">
+            &copy; Copyright 2025 by UC Berkeley Model UN
+          </p>
+          <div class="row" style="height: 5vh"></div>
+        </span>
+        
+      
       </div>
     </footer>
     </div>
@@ -1080,5 +655,10 @@ button {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <!-- <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script> -->
   </body>
 </html>

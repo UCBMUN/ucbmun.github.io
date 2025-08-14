@@ -11,45 +11,41 @@
       }
     </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
 
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Markazi+Text:wght@600&family=Nunito+Sans&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
 
     
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       About  - UCBMUN XXIX
+       About  - UCBMUN XXX
     </title>
   </head>
-  <body style="padding-top: 0px; width: 100%; overflow-x: hidden;">
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
+  class="navbar navbar-expand-lg navbar-dark justify-content-center"
   style="
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    color: white !important;
+    background-color:#323232
   "
 >
   <a
     class="navbar-brand header-font align-bottom"
-    style="text-align: center"
+    style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def.png"
-      style="max-width: 18vh; width: 18vh"
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
   /></a>
-
   <button
     class="navbar-toggler"
     type="button"
@@ -59,346 +55,102 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-      <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-      <style>
-        svg {
-          fill: #ffffff;
-        }
-      </style>
-      <path
-        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-      />
-    </svg>
+    <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto justify-content-center bg-mini"></li>
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/about"
           id="ABOUTNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           ABOUT
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="ABOUTNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/about"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Overview</a
-          >
-          <a
-            class="dropdown-item"
-            href="/awards"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Awards</a
-          >
-          <a
-            class="dropdown-item"
-            href="/staff"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Secretariat</a
-          >
-          <a
-            class="dropdown-item"
-            href="/schedule"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Schedule</a
-          >
-          <a
-            class="dropdown-item"
-            href="/events"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Events</a
-          >
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
         </div>
-      </li></li>
+      </li>
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/handbook"
           id="RESOURCESNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           RESOURCES
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="RESOURCESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/handbook"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Delegate Handbook</a
-          >
-          <a
-            class="dropdown-item"
-            href="/rules"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Rules of Procedure</a
-          >
-          <a
-            class="dropdown-item"
-            href="/hotels"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Hotels and Flights</a
-          >
-          <a
-            class="dropdown-item"
-            href="/faq"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Policies</a
-          >
-          <a
-            class="dropdown-item"
-            href="/explore"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Explore SF</a
-          >
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Policies</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/committees"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >COMMITTEES</a
-        >
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/register"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >REGISTRATION</a
-        >
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/sponsors"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >SPONSORS</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="https://mun.studentorg.berkeley.edu/travel.html"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >TRAVEL TEAM</a
-        >
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light" style="padding-top:5rem !important;">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    .full-background {
-      /* /* all: unset;  */
-  background-color: white;
-  width: 100%; /* Spans full width of parent/container */
-  /* min-height: 50vh;  */
-  /* margin: 0; */
-  /* margin-top: 50vh;  */
-  /* padding: 0; */
-  /* position: relative;  */
-  /* display: block; */
-  /* overflow: hidden;  */
-    }
-    .full-background, .full-background * {
-      color: black;
-      font-family: 'Merriweather', serif;
-      
-    }
-
-    body {
-      background: url("/static/about_pics/about.jpeg") no-repeat center center fixed; */
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-bottom: 0;
-}
-button {
-    background: lightgrey;
-    border: 3px solid white;
-    border-color: #FFFFFF;
-    color:  white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-  }
-  .register-button {
-            display: inline-block;
-            padding: 15px 30px;
-            text-align: center;
-            font-size: 16px;
-            color: #636363;
-            border: 2px solid #636363;
-            background-color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .register-button:hover {
-            color: white;
-            background-color: black;
-            border: 2px solid black;
-        }
-        .tail-background {
-      /* /* all: unset;  */
-  background-color: #032c4e;
-  width: 100%; /* Spans full width of parent/container */
-}
-  </style>
-  </head>
-
+    <div id="content" class="text-light">
 <div class="container text-center">
-  </div>
-  <br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h1 style="font-size: 4rem; text-align: center;">
-		ABOUT UCBMUN
-	  </h1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
   
         <div class="row" style="height: 10vh"></div>
           
 
-  <div class="full-background" style="">
-    <div class="container text-center">
   <div class="row">
     <div class="col">
+      <h4 class="display-4">
+        ABOUT
+      </h4>
     </div>
   </div>
 
   <div class="row" style="padding-top: 3rem;">
     <div class="col">
-      <h5 class="display-6">
-        <p>WHEN: February 27<sup>th</sup> to March 2<sup>nd</sup>, 2025 <br /></p>
-        <p>WHERE: InterContinental San Francisco <br /></p>
-      </h5>
+      <p>WHEN: March 5<sup>nd</sup> to March 8<sup>th</sup>, 2026 <br /></p>
+      <p>WHERE: Intercontinental San Francisco <br /></p>
     </div>
   </div>
   <br /><br />
   
   <h1>
-    HISTORY
+    OUR STORY
   </h1>
   <br />
   <div class="row">
@@ -413,17 +165,19 @@ button {
     <div class="col" style="text-align: left; min-width: 250px;">
       <h3>History</h3>
       <p>
-        Nearly 3 decades ago, UC Berkeley Model United Nations&rsquo; annual conference began with the goal of inspiring college students to challenge themselves in the realm of policy-based problem solving. Since then, UCBMUN has provided delegates a forum in which to discuss the most urgent and pressing contemporary issues, while also giving them the opportunity to learn from our past. The 29th iteration of UCBMUN is the culmination of years pushing the boundaries on civic engagement and duty, helping create and inspire change-makers that will mold the future of humanity. Over all these years, UCBMUN has risen to become one of the most prestigious conferences on the West Coast as well as in the United States as a whole. Sitting in the heart of San Francisco, UCBMUN has consistently drawn from its historic surroundings and given delegates experiences to last a lifetime. This year shall be no exception.
+        30 years ago, UC Berkeley Model United Nations started with the goal of inspiring collegiate students to challenge themselves in the realm of policy based problem solving. UCBMUN provides delegates a forum in which to discuss the most urgent and pressing issues of today while also studying the past. The 30th iteration of UCBMUN is the culmination of 30 years of pushing the boundaries on civic engagement and duty.
+      </p>
+      <p>
+        UCBMUN has risen to become one of the most prestigious conferences on the West Coast as well as the United States. Sitting in the heart of San Francisco, UCBMUN has drawn from its historic surroundings and has given delegates experiences to last a lifetime.
       </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col" style="text-align: left; min-width: 250px; padding-top: 5vh">
-      <h3>Committees</h3>
+    <div class="col" style="text-align: left; min-width: 250px;">
+      <h3>Diversity</h3>
         <p>
-          UCBMUN XXIX features 15 unique committees that vary in terms of time, space, as well as theme. Delegates can expect fast paced, historical crises mixed in with substantive as well as current general assemblies for a perfect mix of committee experiences. 
-          Our specialized bodies also offer a challenging set of issues that will provide for not only contentious debate, but also the rise of innovative, thought-provoking solutions.
+          UCBMUN XXX features 15 unique committees that vary in terms of time, space, as well as theme. Delegates can expect fast paced, historical crises mixed in with substantive as well as current general assemblies for a perfect mix of committee experiences. UCBMUN’s specialized bodies also offer a challenging set of issues that will provide for not only contentious debate, but also the rise of innovative, thought provoking solutions.
         </p>
     </div>
 
@@ -445,19 +199,20 @@ button {
       <br><br>
     </div>
 
-    <div class="col" style="text-align: left; min-width: 250px; padding-top: 5vh;">
-      <h3>Location</h3>
+    <div class="col" style="text-align: left; min-width: 250px;">
+      <h3>San Francisco</h3>
       <p>
-        UCBMUN XXIX is located in Union Square, the center of San Francisco. Delegates can explore a number of SF's attractions including Alcatraz, the Golden Gate Bridge, Fisherman's Wharf, and Ghirardelli Square or experience San Francisco's nightlife, which is second to none. For a more educational experience, delegates are encouraged to visit the site of the UN Charter just five minutes away from the hotel. Delegates can also explore San Francisco's world-famous cuisine while walking down the Embarcadero. All of these amazing attractions are within 2 miles of the conference venue.
+        UCBMUN XXX is located in Union Square, the center of San Francisco. Delegates can explore a number of SF's attractions including Alcatraz, the Golden Gate Bridge, Fisherman's Wharf, and Ghirardelli Square. San Francisco's nightlife is second to none. Delegates can explore San Francisco's world famous cuisine while walking down the Embarcadero. All of these amazing attractions are within 2 miles of the conference venue.
       </p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col" style="text-align: left; min-width: 250px; padding-top: 5vh;">
+    <div class="col" style="text-align: left; min-width: 250px;">
       <h3>Staff</h3>
         <p>
-          UCBMUN features a team of around 100 staff members, all with competitive experience on the circuit. This means that each and every staffer, from Chairs to Assistant Crisis Directors, has a full understanding of Model UN rules of procedure and best practices. Our staffers study a wide variety of majors and concentrations, but are all united by a common passion for Model UN and policy. Our staff could not be more prepared to host the 29th edition of this conference.</p>
+          UCBMUN staff is composed of a variety of majors and concentrations, each of whom shares a passion for Model UN as well as policy. With a large majority of staff that has traveled, UCBMUN boasts some of the most competitive staffers on the circuit as well as those who attend one of the most prestigious political science universities in the country. All staff could not be more prepared to host this 30th edition of conference.
+        </p>
     </div>
 
     <div class="col" style="text-align: left; min-width: 250px;">
@@ -467,49 +222,43 @@ button {
       />  
     </div>
   </div>
-  <br>
-  <br>
-</div>
-</div>
 </div>
 
     </div>
     <div>
     <footer class="bg-transperant footer">
       
-<div class="tail-background">
-  <div class=container>
-    <span class="text-light" >
-      <div class="row" style="height: 5vh"></div>
-      <div class="row">
-        <div class="col" style="width: 20vw">
-        <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
-          <img
-            src="/static/instagram.png"
-            style="width: 3vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@ucbmun</strong>
-        </a>
-        </div>
-        <div class="col" style="width: 20vw"></div>
-        <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
-          <img
-            src="/static/facebook.png"
-            style="width: 2vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@UCBMUNconference</strong>
-        </a>
-        </div>
-      </div>
-      <div class="row" style="height: 5vh"></div>
-      <p style="margin-top: 12px; text-align: center; color: white">
-        &copy; Copyright 2023 by UC Berkeley Model UN
-      </p>
-      <div class="row" style="height: 5vh"></div>
-    </span>
-    
-  </div>
-  
+      <div class=container>
+        <span class="text-light" >
+          <div class="row" style="height: 5vh"></div>
+          <div class="row">
+            <div class="col" style="width: 20vw">
+            <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
+              <img
+                src="/static/instagram.png"
+                style="width: 3vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@ucbmun</strong>
+            </a>
+            </div>
+            <div class="col" style="width: 20vw"></div>
+            <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
+              <img
+                src="/static/facebook.png"
+                style="width: 2vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@UCBMUNconference</strong>
+            </a>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center; color: white">
+            &copy; Copyright 2025 by UC Berkeley Model UN
+          </p>
+          <div class="row" style="height: 5vh"></div>
+        </span>
+        
+      
       </div>
     </footer>
     </div>
@@ -517,5 +266,10 @@ button {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <!-- <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script> -->
   </body>
 </html>

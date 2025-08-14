@@ -11,45 +11,41 @@
       }
     </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-
     <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
 
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Markazi+Text:wght@600&family=Nunito+Sans&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Raleway:400,400i" rel="stylesheet">
 
     
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       Sponsors  - UCBMUN XXIX
+       Sponsors  - UCBMUN XXX
     </title>
   </head>
-  <body style="padding-top: 0px; width: 100%; overflow-x: hidden;">
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
       <nav
-  class="navbar navbar-expand-lg navbar-white bg-transparent justify-content-center"
+  class="navbar navbar-expand-lg navbar-dark justify-content-center"
   style="
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    color: white !important;
+    background-color:#323232
   "
 >
   <a
     class="navbar-brand header-font align-bottom"
-    style="text-align: center"
+    style="text-align: center;"
     href="/"
     ><img
-      src="/static/ucbmun_logo_high_def.png"
-      style="max-width: 18vh; width: 18vh"
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
   /></a>
-
   <button
     class="navbar-toggler"
     type="button"
@@ -59,531 +55,133 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-      <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-      <style>
-        svg {
-          fill: #ffffff;
-        }
-      </style>
-      <path
-        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-      />
-    </svg>
+    <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto justify-content-center bg-mini"></li>
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/about"
           id="ABOUTNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           ABOUT
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="ABOUTNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/about"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Overview</a
-          >
-          <a
-            class="dropdown-item"
-            href="/awards"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Awards</a
-          >
-          <a
-            class="dropdown-item"
-            href="/staff"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Secretariat</a
-          >
-          <a
-            class="dropdown-item"
-            href="/schedule"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Schedule</a
-          >
-          <a
-            class="dropdown-item"
-            href="/events"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Events</a
-          >
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
         </div>
-      </li></li>
+      </li>
+      </li>
 
       <li class="nav-item dropdown">
         
         <a
-          class="nav-link dropdown-toggle bg-textcolor"
+          class="nav-link dropdown-toggle"
           href="/handbook"
           id="RESOURCESNavbarDropdown"
           role="button"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          style="color: aliceblue"
         >
           RESOURCES
         </a>
         <div
           class="dropdown-menu"
           aria-labelledby="RESOURCESNavbarDropdown"
-          style="max-height: 300px; overflow-y: auto; white-space: normal; bg-white; color: #032c4e;"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
         >
-          <a
-            class="dropdown-item"
-            href="/handbook"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Delegate Handbook</a
-          >
-          <a
-            class="dropdown-item"
-            href="/rules"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Rules of Procedure</a
-          >
-          <a
-            class="dropdown-item"
-            href="/hotels"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Hotels and Flights</a
-          >
-          <a
-            class="dropdown-item"
-            href="/faq"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Conference Policies</a
-          >
-          <a
-            class="dropdown-item"
-            href="/explore"
-            style="
-              width: max-content;
-              max-width: 150vw;
-              white-space: normal;
-              color: #032c4e;
-            "
-            >Explore SF</a
-          >
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Policies</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
         </div>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/committees"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >COMMITTEES</a
-        >
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">COMMITTEES</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/register"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >REGISTRATION</a
-        >
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="/sponsors"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >SPONSORS</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link bg-textcolor"
-          href="https://mun.studentorg.berkeley.edu/travel.html"
-          style="
-            width: max-content;
-            max-width: 80vw;
-            white-space: normal;
-            color: aliceblue;
-          "
-          >TRAVEL TEAM</a
-        >
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <div id="content" class="text-light" style="padding-top:5rem !important;">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    .full-background {
-      /* /* all: unset;  */
-  background-color: white;
-  width: 100%; /* Spans full width of parent/container */
-  /* min-height: 50vh;  */
-  /* margin: 0; */
-  /* margin-top: 50vh;  */
-  /* padding: 0; */
-  /* position: relative;  */
-  /* display: block; */
-  /* overflow: hidden;  */
-    }
-    .full-background, .full-background * {
-      color: black;
-      font-family: 'Merriweather', serif;
-      
-    }
-
-    body {
-      background: url("/static/sponsor/icsf.webp") no-repeat center center fixed; */
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-bottom: 0;
-}
-button {
-    background: lightgrey;
+    <div id="content" class="text-light">
+<style>
+  button {
+    background: white;
     border: 3px solid white;
     border-color: #FFFFFF;
-    color:  white;
+    color:  black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display:inline-block;
   }
-  .register-button {
-            display: inline-block;
-            padding: 15px 30px;
-            text-align: center;
-            font-size: 16px;
-            color: #636363;
-            border: 2px solid #636363;
-            background-color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .register-button:hover {
-            color: white;
-            background-color: black;
-            border: 2px solid black;
-        }
-        .tail-background {
-      /* /* all: unset;  */
-  background-color: #032c4e;
-  width: 100%; /* Spans full width of parent/container */
-}
-  </style>
-  </head>
-
-  
-
-  
-  <div class="container text-center" style="margin-bottom: 210px; margin-top: 210px">
-    
-      
-  <div class="row">
-    <div class="col">
-      <h1 style="font-size: 4rem; text-align: center;">
-      SPONSORSHIP
-    </h1>
-      </div>
-      </div>
- 
-
-
-    
-  </div>
-  
+</style>
 <div class="container" style="display: table; height: 100%; ">
-  
-  
   
         <div class="row" style="height: 10vh"></div>
           
 
 
-</div>
-<div class="full-background" style="">
-  
-  <div class="container" style="display: table; height: 100%; ">
-  <div style="background-color: white; padding: 5%;">
-  <div class="row" style="min-width: 285px; margin: auto;">
+  <div style="background-color: #032c4e; padding: 5%;">
+  <div class="row" style="min-width: 280px; margin:0;">
     <div class="col">
-      
+      <h4 class="display-4" style="text-align: center;">
+        <strong> Sponsor & Support UCBMUN XXX </strong>
+      </h4>
       <br>
     </div>
   </div>
-  <div class="row" style="min-width: 290px; margin: auto;">
-    <p>Each year, the generous contributions of our sponsors help us make UCBMUN the best it can be. Their support is instrumental in fostering a weekend of debate and learning for hundreds of college students with diverse interests and backgrounds.  We offer a wide variety of sponsorship package options and benefits to ensure that our sponsors’ unique needs are met. Learn more about what makes UCBMUN a great sponsorship opportunity as well as our package offerings in the sponsorship packet linked at the top of the page. </p>
-
-<p>If you are interested in sponsoring UCBMUN, please contact our Director of Business Relations, Jomari Encarnacion, at <a href="sponsorships@mun.berkeley.edu"
-  >sponsorships@mun.berkeley.edu</a> to get the process started.</p>
-    <br />
+  <div class="row" style="min-width: 280px; margin:0;">
+    <p>
+      Each year, the generous contributions of our sponsors help us make UCBMUN the best it can be. Their support is instrumental in fostering a weekend of debate and learning for hundreds of college students with diverse interests and backgrounds. We offer a wide variety of sponsorship package options and benefits to ensure that our sponsors’ unique needs are met. Learn more about what makes UCBMUN a great sponsorship opportunity as well as our package offerings in the sponsorship packet linked at the top of the page.
+      <br>
+      <br>
+      If you are interested in sponsoring UCBMUN, please contact our Director of Business Relations, Daniel Dolan, at danield05@berkeley.edu to get the process started. 
+    </p>
+    <p style="text-align: center; ">
+      <strong>Sponsorship packet coming soon!</strong>
+    </p>
   </div>
-  <form
-    action="/static/UCBMUN XXIX Sponsorship Packet.pdf"
+    <!--<p>
+      <strong>To learn more about our sponsorship
+      packages and incentives, please see our sponsorship packet
+      or contact <a href="mailto:secretarygeneral@mun.berkeley.edu">secretarygeneral@mun.berkeley.edu</a>.</strong> 
+      We look forward to working with you!
+    </p>
+    <br />
+  </div>-->
+  <!--<form
+    action="/static/UCBMUNXXVII_sponsorships.pdf"
     style="text-align: center;"
     target="_blank"
   >
-    <button class="register-button" type="submit">SPONSORSHIP PACKET</button>
+    <button type="submit">SPONSORSHIP PACKET</button>
   </form>
-  <br />
-</div>
-  <br />
-
-  <!-- <div class="row" style="width: 65%; min-width: 280px; margin: auto;">
-    <div class="col">
-      <h4 class="display-4" style="text-align: center;">
-        <strong> OUR SPONSORS </strong>
-      </h4>
-    </div>
-  </div> -->
-
-  <!-- <div class="row" style="padding-top: 7%;">
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-    <img
-        src="/static/sponsor/united.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>United Airlines</h3>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/columbia.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>Columbia Summer Sessions</h3>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/seton.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>Seton Hall University School of Diplomany and International Relations</h3>
-    </div>
-  </div> -->
-
-
-  <!-- <div class="row" style="padding-top: 7%;">
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/7sage_.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3><a href="https://7sage.com
-        " target="_blank">7Sage LSAT, Law School and MBE Prep</a></h3>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/blueprint.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>Blueprint</h3>
-    </div>
-
-
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/testcrackers.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>Testcrackers</h3>
-    </div>
-  </div> -->
-
-  <!-- <div class="row" style="padding-top: 7%;">
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/tfas.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>The Fund for American Studies</h3>
-    </div>
-
-    <div
-      class="col"
-      style="
-        padding-left: 5%;
-        padding-right: 5%;
-        float: center;
-        width: 100%;
-        min-width: 300px;
-        text-align: center;
-        padding-bottom: 5%;
-      "
-    >
-      <img
-        src="/static/sponsor/aaron.png"
-        class="img-thumbnail"
-        style="width: 256px;"
-      />
-      <h3>Aaron Tarajos</h3>
-    </div>
-  </div> -->
-</div>
-</div>
+  <br /> -->
 </div>
 </div>
 
@@ -591,39 +189,37 @@ button {
     <div>
     <footer class="bg-transperant footer">
       
-<div class="tail-background">
-  <div class=container>
-    <span class="text-light" >
-      <div class="row" style="height: 5vh"></div>
-      <div class="row">
-        <div class="col" style="width: 20vw">
-        <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
-          <img
-            src="/static/instagram.png"
-            style="width: 3vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@ucbmun</strong>
-        </a>
-        </div>
-        <div class="col" style="width: 20vw"></div>
-        <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
-          <img
-            src="/static/facebook.png"
-            style="width: 2vw; min-width: 35px; padding: 2%;"
-          />
-          <strong>@UCBMUNconference</strong>
-        </a>
-        </div>
-      </div>
-      <div class="row" style="height: 5vh"></div>
-      <p style="margin-top: 12px; text-align: center; color: white">
-        &copy; Copyright 2023 by UC Berkeley Model UN
-      </p>
-      <div class="row" style="height: 5vh"></div>
-    </span>
-    
-  </div>
-  
+      <div class=container>
+        <span class="text-light" >
+          <div class="row" style="height: 5vh"></div>
+          <div class="row">
+            <div class="col" style="width: 20vw">
+            <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
+              <img
+                src="/static/instagram.png"
+                style="width: 3vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@ucbmun</strong>
+            </a>
+            </div>
+            <div class="col" style="width: 20vw"></div>
+            <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
+              <img
+                src="/static/facebook.png"
+                style="width: 2vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@UCBMUNconference</strong>
+            </a>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center; color: white">
+            &copy; Copyright 2025 by UC Berkeley Model UN
+          </p>
+          <div class="row" style="height: 5vh"></div>
+        </span>
+        
+      
       </div>
     </footer>
     </div>
@@ -631,5 +227,10 @@ button {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <!-- <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script> -->
   </body>
 </html>
