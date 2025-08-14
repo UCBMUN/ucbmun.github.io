@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="/static/favicon.ico?v=2">
+
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+
+    <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
 
     
 
@@ -15,178 +23,488 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>
-       DISEC: Peace Operations (Double-Del) - Committees  - UCBMUN XXIV
+       Disarmament and International Security Council - Committees  - UCBMUN XXX
     </title>
   </head>
-  <body>
+  <body style="padding-top: 75px; width: 100%; overflow-x: hidden; ">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
-    <a class="navbar-brand header-font align-bottom" href="/">UCBMUN XXIV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav
+  class="navbar navbar-expand-lg navbar-dark justify-content-center"
+  style="
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color:#323232
+  "
+>
+  <a
+    class="navbar-brand header-font align-bottom"
+    style="text-align: center;"
+    href="/"
+    ><img
+      src="/static/ucbmun_logo_high_def_shrunkmargins.png"
+      style="max-width: 70px; width: 70vw;"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/about" id="AboutNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="AboutNavbarDropdown">
-                <a class="dropdown-item" href="/about">Overview</a>
-                <a class="dropdown-item" href="/awards">Awards</a>
-                <a class="dropdown-item" href="/staff">Staff</a>
-                <a class="dropdown-item" href="/schedule">Schedule</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown active">
-          
-          <a class="nav-link dropdown-toggle" href="/committees" id="CommitteesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Committees
-          </a>
-          <div class="dropdown-menu" aria-labelledby="CommitteesNavbarDropdown">
-                <a class="dropdown-item" href="/committees">Overview</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#gaandsb"> General Assembly &amp; Specialized Bodies </a>
-                <a class="dropdown-item" href="/committee/disec">DISEC: Peace Operations (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/escwa">UN Economic and Social Commission for Western Asia</a>
-                <a class="dropdown-item" href="/committee/grulac">Group of Latin America and the Caribbean</a>
-                <a class="dropdown-item" href="/committee/cabinet">Nehru&#39;s Cabinet</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#crisis"> Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/warringstates">Unification of the Warring States Period</a>
-                <a class="dropdown-item" href="/committee/kuwtk">Keeping Up with the Kardashians</a>
-                <a class="dropdown-item" href="/committee/hetchhetchy">Death of a Naturalist</a>
-                <a class="dropdown-item" href="/committee/khomeini">Death of Khomeini</a>
-                <a class="dropdown-item" href="/committee/unsc">UNSC: The Conflict in Kivu (Double-Del)</a>
-                <a class="dropdown-item" href="/committee/reddit">Reddit: /r/BoardOfDirectors</a>
-                <a class="dropdown-item" href="/committee/adhoc">Ad-Hoc</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item disabled" href="/committees#jcc"> Joint Crisis Committees </a>
-                <a class="dropdown-item" href="/committee/jccallende">JCC: Allende&#39;s Government</a>
-                <a class="dropdown-item" href="/committee/jccpinochet">JCC: U.S.-Backed Rebels</a>
-          </div>
-        </li>
-            <li class="nav-item dropdown">
-          
-          <a class="nav-link dropdown-toggle" href="/faq" id="ResourcesNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
-          </a>
-          <div class="dropdown-menu" aria-labelledby="ResourcesNavbarDropdown">
-                <a class="dropdown-item" href="/static/UCBMUN XXIV Delegate Handbook.pdf">Delegate Handbook</a>
-                <a class="dropdown-item" href="/static/Rules of Procedure UCBMUN XXIV.pdf">Rules of Procedure</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/hotels">Hotels and Flights</a>
-                <a class="dropdown-item" href="/position_papers">Position Papers</a>
-          </div>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mun.berkeley.edu/">Travel Team</a>
-          </li>
+    <ul class="navbar-nav mx-auto justify-content-center">
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/about"
+          id="ABOUTNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          ABOUT
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="ABOUTNavbarDropdown"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
+        >
+          <a class="dropdown-item" href="/about" style="width: max-content; max-width: 80vw; white-space: normal;">Overview</a>
+          <a class="dropdown-item" href="/awards" style="width: max-content; max-width: 80vw; white-space: normal;">Awards</a>
+          <a class="dropdown-item" href="/staff" style="width: max-content; max-width: 80vw; white-space: normal;">Secretariat</a>
+          <a class="dropdown-item" href="/schedule" style="width: max-content; max-width: 80vw; white-space: normal;">Schedule</a>
+          <a class="dropdown-item" href="/events" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Events</a>
+        </div>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/handbook"
+          id="RESOURCESNavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          RESOURCES
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="RESOURCESNavbarDropdown"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
+        >
+          <a class="dropdown-item" href="/handbook" style="width: max-content; max-width: 80vw; white-space: normal;">Delegate Handbook</a>
+          <a class="dropdown-item" href="/rules" style="width: max-content; max-width: 80vw; white-space: normal;">Rules of Procedure</a>
+          <a class="dropdown-item" href="/hotels" style="width: max-content; max-width: 80vw; white-space: normal;">Hotels and Flights</a>
+          <a class="dropdown-item" href="/faq" style="width: max-content; max-width: 80vw; white-space: normal;">Conference Policies</a>
+          <a class="dropdown-item" href="/explore" style="width: max-content; max-width: 80vw; white-space: normal;">Explore SF</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/committees" style="width: max-content; max-width: 80vw; white-space: normal;">COMMITTEES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register" style="width: max-content; max-width: 80vw; white-space: normal;">REGISTRATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sponsors" style="width: max-content; max-width: 80vw; white-space: normal;">SPONSORS</a>
+      </li>
+      </li>
+
+      <li class="nav-item dropdown">
+        
+        <a
+          class="nav-link dropdown-toggle"
+          href="/committee/"
+          id="Committees (auto)NavbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Committees (auto)
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="Committees (auto)NavbarDropdown"
+          style="max-height: 300px; overflow-y: auto; white-space: normal;"
+        >
+          <a class="dropdown-item" href="/committee/disec/" style="width: max-content; max-width: 80vw; white-space: normal;">disec</a>
+          <a class="dropdown-item" href="/committee/gadhoc/" style="width: max-content; max-width: 80vw; white-space: normal;">gadhoc</a>
+          <a class="dropdown-item" href="/committee/unicef/" style="width: max-content; max-width: 80vw; white-space: normal;">unicef</a>
+          <a class="dropdown-item" href="/committee/panem/" style="width: max-content; max-width: 80vw; white-space: normal;">panem</a>
+          <a class="dropdown-item" href="/committee/unsc/" style="width: max-content; max-width: 80vw; white-space: normal;">unsc</a>
+          <a class="dropdown-item" href="/committee/trump/" style="width: max-content; max-width: 80vw; white-space: normal;">trump</a>
+          <a class="dropdown-item" href="/committee/adhoc/" style="width: max-content; max-width: 80vw; white-space: normal;">adhoc</a>
+          <a class="dropdown-item" href="/committee/ghosts/" style="width: max-content; max-width: 80vw; white-space: normal;">ghosts</a>
+          <a class="dropdown-item" href="/committee/stark/" style="width: max-content; max-width: 80vw; white-space: normal;">stark</a>
+          <a class="dropdown-item" href="/committee/atlantis/" style="width: max-content; max-width: 80vw; white-space: normal;">atlantis</a>
+          <a class="dropdown-item" href="/committee/caliph/" style="width: max-content; max-width: 80vw; white-space: normal;">caliph</a>
+          <a class="dropdown-item" href="/committee/samurai/" style="width: max-content; max-width: 80vw; white-space: normal;">samurai</a>
+          <a class="dropdown-item" href="/committee/tsar/" style="width: max-content; max-width: 80vw; white-space: normal;">tsar</a>
+          <a class="dropdown-item" href="/committee/capulets/" style="width: max-content; max-width: 80vw; white-space: normal;">capulets</a>
+          <a class="dropdown-item" href="/committee/montagues/" style="width: max-content; max-width: 80vw; white-space: normal;">montagues</a>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
-
     </header>
     <div id="content" class="text-light">
+
+<!--class for white background-->
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .full-background {
+      /* /* all: unset;  */
+  background-color: #032c4e;
+  width: 100%; /* Spans full width of parent/container */
+  /* min-height: 50vh;  */
+  /* margin: 0; */
+  /* margin-top: 50vh;  */
+  /* padding: 0; */
+  /* position: relative;  */
+  /* display: block; */
+  /* overflow: hidden;  */
+    }
+    .full-background, .full-background * {
+      color: white;
+      font-family: 'Merriweather', serif;
+      
+    }
+
+    body {
+      background: url("/static/comm_backgrounds/disec.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 0;
+}
+  </style>
+  </head>
+  
 <div class="container text-center">
   
+        <div class="row" style="height: 10vh"></div>
           
 
   <div class="row">
     <div class="col">
       <br>
-      <h1>
-        DISEC: Peace Operations (Double-Del)
+      <img src="/static/comm_overview/disec.png" style="width: 30vw;"
+        >
+        <br>
+        <br>
+        
+      <h1 style="font-size: 3rem; text-align: center;">
+        Disarmament and International Security Council
       </h1>
+      
     </div>
   </div>
   <div class="row">
     <div class="col">
     <p class="text-light">
-        Email: <a href="mailto:disec@ucbmun.org">disec@ucbmun.org</a>
+      <em>Background Guide coming soon!</em>
+      <!-- <a href="/static/BGs/DISEC.pdf" class="bg-link" target="_blank">Background Guide</a> -->
+
+      <p> 
+
+      </p>
+      <!--
+        <h3>
+          <a href="mailto: " + comm.short_name + "@ucbmun.org"
+          >disec@ucbmun.org</a>
+        </h3>-->
       <br>
-      <a href="https://ucbmun.org/position_papers">Submit Position Papers Here</a>
-      <br>
-      <a href="/static/BGs/DISEC%20Peace%20Operations%20Background%20Guide.pdf" class="bg-link">Background Guide</a>
       <br>
     </p>
-      <br>
     </div>
   </div>
-  <div class="col">
-    DISEC will focus on the larger umbrella of peace operations, with Topic A being Disarmament, Demobilization, and Reintegration and Topic B focusing on United Nations Peacekeeping reforms. DDR functions through a process of removing weapons from the hands of members of armed groups, taking these combatants out of their groups, and helping them to reintegrate as civilians into society, and this is the topic the chairs expect the committee to focus on for the majority of the weekend at UCBMUN. Delegates in our committee will represent a mix of African, Latin American, and Middle Eastern nations along with Non-Governmental Organizations and the P5.
+  <!--start white background here-->  
+</div>
+<div class="full-background">
+  <div class="container text-center">
+  <div class="col" style="          float: center;
+  width: 98%;
+  min-width: 300px;
+  text-align: left;
+  background-color: #032c4e;
+  padding: 5%;
+  margin: -3%;
+  margin-left: 1%;
+  margin-right: -5%; 
+  padding-right: 5%; 
+  padding-left:5%; 
+  padding-top: 3%; 
+  padding-bottom: 3%
+  "
+>
+<br>
+ <br>
+ <div style="font-size: 2rem;">
+  About the Committee
+ </div>
+ <br>
+
+    Topic A: Preventing the Weaponization of Genetic Engineering-Based Bioweapons in Precision Warfare
+<br> <br> By 2050, gene editing technologies, including gene drive, capable of permanently altering or eliminating entire species, have matured alongside CRISPR-based pathogen engineering. Originally used for curing genetic diseases and eliminating malaria-carrying mosquitoes, these technologies have since been militarized. Rogue states and non-state actors have begun developing CRISPR-engineered pathogens that can target specific populations, suppress immune systems, or evade detection, and gene drive systems that are capable of forcing genetic traits through populations have also emerged, enabling the destabilization of food chains and collapsing agricultural economies. DISEC must urgently develop a regulatory framework to prevent the military application of genetically engineered bioweapons, balancing the need for biosecurity with the potential for public health and environmental breakthroughs, with a shift in global security where biowarfare is no longer limited to state-sponsored programs or complex labs.
+
+The goal of this futuristic DISEC committee is to craft comprehensive global strategies to prevent and respond to the militarization of CRISPR and gene drive technologies. What international frameworks should the United Nations adopt to clearly distinguish between peaceful gene editing and its weaponized applications? How can we develop robust verification and monitoring mechanisms to trace and prevent the development and deployment of synthetic bioweapons? How should the international community balance scientific innovation with global biosecurity and the protection of human and environmental life?
+<br> <br>
+Topic B: Addressing the Threat of AI-Driven Cyberterrorism by Non-State Actors
+<br> <br>
+Based in 2050, artificial intelligence has revolutionized cyber operations, giving rise to autonomous malware capable of self propagation and adaptive evasion, AI-orchestrated disinformation campaigns amplifying misinformation on a global scale, and self-adapting cyberweapons capable of crippling critical infrastructure at high speeds. In this new era of AI-driven cyber terrorism, hostile actors, whether rogue states or decentralized networks, can unleash attacks with unprecedented precision, scale, and plausible deniability. These technologies now threaten critical infrastructure such as power grids, financial systems, and communication networks while also undermining democratic institutions, sowing societal discord, and manipulating public opinion. DISEC must urgently craft international norms to govern the military and terrorist use of AI in cyberspace, balancing the imperatives of security, innovation, and digital sovereignty.
+
+The goal of the futuristic DISEC committee is to create comprehensive international mechanisms to address the growing threat of AI-driven cyberterrorism by non-state actors. What global frameworks should the UN adopt to regulate the use of artificial intelligence in cyberspace, particularly for autonomous attacks, disinformation campaigns, or critical infrastructure sabotage? How can member states collaborate to develop standards for accountability where digital threats are rapidly evolving and often anonymous? What systems should be put in place to distinguish between legitimate AI research and malicious intent, and how should the UN engage with private sector developers of advanced algorithms?
+    
   </div>
   <br>
   <br>
+  <hr style="border: 0; border-top: 1px solid #fff; margin: 20px 0; size: 10px;">
+  <div style="font-size: 2rem; position: relative; top: 25px; ">
+    Meet the Dais
+   </div>
+  <!-- <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;"> -->
+  <!-- -->
   <div class="row text-left">
-    <div class="col-md-4">
+    <div
+      class="col"
+      style="
+          float: center;
+          width: 100%;
+          min-width: 300px;
+          text-align: center;
+          background-color: #032c4e;
+          padding: 5%;
+          margin: 2%;
+        "
+    >
+        <img
+          src="/static/comm_staff/disec-chair.png"
+          style="width: 256px;"
+        />
+        <br><br>
+      <h3>
+        SARA KHEMANI
+      </h3>
+      <h5></h5>
+      Chair
+      <br><br>
+      <div style="text-align: left;">
+        <p>Hi! My name is Sara Khemani, and I am so excited to serve as one of your chairs for the Futuristic DISEC at UCBMUN! </p>
+<p>I was born in Bombay, India, but spent most of my life growing up in Singapore. I am currently in my third year at Berkeley, majoring in Molecular and Cell Biology and Political Economy. I have been doing MUN since middle school, all through high school, and joined UCBMUN as a freshman at Berkeley, and have been competing as a GA delegate on the circuit since. In the past, I have served as vice chair for Adani BoD and chaired the SAG AFTRA Hollywood Strikes for our college conference, and chaired the ICJ and served as Secretary General for BearMUN previously. Outside of MUN, I work at the Dueber Lab at the Innovative Genomics Institute and Berkeley’s Electron Microscopy Lab, and am also involved in a healthcare business society and Project RISHI on campus. I also love traveling, going to beaches, and matcha! I also spent the past summer interning in Seattle and got really into hiking while I was there! </p>
+<p>Anousha and I are both so excited to meet all of you in a few months and hope this committee is as fun for you to participate in as it was for us to plan! Please feel free to reach out to either of us if you have any questions, and see you soon!</p>
+
+        Best,
+        <br>
+        SARA KHEMANI
+        <br>
+        Chair, Disarmament and International Security Council
+      </div>
+    </div>
+
+    <div
+      class="col"
+      style="
+          float: center;
+          width: 100%;
+          min-width: 300px;
+          text-align: center;
+          background-color: #032c4e;
+          padding: 5%;
+          margin: 2%;
+        "
+    >
+        <img
+          src="/static/comm_staff/disec-cd.png"
+          style="width: 256px;"
+        />
+        <br><br>
+      <h3>ANOUSHA ATHREYA</h3>
+      <h5></h5>
+      Crisis Director
+      <br><br>
+      <div style="text-align: left;">
+        <p>Hey all, I'm Anousha Athreya, and I'm beyond excited to be your chair for the DISEC committee at UCBMUN this year! I'm a fourth-year majoring in Electrical Engineering and Computer Science, with minors in Data Science and Public Policy. In the past, I served as a Chair for the World Health Organization GA, the My Way Killings Committee, on UCBMUN XXVIII Secretariat as the Director of Technology, and currently serve as the External Vice President, overseeing the travel team. Before diving into international relations, I was always fascinated by the intersection of science and security and how it can reshape global stability. In this DISEC committee, we're confronting two emerging challenges to modern peace: the weaponization of synthetic pathogens and the rise of AI in cyberwarfare and terrorist operations. I'm beyond excited to chair this committee and see how you, as delegates, take on the responsibility of building regulatory frameworks that can stand up to 21st-century threats. At Berkeley, I am a senior mentor with Computer Science Mentors and serve on the Computing and Information Technology Academic Senate Committee. I also really enjoy watching mystery &amp; detective shows, so let me know if you have any recommendations. I can't wait to see you all, good luck, and I look forward to meeting you next year!</p>
+
+        Best,
+        <br>
+        ANOUSHA ATHREYA
+        <br>
+          Crisis Director, Disarmament and International Security Council 
+        
+      </div>
+      
+    </div>
+    
+
+
+    <!-- <div class="col-md-4">
       <img
         src="/static/comm_staff/disec-chair.png"
         class="img-thumbnail"
         style="width: 95%; max-width: 256px; display: block; margin: 0 auto;"
-        alt="Ruhee Wadhwania"
+        alt="SARA KHEMANI"
       />
     </div>
     <div class="col">
-      <p>Hello delegates! My name is Ruhee Wadhwania and I am very excited to co-chair DISEC this year at UCBMUN XXIV. The topics covered under our larger umbrella of peace operations are ones that have demanded attention for decades now and failed to receive adequate awareness. We exist in an era of violent extremism that has intensified the repercussions of any action a UN body takes. In debating strategies for executing successful peacekeeping operations, I hope that you are all able to gain an appreciation for the complexities surrounding international conflict resolution. About myself - I am a senior at Cal majoring in public health and economics, and this is my fourth year on the circuit. I had the privilege of being Secretary-General for UCBMUN XXIII last year, and I am now serving as president of this crazy organization. Most of my academic and career focus has been in healthcare economics, or looking at cost or quality-based problems for hospital systems and payors. Fun fact, I recently binged all eight seasons of Game of Thrones in less than two months, so that should tell you how good I am at prioritizing. I’m excited to see all of you and hear about your insightful solutions in February!</p>
+      <p>Hi! My name is Sara Khemani, and I am so excited to serve as one of your chairs for the Futuristic DISEC at UCBMUN! </p>
+<p>I was born in Bombay, India, but spent most of my life growing up in Singapore. I am currently in my third year at Berkeley, majoring in Molecular and Cell Biology and Political Economy. I have been doing MUN since middle school, all through high school, and joined UCBMUN as a freshman at Berkeley, and have been competing as a GA delegate on the circuit since. In the past, I have served as vice chair for Adani BoD and chaired the SAG AFTRA Hollywood Strikes for our college conference, and chaired the ICJ and served as Secretary General for BearMUN previously. Outside of MUN, I work at the Dueber Lab at the Innovative Genomics Institute and Berkeley’s Electron Microscopy Lab, and am also involved in a healthcare business society and Project RISHI on campus. I also love traveling, going to beaches, and matcha! I also spent the past summer interning in Seattle and got really into hiking while I was there! </p>
+<p>Anousha and I are both so excited to meet all of you in a few months and hope this committee is as fun for you to participate in as it was for us to plan! Please feel free to reach out to either of us if you have any questions, and see you soon!</p>
 
       <p>Yours,<br>
-      	Ruhee Wadhwania<br>
+      	SARA KHEMANI<br>
       	Chair,
-      	DISEC: Peace Operations (Double-Del)
+      	Disarmament and International Security Council
       </p>
-    </div>
+    </div> -->
+    
   </div>
+  <div class="col" style="          float: center;
+  width: 98%;
+  min-width: 300px;
+  max-width: 100%;
+  text-align: left;
+  background-color: #032c4e;
+  padding: 5%;
+  margin: -3%;
+  margin-left: 1%;
+  margin-right: -5%; 
+  padding-right: 5%; 
+  padding-left:5%; 
+  padding-top: 3%; 
+  padding-bottom: 3%; 
+  overflow-wrap: break-word;  /* Ensures long links wrap */
+  word-wrap: break-word;      /* Legacy support */
+  word-break: break-word;     /* Forces breaks within words */
+  "
+>
+<!--
+<p style="font-size: 1.2em;">Image Citations</p>
+   <p>&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;<a href="" target="_blank" style="color: blue; font-size: 0.8em"></a></p>-->
+
+
+
+
+
+  <div class="container text-center" style="float:center; padding:0 3vw 3vh; margin-top:2vh; color:#fff; overflow-wrap:break-word; word-break:break-word;">
+    <h6 style="font-size:1.2em; letter-spacing:0.02em; text-transform:none;">Image Citations</h6>
+    <ol style="margin:0 auto; text-align:left; max-width:900px;">
+      <li><a href="https://media.un.org/photo/en/asset/oun7/oun7189453" target="_blank" rel="noopener" style="color: #cfe8ff; font-size:0.9em;">https://media.un.org/photo/en/asset/oun7/oun7189453</a></li>
+      <li><a href="https://www.academymodelun.org/disarmament-and-international-security-committee-disec.html" target="_blank" rel="noopener" style="color: #cfe8ff; font-size:0.9em;">https://www.academymodelun.org/disarmament-and-international-security-committee-disec.html</a></li>
+    </ol>
+  </div>
+
+
+
+</div>
   <br>
   <br>
-  <div class="row text-left">
+  <!-- <div class="row text-left">
     <div class="col-md-4">
       <img
         src="/static/comm_staff/disec-cd.png"
         class="img-thumbnail"
         style="width: 95%; max-width: 256px; display: block; margin: 0 auto;"
-        alt="Avani Yadav"
+        alt="ANOUSHA ATHREYA"
       />
     </div>
     <div class="col">
-      <p>Esteemed delegates - welcome to UCBMUN XXIV! My name is Avani Yadav, and I’m honored to co-chair DISEC this year. In a world of exponential technological growth and international codependency, peacekeeping is more complicated and vital than ever before. The topics of this committee are historically mired in controversy, presenting you all with the challenge of suggesting unique and multifaceted solutions that focus on efficacy. I look forward to tackling the behemoth that is international conflict resolution with you all! On a personal note, I am a sophomore at Cal majoring in Economics and Applied Math, so I spend a lot of time staring at numbers and hoping they’ll figure themselves out. I’m passionate about the intersection of technology and law, and I currently analyze how social media and other open source platforms fit into human rights, international law, and investigative journalism at Berkeley Law. In my free time, I love hiking and listening to the Oh Wonder album for the 800th time. I’m incredibly excited to meet you all this spring, and to watch your brilliant minds at work!</p>
+      <p>Hey all, I'm Anousha Athreya, and I'm beyond excited to be your chair for the DISEC committee at UCBMUN this year! I'm a fourth-year majoring in Electrical Engineering and Computer Science, with minors in Data Science and Public Policy. In the past, I served as a Chair for the World Health Organization GA, the My Way Killings Committee, on UCBMUN XXVIII Secretariat as the Director of Technology, and currently serve as the External Vice President, overseeing the travel team. Before diving into international relations, I was always fascinated by the intersection of science and security and how it can reshape global stability. In this DISEC committee, we're confronting two emerging challenges to modern peace: the weaponization of synthetic pathogens and the rise of AI in cyberwarfare and terrorist operations. I'm beyond excited to chair this committee and see how you, as delegates, take on the responsibility of building regulatory frameworks that can stand up to 21st-century threats. At Berkeley, I am a senior mentor with Computer Science Mentors and serve on the Computing and Information Technology Academic Senate Committee. I also really enjoy watching mystery &amp; detective shows, so let me know if you have any recommendations. I can't wait to see you all, good luck, and I look forward to meeting you next year!</p>
 
       <p>Yours,<br>
-      	Avani Yadav<br>
+      	ANOUSHA ATHREYA<br>
       	Chair,
-      	DISEC: Peace Operations (Double-Del)
+      	Disarmament and International Security Council
   	  </p>
     </div>
-  </div>
+  </div> -->
+    <!-- -->
+    
+  </div>    
+</div>
 </div>
 
+
+<!--end white background block-->
+
+
     </div>
+    <div>
     <footer class="bg-transperant footer">
       
+
+<head>
+  <style>
+.tail-background {
+      /* /* all: unset;  */
+  background-color: #032c4e;
+  width: 100%; /* Spans full width of parent/container */
+}
+
+  </style>
+</head>
+<div class="tail-background">
       <div class=container>
         <span class="text-light" >
-          <p style="margin-top: 8px">
-        &copy; Copyright 2018 by UCBMUN.
+          <div class="row" style="height: 5vh"></div>
+          <div class="row">
+            <div class="col" style="width: 20vw">
+            <a href="https://www.instagram.com/ucbmun/" target="_blank" style="color: white;">
+              <img
+                src="/static/instagram.png"
+                style="width: 3vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@ucbmun</strong>
+            </a>
+            </div>
+            <div class="col" style="width: 20vw"></div>
+            <a href="https://www.facebook.com/UCBMUNconference" target="_blank" style="color: white;">
+              <img
+                src="/static/facebook.png"
+                style="width: 2vw; min-width: 35px; padding: 2%;"
+              />
+              <strong>@UCBMUNconference</strong>
+            </a>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <p style="margin-top: 12px; text-align: center; color: white">
+            &copy; Copyright 2025 by UC Berkeley Model UN
           </p>
+          <div class="row" style="height: 5vh"></div>
         </span>
         
+      </div>
       
       </div>
     </footer>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
+  <!-- <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#recruitmentModal').modal('show');
+    });
+  </script> -->
   </body>
 </html>
